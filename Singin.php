@@ -1,16 +1,15 @@
+<? $path = $_SERVER['DOCUMENT_ROOT'] ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalortFit</title>
-    <link rel="stylesheet" href="/css/unsubscribe.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/singin.css">
+    <title>CalorFit</title>
 </head>
-
 <body>
     <div class="wrapper">
     <header class="header">
@@ -44,34 +43,21 @@
             </div>
           </div>
         </header>
+        <div class="container">
+        <? include $path . "/components/header.php"; ?>
+      </div>
         <div class="block">
-            <div class="text-content white-text">
-                <h1>Отказ от подписки</h1>
-                <p>-Вы можете найти свою подписку и отменить ее самостоятельно.</p>
-                <p>-Уже списанные средства за подписку - НЕ возвращаются согласно нашему договору-оферте.</p>
-            </div>
+            <h1>Вход в аккаунт</h1>
             <form action="">
-                <input class="emailInput" type="email" name="email" placeholder="Введите свой Email адрес...">
-                <input class="button" type="submit" name="send">
+                <label for="login">Login</label><br>
+                <input type="text" name="login" id="login" class="information-input browser-default" required><br>
+                <label for="password">Password</label><br>
+                <input type="passwrod" name="password" id="password" class="information-input" required><br>
+                <input type="submit" name="send" class="button-form">
             </form>
         </div>
-
-        <footer>
-            <div class="logo">
-                <p class="white-text">CalorFit</p>
-            </div>
-            <div class="about">
-                Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
-                <a href="#">Политикой<br />
-                    конфиденциальности</a>, <a href="#">Условиями подписки</a><br />
-                <a href="#">Отписаться от услуги</a><br />
-                Поддержка: admin@meallforme.ru<br />
-                2021 © All Rights Reserved.
-            </div>
-        </footer>
+        <? include $path . "/components/footer.php"; ?>
     </div>
-
     <script src="../js/burger.js"></script>
 </body>
-
 </html>

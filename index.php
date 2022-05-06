@@ -15,7 +15,6 @@
 <body>
   <div class="wrapper">
     <div class="block-one">
-
       <div class="head">
         <div class="logo">CalorFit</div>
         <header class="header">
@@ -42,7 +41,7 @@
                     <a href="#" class="header__link">Условия пользования</a>
                   </li>
                   <li>
-                    <a href="#" class="header__link">Личный кабинет</a>
+                    <a href="Singin.php" class="header__link">Личный кабинет</a>
                   </li>
                 </ul>
               </nav>

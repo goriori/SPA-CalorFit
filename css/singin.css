@@ -230,74 +230,94 @@ h6 {
     height: 120vh;
     margin: 0 auto;
     padding-top: 50px;
-
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin: 0px;
+    display: flex;
+}
+
+.logo a {
+    font-size: 64px;
+    margin-top: 0px;
+    font-family: "Lexend Exa";
+    color: #fff;
+}
 
 .block {
-    width: 870px;
-    height: 497px;
-    background: rgba(53, 53, 58, 0.8);
-    border: 1px solid #F7F7F7;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 50px;
-
+    width: 1900px;
+    height: 567px;
+    background: rgba(196, 196, 196, 0.3);
+    padding-top: 30px;
+    margin-top: 100px;
 }
 
-.logo {  
-    width: 680px;
-    height: 60px;
-    font-size: 64px;
-    font-family: "Lexend Exa";  
-    margin: 0 auto; 
-
-}
-
-.text-content {
-    width: 688px;
-    height: 204px;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-
-.text-content p {
-    margin-top: 60px;
+h1 {
+    width: 240px;
+    height: 25px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 32px;
+    color: white;
+    margin: 0 auto;
+    
+
 }
 
 form {
     width: 510px;
-    height: 148px;
+    height: 317px;
+    background: rgba(53, 53, 58, 0.6);
+    border: 3px solid #636363;
+    border-radius: 10px;
     margin: 0 auto;
-    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 30px;
 }
 
-.emailInput {
-    width: 510px;
-    height: 55px;
-    border: 1px solid #efefef;
+label {
+    font-weight: 400;
+    font-size: 15px;
+    color: #E8E8E8;
+
+    margin-left: 90px;
+
+}
+
+.information-input {
+    width: 330px;
+    height: 49px;
+    border: 1px solid #EFEFEF;
     border-radius: 10px;
-    display: block;
-    padding-left: 25px;
-    padding-top: 22px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: transparent;
+    margin-left: 90px;
+    margin-bottom: 20px;
     color: white;
     font-family: "Lexend Exa";
     font-weight: 400;
-    
+    padding-left: 30px;
+
+
 }
 
-.button {
-    width: 330px;
-    height: 53px;
+.button-form {
+    margin: 0 auto;
     background: #C4C4C4;
     border-radius: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 100px;
-    margin-top: 40px;
-
+    width: 210px;
+    height: 33px;
+    margin-left: 150px;
+    margin-top: 10px;
 }
 
 footer {
@@ -328,5 +348,4 @@ footer {
     text-align: center;
     color: white;
     margin: 0 auto;
-    margin-top: 50px;
 }
