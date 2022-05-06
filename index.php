@@ -21,7 +21,7 @@
           <div class="container">
             <div class="header__body">
               <div class="header__burger">
-                <span></span>
+                <span class="spanTest"></span>
               </div>
               <nav class="header__menu">
                 <ul class="header__list">
@@ -91,14 +91,14 @@
         <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
       </div>
       <div class="imageTest">
-        <div class="Man">
+        <a href="#"><div class="Man">
           <h1 class="white-text">МУЖЧИНА</h1>
           <div class="imageman"></div>
-        </div>
-        <div class="Woman">
+        </div></a>
+        <a href="TestWoman.php"><div class="Woman">
           <h1 class="white-text">ЖЕНЩИНА</h1>
           <div class="imagewoman"></div>
-        </div>
+        </div></a>
       </div>
       <? include $path . "/components/footer.php"; ?>
   
