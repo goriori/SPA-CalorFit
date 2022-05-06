@@ -1,3 +1,4 @@
+<? $path = $_SERVER['DOCUMENT_ROOT'] ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +15,7 @@
 <body>
   <div class="wrapper">
     <div class="block-one">
+
       <div class="head">
         <div class="logo">CalorFit</div>
         <header class="header">
@@ -81,6 +83,11 @@
           </div>
         </header> -->
       
+
+      <div class="container">
+        <? include $path . "/components/header.php"; ?>
+      </div>
+
       <div class="content">
         <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
       </div>
@@ -94,21 +101,20 @@
           <div class="imagewoman"></div>
         </div>
       </div>
-      <footer>
-        <div class="about">
-          Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
-          <a href="#">Политикой<br />
-            конфиденциальности</a>, <a href="#">Условиями подписки</a><br />
-          <a href="#">Отписаться от услуги</a><br />
-          Поддержка: admin@meallforme.ru<br />
-          2021 © All Rights Reserved.
-        </div>
-      </footer>
+      <? include $path . "/components/footer.php"; ?>
+  
     </div>
   </div>
   </div>
   <script src="../js/burger.js"></script>
  
+     
+    </div>
+  </div>
+  </div>
+
+
+
 </body>
 
 </html>

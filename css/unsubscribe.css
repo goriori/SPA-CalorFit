@@ -99,7 +99,8 @@ h6 {
     background-repeat: no-repeat;
     height: 120vh;
     margin: 0 auto;
-    
+    padding-top: 150px;
+
 }
 
 .block {
@@ -108,4 +109,52 @@ h6 {
     background: rgba(53, 53, 58, 0.8);
     border: 1px solid #F7F7F7;
     border-radius: 10px;
+    margin: 0 auto;
+
+}
+
+.text-content {
+    width: 688px;
+    height: 204px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.text-content p {
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+form {
+    width: 510px;
+    height: 148px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.emailInput {
+    width: 510px;
+    height: 55px;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    display: block;
+    padding-left: 25px;
+    padding-top: 22px;
+    color: white;
+    font-family: "Lexend Exa";
+    font-weight: 400;
+    
+}
+
+.button {
+    width: 330px;
+    height: 53px;
+    background: #C4C4C4;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 100px;
+    margin-top: 40px;
+
 }
