@@ -51,6 +51,7 @@
                 <div class="slide_2"></div>
             </div>
         </div>
+        <!-- test1 -->
         <div class="test1">
             <h1 class="target1">Желаемый вес</h1>
             <h1 class="question1">Хорошо, какой Ваш идеальный вес?</h1>
@@ -70,6 +71,7 @@
                 <button class="continue1" onclick="test2()">Продолжить</button>
             </div>
         </div>
+        <!-- test2 -->
         <div class="container-block2">
             <div class="text-content white-text2">
                 <h2>Физические параметры</h2>
@@ -84,6 +86,36 @@
                 <input type="number" placeholder="Текущий вес(кг)" class="browser-default">
             </div>
             <div class="btn2" onclick="test3()">Продолжить</div>
+            <div class="sliders">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+        </div>
+        <!-- test3 -->
+        <div class="gran">
+            <div class="text-content">
+                <h2>Возраст</h2>
+                <p class="text-section-two">Сколько Вам лет?</p>
+            </div>
+            <div class="buttons">
+                <div class="active">
+                    <button>18-29</button>
+                </div>
+                <div>
+                    <button>30-29</button>
+                </div>
+                <div>
+                    <button>40-49</button>
+                </div>
+                <div>
+                    <button>50+</button>
+                </div>
+            </div>
             <div class="sliders">
                 <div class="one"></div>
                 <div class="two"></div>
