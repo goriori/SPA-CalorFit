@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/TestWoman.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/TestWoman.css">
@@ -13,29 +14,28 @@
 
 <body>
     <div class="wrapper">
-        <MyBurgerW />
-        <div class="block center-align">
+        <div class="block">
             <div class="block-text">
                 <h2>Цель</h2>
                 <p>Какая Ваша главная цель?</p>
             </div>
             <div class="buttons">
                 <div class="left">
-                    <button>
+                    <button class="button" onclick="test()">
                         <p class="one">Похудеть</p>
                         <div class="img-one"></div>
                     </button></router-link>
-                    <button>
+                    <button class="button" onclick="test()">
                         <p class="two">Ускорить рост своих мышц</p>
                         <div class="img-two"></div>
                     </button>
                 </div>
                 <div class="right">
-                    <button>
+                    <button class="button" onclick="test()">
                         <p class="three">Убрать лишние килограммы</p>
                         <div class="img-three"></div>
                     </button>
-                    <button>
+                    <button class="button" onclick="test()">
                         <p class="four">Начать правильно питаться</p>
                         <div class="img-four"></div>
                     </button>
@@ -49,6 +49,49 @@
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
+            </div>
+        </div>
+        <div class="test1">
+            <h1 class="target1">Желаемый вес</h1>
+            <h1 class="question1">Хорошо, какой Ваш идеальный вес?</h1>
+            <div class="response1">
+                <div class="changeWeight1">
+                    <div id="pound1" class="pound1"></div>
+                    <div id="kg1" class="kg1"></div>
+                    <div class="changeWeight_text1">
+                        <font class="pound_text1">В фунтах</font>
+                        <font class="kg_text1">В килограммах</font>
+                    </div>
+                </div>
+                <div class="quantity1">
+                    <input type="text">
+                    <h1 id="quantity1">КГ</h1>
+                </div>
+                <button class="continue1" onclick="test2()">Продолжить</button>
+            </div>
+        </div>
+        <div class="container-block2">
+            <div class="text-content white-text2">
+                <h2>Физические параметры</h2>
+                <p class="last-text2">
+                    Отлично! А как насчет Вашего текущего роста и веса?
+                </p>
+            </div>
+            <div class="select-param2">
+                <input type="number" placeholder="Рост(см)" class="browser-default">
+            </div>
+            <div class="select-param2">
+                <input type="number" placeholder="Текущий вес(кг)" class="browser-default">
+            </div>
+            <div class="btn2" onclick="test3()">Продолжить</div>
+            <div class="sliders">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
             </div>
         </div>
         <footer>
