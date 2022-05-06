@@ -1,3 +1,4 @@
+<? $path = $_SERVER['DOCUMENT_ROOT'] ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
 </head>
 <body>
 <div class="wrapper">
+<? include $path . "/components/header.php"; ?>
     <section>
         <div class="img1"></div>
         <div class="img2"></div>

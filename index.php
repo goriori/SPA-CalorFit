@@ -95,7 +95,7 @@
           <h1 class="white-text">МУЖЧИНА</h1>
           <div class="imageman"></div>
         </div></a>
-        <a href="TestWoman.php"><div class="Woman">
+        <a href="/tests/woman/TestWoman.php"><div class="Woman">
           <h1 class="white-text">ЖЕНЩИНА</h1>
           <div class="imagewoman"></div>
         </div></a>
