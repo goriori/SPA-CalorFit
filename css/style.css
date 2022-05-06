@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* ================== */
+
+.wrapper {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 120vh;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Lexend Exa";
+    src: url(../fonts/LexendDecaRegular.ttf);
+}
+
+/* Animation */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active до версии 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+/* BURGER */
+
+.icon {
+    width: 200px;
+    height: 100px;
+
+}
+
+
+
+.icon>.line {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.background-prop {
+    background-color: #201A1A;
+    width: 315px;
+    height: 452px;
+}
+
+ul li {
+    color: white;
+}
+
+/* HOME */
+
+
+
+.container {
+    margin: auto;
+    max-width: 1170px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin: 0px;
+    display: flex;
+}
+
+.logo a {
+    font-size: 64px;
+    margin-top: 0px;
+    font-family: "Lexend Exa";
+    color: #fff;
+}
+
+.content {
+    margin: 0 auto;
+    background-color: #c4c4c4;
+    height: 182px;
+    background: rgba(196, 196, 196, 0.3);
+}
+
+.content p {
+    font-size: 32px;
+    padding-top: 55px;
+}
+
+.imageTest {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.Man {
+    max-width: 372px;
+    height: 440px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 50px 1000px 0px 0px;
+    margin-right: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.Man h1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    transform: rotate(-90deg);
+    width: 419px;
+    height: 60px;
+    margin-right: 500px;
+    position: relative;
+    z-index: 2;
+    left: -180px;
+    top: 150px;
+}
+
+.imageman {
+    background-image: url(../images/men.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 360px;
+    height: 464px;
+    position: relative;
+    z-index: 3;
+    top: -146px;
+    left: 30px;
+}
+
+.Woman {
+    max-width: 330px;
+    height: 439px;
+    background: rgba(90, 90, 90, 0.5);
+    border-radius: 1000px 50px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.Woman h1 {
+    font-size: 75px;
+    transform: rotate(90deg);
+    width: 403px;
+    height: 53px;
+    float: left;
+    position: relative;
+    z-index: 2;
+    left: 100px;
+    top: 150px;
+}
+
+.imagewoman {
+    background-image: url(../images/woman.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 301px;
+    height: 417px;
+    position: relative;
+    z-index: 3;
+    top: 22px;
+}
+
+footer {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.text {
+    width: 540px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.about {
+    width: 680px;
+    height: 160px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.imageman:hover {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.imagewoman:hover {
+    cursor: pointer;
+}
+
+.Woman:hover {
+    background: rgba(78, 78, 78, 0.5);
+    border-radius: 1000px 50px 0px 0px;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.Man:hover {
+    background: rgba(78, 78, 78, 0.5);
+    border-radius: 50px 1000px 0px 0px;
+    margin-right: 32px;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
