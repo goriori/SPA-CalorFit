@@ -41,7 +41,7 @@
                     <a href="#" class="header__link">Условия пользования</a>
                   </li>
                   <li>
-                    <a href="#" class="header__link">Личный кабинет</a>
+                    <a href="Singin.php" class="header__link">Личный кабинет</a>
                   </li>
                 </ul>
               </nav>

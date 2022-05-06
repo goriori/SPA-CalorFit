@@ -230,103 +230,50 @@ h6 {
     height: 120vh;
     margin: 0 auto;
     padding-top: 50px;
-
 }
 
 
-.block {
-    width: 870px;
-    height: 497px;
-    background: rgba(53, 53, 58, 0.8);
-    border: 1px solid #F7F7F7;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 50px;
-
-}
-
-.logo {  
-    width: 680px;
-    height: 60px;
-    font-size: 64px;
-    font-family: "Lexend Exa";  
-    margin: 0 auto; 
-
-}
-
-.text-content {
-    width: 688px;
-    height: 204px;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-
-.text-content p {
-    margin-top: 60px;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-form {
-    width: 510px;
-    height: 148px;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-
-.emailInput {
-    width: 510px;
-    height: 55px;
-    border: 1px solid #efefef;
-    border-radius: 10px;
-    display: block;
-    padding-left: 25px;
-    padding-top: 22px;
-    color: white;
-    font-family: "Lexend Exa";
-    font-weight: 400;
-    
-}
-
-.button {
-    width: 330px;
-    height: 53px;
-    background: #C4C4C4;
-    border-radius: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 100px;
-    margin-top: 40px;
-
-}
-
-footer {
-    margin-top: 70px;
-    width: 100%;
+.wrapper {
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 88.125rem;
+    margin: auto;
+  }
+  .admin_main {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    gap: 15px;
+  }
+  
+  .admin_main > div {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  
+  /* .admin_main>button:hover
+  {
+      background-color: #fff;
+      color: #000;   
+  } */
+  
+  table {
+    border: 1px solid #fff;
+    font-size: 25px;
+    background-color: #000;
+  }
+  td {
+    border: 1px solid #fff;
     text-align: center;
-    align-items: center;
-
-
-}
-
-.text {
-    width: 540px;
-    margin: 0px auto;
-    margin-top: 50px;
-}
-
-.about {
-    width: 680px;
-    height: 160px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 14px;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-    margin-top: 50px;
-}
+    padding: 15px;
+  }
+  tr {
+    border: 1px solid #fff;
+  }
+  th {
+    border: 1px solid #fff;
+    padding: 12px;
+  }
