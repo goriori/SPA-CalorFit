@@ -5,34 +5,22 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/energy.css'>
     <script src='js/main.js'></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="panel">
-            <p class="type">Когда был идеальный вес</p>
-            <p class="type2">Как давно вы были в Вашем <br> идеальном весе?</p>
+            <p class="type">Энергия</p>
+            <p class="type2">Остаетесь ли вы энергичными в течение дня?</p>
 
-            <div class="wrapp_panel">
-                <div class="block_img_panel"></div>
-                <div class="block_test_panel">
-                    <div class="buttons">
-                        <button class="test_panel1">
-                            Больше 1 года <br> назад
-                        </button>
-                        <button class="test_panel2">
-                            Меньше 1 года назад
-                        </button>
-                        <button class="test_panel3">
-                            Больше 3 лет назад
-                        </button>
-                        <button class="test_panel4">
-                            Никогда
-                        </button>
-                    </div>
+            <div class="box_panel">
+                <div class="buttons">
+                    <button class="button_panel1">Мой уровень энергии <br> не меняется</button>
+                    <button class="button_panel2">У меня упадок сил перед <br> приемом пищи</button>
+                    <button class="button_panel3">Я чувствую сонливость <br> после обеда</button>
                 </div>
-            </div>
+            </div>  
             
             <div class="ellipse">
                 <div class="elliplse_1"></div>
