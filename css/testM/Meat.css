@@ -5,11 +5,11 @@
 
 @font-face {
   font-family: "Lexend Exa";
-  src: url("../fonts/LexendDecaRegular.ttf");
+  src: url("../../fonts/LexendDecaRegular.ttf");
 }
 
 .wrapper{
-  background-image: url("../img/background.png");
+  background-image: url("../../images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: hidden;
@@ -174,4 +174,3 @@ input {
 }
 
 }
-</style>

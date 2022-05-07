@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/testM/Target.css">
     <title>Target</title>
   </head>
+<body>
 <div class="wrapper">
     <HeaderMain />
     <div class="gran">
@@ -15,15 +16,15 @@
       <div class="buttons">
           <button>
             <p>Похудеть</p>
-            <img class="img_man1" src="img/man1.png" />
+            <img class="img_man1" src="../../images/man1.png" />
           </button>
         <button>
             <p>Ускорить рост своих мышц</p>
-            <img class="img_man2" src="img/Man2.png" />
+            <img class="img_man2" src="../../images/Man2.png" />
           </button>
         <button>
             <p>Начать питаться правильно</p>
-            <img class="img_man3" src="img/Man3.png" />
+            <img class="img_man3" src="../../images/Man3.png" />
           </button>
         </div>
         <div class="sliders">
@@ -50,3 +51,5 @@
     </div>
   </footer>
   </div>
+</body>
+</html>

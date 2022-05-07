@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/testM/Water.css">
     <title>Water</title>
   </head>
-<div class="wrapper">
+  <body>
+  <div class="wrapper">
     <HeaderMain />
     <div class="gran">
       <div class="text-content">
@@ -28,26 +29,26 @@
       <div class="buttons">
         <div class="left">
           <div>
-           <router-link to="/test/motivation" tag="a"> <button class="active">
+           <button class="active">
               <p>☕Только кофе или чай</p>
             </button></router-link>
           </div>
           <div>
-            <router-link to="/test/motivation" tag="a"> <button class="active">
+            <button class="active">
               <p class="Stack">💧2-5 стаканов(0,5-1,5)</p>
-            </button></router-link>
+            </button>
           </div>
         </div>
         <div class="right">
           <div>
-           <router-link to="/test/motivation" tag="a">  <button class="active">
+           <button class="active">
               <p>💧Меньше 2 стаканов(0,5л)</p>
-            </button></router-link>
+            </button>
           </div>
           <div>
-           <router-link to="/test/motivation" tag="a">  <button class="active">
+           <button class="active">
               <p class="Stack">💧Больше 6 стаканов</p>
-            </button></router-link>
+            </button>
           </div>
         </div>
       </div>
@@ -74,3 +75,5 @@
     </div>
   </footer>
   </div>
+</body>
+</html>

@@ -5,11 +5,20 @@
 
 @font-face {
   font-family: "Lexend Exa";
-  src: url("../fonts/LexendDecaRegular.ttf");
+  src: url("../../fonts/LexendDecaRegular.ttf");
+}
+
+.active {
+  transition: 0.5s;
+  background: #7287a7;
+}
+
+.mystyle{
+  background: #7287a7;
 }
 
 .wrapper{
-  background-image: url("../img/background.png");
+  background-image: url("../../images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: hidden;
@@ -74,7 +83,7 @@ input {
     display: block;
 }
 
-.buttons button {
+button {
   width: 150px;
   height: 79px;
   background: #231f1f;
@@ -93,10 +102,6 @@ input {
 
 .buttons div {
   margin-bottom: 20px;
-}
-
-.active {
-  margin-top: 50px;
 }
 
 .sliders {
@@ -181,4 +186,3 @@ input {
 }
 
 }
-</style>
