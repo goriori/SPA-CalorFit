@@ -5,34 +5,23 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/body_type.css'>
     <script src='js/main.js'></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="panel">
-            <p class="type">Фитнес</p>
-            <p class="type2">Учитывая то, что Вы хотите набрать (n)кг. <br> Ваша физическая активность играет большую <br> роль!</p>
-            <p class="type3">Насколько вы физически активны?</p>
+            <p class="type">Тип Телосложения</p>
+            <p class="type2">Для каждого типа телосложения <br> характерен свой уровень метаболизма</p>
+            <p class="type3">Какое изображение лучше всего соответствует <br> Вашем типу телосложения?</p>
 
-            <div class="wrapp_panel">
-                <div class="block_img_panel"></div>
-                <div class="block_test_panel">
-                    <div class="buttons">
-                            <button class="test_panel1">
-                                Практически нет активности
-                            </button>
-                        <button class="test_panel2">
-                            Фитнес 1-2раза в неделю
-                        </button>
-                        <button class="test_panel3">
-                            Фитнес 3-5 раз в неделю
-                        </button>
-                        <button class="test_panel4">
-                            Фитнес 5-7 раз в неделю
-                        </button>
-                    </div>
-                </div>
+            <div class="buttons">
+                <button class="button_panel1">Эктоморф</button>
+                <img src="img/ectomorph.png" class="img_panel1">
+                <button class="button_panel2">Мезоморф</button>
+                <img src="img/mesomorph.png" class="img_panel2">
+                <button class="button_panel3">Эндоморф</button>
+                <img src="img/endomorph.png" class="img_panel3">
             </div>
             
             <div class="ellipse">
