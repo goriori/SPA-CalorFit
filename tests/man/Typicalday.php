@@ -28,26 +28,26 @@
       <div class="buttons">
         <div class="left">
           <div>
-           <router-link to="/test/motivation" tag="a"> <button class="active">
+            <button class="active">
               <p>☕Только кофе или чай</p>
-            </button></router-link>
+            </button>
           </div>
           <div>
-            <router-link to="/test/motivation" tag="a"> <button class="active">
+             <button class="active">
               <p class="Stack">💧2-5 стаканов(0,5-1,5)</p>
-            </button></router-link>
+            </button>
           </div>
         </div>
         <div class="right">
           <div>
-           <router-link to="/test/motivation" tag="a">  <button class="active">
+            <button class="active">
               <p>💧Меньше 2 стаканов(0,5л)</p>
-            </button></router-link>
+            </button>
           </div>
           <div>
-           <router-link to="/test/motivation" tag="a">  <button class="active">
+             <button class="active">
               <p class="Stack">💧Больше 6 стаканов</p>
-            </button></router-link>
+            </button>
           </div>
         </div>
       </div>

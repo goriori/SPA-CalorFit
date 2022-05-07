@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Lexend Exa";
+    src: url(../fonts/LexendDecaRegular.ttf);
+}
+
+
 * {
     margin: 0 auto;
 }
