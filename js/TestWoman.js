@@ -25,19 +25,8 @@ function test2() {
 }
 
 function test3() {
-    $ValueHeightCheck=$('#height').attr('value');
-    $ValueWeightCheck=$('#weight').attr('value');
-    if($ValueHeightCheck>243 && $ValueHeightCheck<91){
-        alert('Вы ввели неправильный рост!')
-        console.log($ValueHeightCheck);
-    }
-    else if(number($ValueWeightCheck)>300 && number($ValueWeightCheck)<40){
-        alert('Вы ввели неправильный вес')
-    }
-    else{
         $('.container-block2').css('display', 'none');
         $('.gran3').css('display', 'block'); 
-    }
     
 }
 
