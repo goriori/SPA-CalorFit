@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/testM/Meat.css">
     <title>Meat</title>
   </head>
-<div class="wrapper">
+  <body>
+  <div class="wrapper">
     <HeaderMain />
     <div class="gran">
       <div class="text-content white-text">
@@ -62,3 +63,5 @@
     </div>
   </footer>
   </div>
+</body>
+</html>

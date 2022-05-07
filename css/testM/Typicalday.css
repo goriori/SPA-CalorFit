@@ -5,8 +5,9 @@
 
 @font-face {
   font-family: "Lexend Exa";
-  src: url("../fonts/LexendDecaRegular.ttf");
+  src: url("../../fonts/LexendDecaRegular.ttf");
 }
+
 
 .wrapper {
 
@@ -16,6 +17,15 @@
     height: 120vh;
     margin: 0 auto;
 }
+/* .wrapper{
+  background-image: url("../../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  text-align: center;
+  width: 100%;
+
+} */
 
 .gran {
   width: 690px;
@@ -32,6 +42,9 @@
 .active{
 width: 100%;
 font-size:20px;
+
+font-size: 20px;
+
 }
 
 .text-content {

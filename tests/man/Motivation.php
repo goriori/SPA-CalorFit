@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/testM/Motivation.css">
     <title>Motivation</title>
   </head>
-<div class="wrapper">
+<body>
+  <div class="wrapper">
         <div class="gran">
       <div class="text-content white-text">
         <h2>Мотивация</h2>
@@ -55,3 +56,5 @@
     </div>
   </footer>
   </div>
+</body>
+</html>

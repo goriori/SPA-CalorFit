@@ -5,11 +5,15 @@
   
   @font-face {
     font-family: "Lexend Exa";
-    src: url("../fonts/LexendDecaRegular.ttf");
+    src: url("../../fonts/LexendDecaRegular.ttf");
   }
   
   .wrapper{
+<<<<<<< HEAD
     background-image: url(../images/background.png);
+=======
+    background-image: url("../../images/background.png");
+>>>>>>> fb9c4f5aa78117d8f0b29be94a54c099c40dd6e7
     background-size: cover;
     background-repeat: no-repeat;
     height: 120vh;

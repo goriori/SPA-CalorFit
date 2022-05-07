@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/testM/Phisicparam.css">
     <title>PhisicParam</title>
   </head>
-<div class="wrapper">
+  <body>
+  <div class="wrapper">
     <HeaderMain/>
     <div class="gran">
       <div class="text-content white-text">
@@ -76,3 +77,5 @@
     </div>
   </footer>
   </div>
+</body>
+</html>

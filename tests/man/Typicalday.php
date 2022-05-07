@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/testM/Typicalday.css">
     <title>Typicalday</title>
   </head>
+  <body>
 <div class="wrapper">
     <HeaderMain />
     <div class="container-block">
@@ -28,24 +29,40 @@
       <div class="buttons">
         <div class="left">
           <div>
+
             <button class="active">
+
+           <button class="active">
+
               <p>☕Только кофе или чай</p>
             </button>
           </div>
           <div>
+
              <button class="active">
+
+            <button class="active">
+
               <p class="Stack">💧2-5 стаканов(0,5-1,5)</p>
             </button>
           </div>
         </div>
         <div class="right">
           <div>
+
             <button class="active">
+
+          <button class="active">
+
               <p>💧Меньше 2 стаканов(0,5л)</p>
             </button>
           </div>
           <div>
+
              <button class="active">
+
+           <button class="active">
+
               <p class="Stack">💧Больше 6 стаканов</p>
             </button>
           </div>
@@ -74,3 +91,5 @@
     </div>
   </footer>
   </div>
+</body>
+</html>
