@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/TestWoman.css">
     <title>CalorFit</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="block">
@@ -42,6 +43,17 @@
             </div>
             <div class="sliders">
                 <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -70,24 +82,24 @@
                 <button class="continue1" onclick="test2()">Продолжить</button>
             </div>
             <div class="ellipse1">
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test2 -->
@@ -106,13 +118,24 @@
             </div>
             <div class="btn2" onclick="test3()">Продолжить</div>
             <div class="sliders">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test3 -->
@@ -136,13 +159,24 @@
                 </div>
             </div>
             <div class="sliders3">
-                <div class="one3"></div>
-                <div class="two3"></div>
-                <div class="two3"></div>
-                <div class="two3"></div>
-                <div class="two3"></div>
-                <div class="two3"></div>
-                <div class="two3"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test4 -->
@@ -154,41 +188,41 @@
                 <div class="answer4">
                     <div class="girl1" onclick="test5()">
                         <p>Прямоуго<br>льник</p>
-                        <img src="images/woman/girl1.png">
+                        <img src="../../images/woman/girl1.png">
                     </div>
                     <div class="girl2" onclick="test5()">
                         <p>песочные<br>часы</p>
-                        <img src="images/woman/girl2.png">
+                        <img src="../../images/woman/girl2.png">
                     </div>
                     <div class="girl3" onclick="test5()">
                         <p>груша</p>
-                        <img src="images/woman/girl3.png">
+                        <img src="../../images/woman/girl3.png">
                     </div>
                     <div class="girl4" onclick="test5()">
                         <p>яблоко</p>
-                        <img src="images/woman/girl4.png">
+                        <img src="../../images/woman/girl4.png">
                     </div>
                 </div>
             </div>
             <div class="ellipse4">
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test5 -->
@@ -218,13 +252,23 @@
                 </div>
             </div>
             <div class="sliders5">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
-                <div class="two"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test6 -->
@@ -246,13 +290,23 @@
                 </div>
             </div>
             <div class="ellipse6">
-                <div class="elliplse_1"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test7 -->
@@ -271,24 +325,23 @@
                 <button id="continue" class="continue7" onclick="test8()">Продолжить</button>
             </div>
             <div class="ellipse7">
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_1"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test8 -->
@@ -321,13 +374,23 @@
                 </div>
             </div>
             <div class="ellipse8">
-                <div class="elliplse_1"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <!-- test9 -->
@@ -356,15 +419,83 @@
                     </button>
                 </div>
             </div>
-
             <div class="ellipse9">
-                <div class="elliplse_1"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
-                <div class="elliplse_0"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+            </div>
+        </div>
+        <!-- test9.1 -->
+        <div class="gran9-1">
+            <div class="target9-1">
+                <h2>Сон</h2>
+                <p class="description9-1">
+                    Достаточное количество сна <br />необходимо для того, чтобы похудеть
+                </p>
+                <p class="qustion9-1">Сколько вы обычно спите?</p>
+            </div>
+            <div class="buttons9-1">
+                <div class="left9-1">
+                    <div class="butt9-1" onclick="test9_1()">
+                        <button class="active9-1">
+                            <div class="image-clock9-1"></div>
+                            <p>Меньше 5 часов</p>
+                        </button>
+                    </div>
+                    <div class="butt9-1" onclick="test9_1()">
+                        <button class="active9-1">
+                            <div class="image-clock9-1"></div>
+                            <p>7-8 часов</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="right9-1" onclick="test9_1()">
+                    <div class="butt9-1">
+                        <button class="active9-1">
+                            <div class="image-clock9-1"></div>
+                            <p>5-6 часов</p>
+                        </button>
+                    </div>
+                    <div class="butt" onclick="test9_1()">
+                        <button class="active9-1">
+                            <div class="image-clock9-1"></div>
+                            <p>Больше 8 часов</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="sliders9-1">
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
         </div>
         <footer>
@@ -412,13 +543,23 @@
                     </div>
                 </div>
                 <div class="sliders10">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <!-- test11 -->
@@ -440,13 +581,23 @@
                     </div>
                 </div>
                 <div class="sliders11">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <!-- test12 -->
@@ -467,13 +618,23 @@
                     </div>
                 </div>
                 <div class="sliders11">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
-                    <div class="two"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <!-- test13 -->
@@ -494,24 +655,23 @@
                 </div>
                 <div class="continue13" onclick="test14()">Продолжить</div>
                 <div class="ellipse13">
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <!-- test14 -->
@@ -533,24 +693,23 @@
                 </div>
                 <div class="continue13" onclick="test15()">Продолжить</div>
                 <div class="ellipse13">
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
                 </div>
             </div>
             <!-- test15 -->
@@ -569,24 +728,23 @@
                 </div>
                 <div class="continue15" onclick="test15()">Продолжить</div>
                 <div class="ellipse15">
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_1"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
-                    <div class="ellipse_0"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
                 </div>
             </div>
             <div class="text-btn center-align">

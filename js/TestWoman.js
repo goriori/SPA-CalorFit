@@ -137,6 +137,11 @@ function pound_text10() {
 // =======
 function test9() {
     $('.panel8').css('display', 'none');
+    $('.gran9-1').css('display', 'block');
+}
+
+function test9_1(){
+    $('.gran9-1').css('display', 'none');
     $('.panel9').css('display', 'block');
 }
 
