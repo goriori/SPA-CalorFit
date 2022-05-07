@@ -88,27 +88,58 @@ h6 {
 }
 
 /* ================== */
+@font-face {
+    font-family: "Lexend Exa";
+    src: url(../fonts/LexendDecaRegular.ttf);
+}
 
 .wrapper {
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 20px;
     
+    padding-top: 20px;
+    overflow-x: hidden;
     margin: 0 auto;
     height: 120vh;
+    background-position: center center;
+    
    
 }
 
-
-section {
-    padding-left: 125px;
-    
+.wrapper::-webkit-scrollbar{
+    display: none;
 }
+
+
+
+
+
 
 section div {
     margin: 0 auto;
+    
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-left: 250px;
+    display: flex;
+}
+
+.logo a {
+    font-size: 64px;
+    margin-top: 0px;
+    font-family: "Lexend Exa";
+    color: #fff;
+}
+
 /* Images ======================*/
 .img1 {
     background-image: url(../images/polit/1.jpg);
