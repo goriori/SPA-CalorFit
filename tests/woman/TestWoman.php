@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../../js/TestWoman.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="../../js/TestWoman.js"></script>
     <link rel="stylesheet" href="/css/TestWoman.css">
     <title>CalorFit</title>
 </head>
@@ -75,7 +76,7 @@
                     </div>
                 </div>
                 <div class="quantity1">
-                    <input id="input_kg" type="text1" onchange="checked_kg()" autocomplete="off">
+                    <input id="input_kg" class="browser-default" type="number" min="45" max="300" autocomplete="off">
                     <h1 id="quantity1">КГ</h1>
                 </div>
                 <button class="continue1" onclick="test2()">Продолжить</button>
@@ -110,10 +111,10 @@
                 </p>
             </div>
             <div class="select-param2">
-                <input id="height" type="number" placeholder="Рост(см)" class="browser-default">
+                <input id="height" type="number" autocomplete="off" placeholder="Рост(см)" class="browser-default">
             </div>
             <div class="select-param2">
-                <input id="weight" type="number" placeholder="Текущий вес(кг)" class="browser-default">
+                <input id="weight" type="number" autocomplete="off" placeholder="Текущий вес(кг)" class="browser-default">
             </div>
             <div class="btn2" onclick="test3()">Продолжить</div>
             <div class="sliders">

@@ -7,6 +7,11 @@
 * {
     margin: 0 auto;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .wrapper {
     background-size: cover;
@@ -288,7 +293,6 @@ footer {
     transition-duration: 3s;
     float: right;
 }
-
 .kg1.activeRight {
     float: right;
 }
@@ -352,7 +356,7 @@ footer {
 
 .quantity1>input {
     height: 50px;
-    width: 89px;
+    width: 101px;
     background: rgba(232, 138, 146, 1);
     border: none;
     margin-top: 3px;
@@ -369,7 +373,7 @@ footer {
     outline: 0 none;
     border-radius: 5px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 14px;
 }
 
 .quantity1>h1 {
@@ -398,13 +402,15 @@ footer {
     line-height: 25px;
     text-align: center;
     color: rgba(0, 0, 0, 1);
+    pointer-events: none;
 }
 
 .continue1.active {
     transition-property: background;
-    transition-duration: 0.8s;
+    transition-duration: .5s;
     background: rgba(232, 138, 146, 1);
     color: white;
+    pointer-events: auto;
 }
 
 .ellipse1 {
@@ -488,7 +494,7 @@ footer {
     margin-right: 20px;
 }
 
-.btn2 {
+.btn2{
     width: 210px;
     height: 51px;
     left: 855px;
@@ -500,6 +506,16 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 44px;
+    pointer-events: none;
+}
+
+.btn2.active{
+    pointer-events: auto;
+    transition-property: background;
+    transition-duration: .5s;
+    background: rgba(232, 138, 146, 1);
+    color: white;
+    pointer-events: auto;
 }
 
 .btn2 {

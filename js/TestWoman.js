@@ -3,15 +3,12 @@ function test() {
     $('.block').css('display', 'none');
     $('.test1').css('display', 'block');
 }
-function checked_kg(){
-    if($('#input_kg').value < "55)"){
-        alert('Ошибка ввода!');
-    }
-}
+
 function changeWeightLeft() {
     $('.kg1').removeClass('activeRight');
     $('.kg1').addClass('activeLeft');
     $('#quantity1').html("ФН");
+    $('#input_kg').val("");
     $('.pound_text1').css('color', '#ffff');
     $('.kg_text1').css('color', 'rgba(232, 138, 146, 1)');
 }
@@ -19,6 +16,7 @@ function changeWeightRight() {
     $('.kg1').removeClass('activeLeft');
     $('#quantity1').html("КГ");
     $('.kg1').addClass('activeRight');
+    $('#input_kg').val("");
     $('.pound_text1').css('color', 'rgba(232, 138, 146, 1)');
     $('.kg_text1').css('color', '#ffff');
 }
@@ -27,11 +25,47 @@ function test2() {
     $('.test1').css('display', 'none');
     $('.container-block2').css('display', 'block');
 }
+function testphp1() {
+    console.log($('#kg1').attr('class'));
+}
+$(function () {
+    $('#input_kg').on('input', function () {
+        if ($('#kg1').attr('class') == 'kg1' || $('#kg1').attr('class') == 'kg1 activeRight') {
+            $CheckKG = $('#input_kg').val();
+            if ($CheckKG < 25 || $CheckKG > 300) {
+                $('.continue1').removeClass('active');
+                } else if ($CheckKG >= 25 && $CheckKG <= 300) {
+                $('.continue1').addClass('active');
+                }
+            
+            }else if ($('#kg1').attr('class') == 'kg1 activeLeft') {
+
+                $CheckPH = $('#input_kg').val();
+                if ($CheckPH < 55 || $CheckPH > 661) {
+                $('.continue1').removeClass('active');
+                } else if ($CheckPH >= 55 && $CheckPH <= 661) {
+                $('.continue1').addClass('active');
+                }
+            }
+    });
+});
+
+$(function(){
+    $('#height, #weight').on('input', function(){
+        $CheckHeight=$('#height').val();
+        $CheckWeight=$('#weight').val();
+        if($CheckHeight<90 || $CheckHeight > 243 || $CheckWeight < 40 || $CheckWeight > 300){
+            $('.btn2').removeClass('active');
+        }else if($CheckHeight>=90 && $CheckHeight <= 243 && $CheckWeight >= 40 && $CheckWeight <= 300){
+            $('.btn2').addClass('active');
+        }
+    });
+});
 
 function test3() {
-        $('.container-block2').css('display', 'none');
-        $('.gran3').css('display', 'block'); 
-    
+    $('.container-block2').css('display', 'none');
+    $('.gran3').css('display', 'block');
+
 }
 
 function test4() {
@@ -118,6 +152,12 @@ function test7() {
 function test8() {
     $('.test7').css('display', 'none');
     $('.panel8').css('display', 'block');
+    if($('#input_kg').val()<$('#weight').val()){
+        $kgTest=$('#weight').val()-$('#input_kg').val();
+        $('.type2').html("Учитывая то, что Вы хотите набрать" + $kgTest + "кг" + ".Ваша физическая активность играет большую роль!");
+    }else if($('#input_kg').val()>$('#weight').val())
+        $kgTest2=$('#input_kg').val()-$('#weight').val();
+        $('.type2').html("Учитывая то, что Вы хотите сбросить" + $kgTest2 + "кг" + ".Ваша физическая активность играет большую роль!");
 }
 
 function kg_text10() {
@@ -144,7 +184,7 @@ function test9() {
     $('.gran9-1').css('display', 'block');
 }
 
-function test9_1(){
+function test9_1() {
     $('.gran9-1').css('display', 'none');
     $('.panel9').css('display', 'block');
 }
@@ -282,5 +322,5 @@ function test15() {
     $('.change_1, .change_2, .change_3, .change_4, .change_5, .change_6').removeClass('active');
     $('.test14').css('display', 'none');
     $('.test15').css('display', 'block');
-    
+
 }
