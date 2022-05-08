@@ -169,7 +169,7 @@
     display: flex;
 }
 
-.buttons div button {
+.buttons button {
   width: 214px;
   height: 79px;
   background: #231f1f;

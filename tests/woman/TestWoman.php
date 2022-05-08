@@ -746,7 +746,7 @@
                     <div class="slide_1"></div>
                 </div>
             </div>
-            <div class="text-btn center-align">
+            <div class="text-btn">
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
                     Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
