@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/TestMan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="../../js/TestWoman.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
     <title>CalorFit</title>
@@ -59,25 +59,13 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 2 Man -->
         <div class="test-two Mass" v-if="show === 2">
             <div class="block center-align">
-
                 <h1 class="target">Желаемый вес</h1>
-                <h1 class="question">Хорошо, какой Ваш идеальный вес?</h1>
+                <h1 class="question">Хорошо, какой для Вас идеальный вес?</h1>
                 <div class="response1">
                     <div class="changeWeight">
                         <div id="pound" class="pound"></div>
@@ -117,18 +105,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 3 Man -->
         <div class="test-trhee Phisicparam" v-if="show === 3">
@@ -139,14 +116,16 @@
                         Отлично! А как насчет Вашего текущего <br> роста и веса?
                     </p>
                 </div>
-                <form action="" class="form-phisic"  @submit="checkForm">
+                <form action="" class="form-phisic" id="InfoParam">
                     <div class="select-param3">
-                        <input type="number" placeholder="Рост(см)" name="height" class="browser-default"/>
+                        <input type="number" placeholder="Рост(см)" name="height" class="browser-default" v-model="form.heigth" />
                     </div>
+                    <p class="error red-text" v-if="form.heigth < 30">Не допустимое значение роста</p>
                     <div class="select-param3">
-                        <input type="number" placeholder="Текущий вес(кг)" name="mass" class="browser-default" />
+                        <input type="number" placeholder="Текущий вес(кг)" name="mass" class="browser-default" v-model="form.dessiredMass" />
                     </div>
-                    <input type="submit" value="Продолжить" class="white-text browser-default but" v-on:click="show++">
+                    <p class="error red-text" v-if="form.dessiredMass < 120 || form.dessiredMass > 220">Не допустимое значение веса</p>
+                    <input type="button" value="Продолжить" class="white-text browser-default but" v-on:click="show++">
                 </form>
                 <div class="sliders1">
                     <div class="slider_one1"></div>
@@ -169,18 +148,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 4 Man -->
         <div class="test-four Age" v-if="show === 4">
@@ -217,18 +185,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 5 Man -->
         <div class="test-five BodyType" v-if="show === 5">
@@ -258,18 +215,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 6 Man -->
         <div class="tes-fix" v-if="show === 6">
@@ -305,18 +251,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 7  -->
         <div class="test-seven" v-if="show === 7">
@@ -356,18 +291,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 8 Man -->
         <div class="test-eigth" v-if="show === 8">
@@ -402,18 +326,7 @@
                         </p>
                     </div>
                 </footer>
-                <script>
-                    window.replainSettings = {
-                        id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                    };
-                    (function(u) {
-                        var s = document.createElement('script');
-                        s.async = true;
-                        s.src = u;
-                        var x = document.getElementsByTagName('script')[0];
-                        x.parentNode.insertBefore(s, x);
-                    })('https://widget.replain.cc/dist/client.js');
-                </script>
+
             </div>
         </div>
         <!-- Test 9 Man -->
@@ -421,7 +334,7 @@
             <div class="block">
                 <div class="text-content9">
                     <p class="type">Фитнес</p>
-                    <p class="type2">Учитывая то, что Вы хотите набрать (n)кг. <br> Ваша физическая активность играет большую <br> роль!</p>
+                    <p class="type2">Учитывая то, что Вы хотите придти к весу в {{form.mass}}кг. <br> Ваша физическая активность играет большую <br> роль!</p>
                     <p class="type3">Насколько вы физически активны?</p>
                 </div>
                 <div class="wrapp_panel">
@@ -455,18 +368,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 10 -->
         <div class="test-ten" v-if="show === 10">
@@ -503,18 +405,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 11 Man -->
         <div class="test-eleven" v-if="show === 11">
@@ -577,18 +468,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 12 Man -->
         <div class="testtwelwe" v-if="show === 12">
@@ -653,18 +533,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 13 Man -->
         <div class="test-13" v-if="show === 13">
@@ -705,18 +574,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Test 14 Man -->
         <div class="test-14" v-if="show === 14">
@@ -757,18 +615,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Email -->
         <div class="email" v-if="show === 15">
@@ -801,18 +648,7 @@
                     </p>
                 </div>
             </footer>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+
         </div>
         <!-- Page Pay -->
         <div class="pay" v-if="show === 16">
@@ -844,14 +680,9 @@
                                 согласно <a href="#">тарифу</a></span>
                         </label>
                     </div>
-
-<<<<<<< HEAD
                     <button type="submit">Получить</button>
-=======
                     <button type="submit" name="submit">Получить</button>
->>>>>>> 9ba860f72e527934a8a5ea1e24de00b3bccc35f6
                 </form>
-
                 <footer>
                     Нажимая на кнопку, Вы соглашаетесь с
                     <a href="#">политикой конфиденциальности</a> ,<a href="#">условиями использования</a>
@@ -862,30 +693,51 @@
             </div>
         </div>
     </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
+    
     <script>
-        var togle = new Vue({
+        var validate = new Vue({
+            el:"#InfoParam",
+            data: {
+                
+            }
 
-            el: '#test',
+        })
+
+        var togle = new Vue({
+            el: '#test',          
             data: {
                 show: 1,
                 form: {
                     mass: '',
-                    
+                    dessiredMass: '',
+                    finalMass: '',
+                    heigth: ''
                 },
-
-
             },
             methods: {
-                checkForm: function() {
-
+                CalculateWeight: function(mass, dessiredMass) {
+                    this.form.finalMass = mass - dessiredMass
                 }
             }
-
-
         })
     </script>
+    <script>
+        window.replainSettings = {
+            id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
+        };
+        (function(u) {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = u;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
+    <script src="../../js/TestWoman.js"></script>
 </body>
 
 </html>
