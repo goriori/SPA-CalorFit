@@ -134,6 +134,10 @@
     text-align: left;
     z-index: 132;
 }
+.index
+{
+    width: 20px;
+}
 
 .header__link {
     font-family: 'Lexend Exa';
@@ -155,7 +159,7 @@
     position: relative;
     width: 40px;
     height: 30px;
-    z-index: 10;
+    z-index: 4;
     cursor: pointer;
 }
 
@@ -203,13 +207,16 @@
 .header__burger.active span {
     left: 230px;
     transition: 0.5s;
+    z-index: 5;
 }
+
 .header__burger.active:before {
     transform: rotate(45deg);
     top: 7px;
     width: 20px;
     left: 255px;
     transition: 0.5s;
+    z-index: 5;
 }
 
 .header__burger.active:after {
@@ -218,6 +225,7 @@
     width: 20px;
     transition: 0.5s;
     left: 255px;
+    z-index: 5;
 }
 
 .header__menu {

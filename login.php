@@ -46,5 +46,11 @@
             </p>
         </footer>
     </div>
+    <script>
+window.replainSettings = { id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2' };
+(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
 </body>
 </html>

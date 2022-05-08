@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,6 +61,18 @@
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
             </div>
+            <script>
+                window.replainSettings = {
+                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
+                };
+                (function(u) {
+                    var s = document.createElement('script');
+                    s.async = true;
+                    s.src = u;
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                })('https://widget.replain.cc/dist/client.js');
+            </script>
         </div>
         <!-- test1 -->
         <div class="test1">
