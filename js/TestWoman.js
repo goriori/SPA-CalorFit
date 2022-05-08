@@ -3,7 +3,11 @@ function test() {
     $('.block').css('display', 'none');
     $('.test1').css('display', 'block');
 }
-
+function checked_kg(){
+    if($('#input_kg').value < "55)"){
+        alert('Ошибка ввода!');
+    }
+}
 function changeWeightLeft() {
     $('.kg1').removeClass('activeRight');
     $('.kg1').addClass('activeLeft');
@@ -275,5 +279,8 @@ function continue_meat() {
 }
 
 function test15() {
-
+    $('.change_1, .change_2, .change_3, .change_4, .change_5, .change_6').removeClass('active');
+    $('.test14').css('display', 'none');
+    $('.test15').css('display', 'block');
+    
 }

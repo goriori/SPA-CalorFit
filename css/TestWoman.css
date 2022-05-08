@@ -227,7 +227,7 @@ footer {
     margin-top: 100px;
     border: 3px solid #fcf9f9;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
     margin: 0 auto;
     margin-top: 100px;
@@ -447,7 +447,7 @@ footer {
     height: 675px;
     background: #ffffff;
     border: 3px solid #fcf9f9;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto;
     margin-top: 100px;
     display: none;
@@ -559,9 +559,7 @@ footer {
     .container-block2 {
         max-width: 650px;
         max-height: 675px;
-        background: rgba(53, 53, 58, 0.8);
-        border: 3px solid #fcf9f9;
-        border-radius: 10px;
+        background: #ffff;
         margin: 0 auto;
         margin-top: 100px;
     }
@@ -569,10 +567,7 @@ footer {
     .select-param2 input {
         max-width: 328px;
         max-height: 79px;
-        background: #231f1f;
-        border: 1px solid #efefef;
         border-radius: 10px;
-        color: #fff;
         font-weight: 400;
         font-size: 20px;
         text-align: center;
@@ -600,9 +595,6 @@ footer {
     .container-block2 {
         max-width: 650px;
         max-height: 675px;
-        background: rgba(53, 53, 58, 0.8);
-        border: 3px solid #fcf9f9;
-        border-radius: 10px;
         margin: 0 auto;
         margin-top: 100px;
     }
@@ -610,10 +602,8 @@ footer {
     .select-param2 input {
         max-width: 328px;
         max-height: 79px;
-        background: #231f1f;
         border: 1px solid #efefef;
         border-radius: 10px;
-        color: #fff;
         font-weight: 400;
         font-size: 20px;
         text-align: center;
@@ -736,12 +726,8 @@ footer {
         width: 100%;
         height: 615px;
         background-color: #fff;
-        border: 3px solid #fcf9f9;
         box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
+        border-radius: 30px;
     }
 
     .buttons3 {
@@ -901,10 +887,9 @@ footer {
     width: 690px;
     height: 675px;
     background: #ffffff;
-    border: 3px solid #fcf9f9;
     margin: 0 auto;
     margin-top: 100px;
-    border-radius: 10px;
+    border-radius: 30px;
     display: none;
 }
 
@@ -1003,15 +988,9 @@ footer {
     .gran5 {
         max-width: 100%;
         height: 665px;
-        background: rgba(53, 53, 58, 0.8);
-        border: 3px solid #fcf9f9;
+        background: #ffff;
         box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: none;
         margin: 0 auto;
         margin-top: 140px;
     }
@@ -1053,7 +1032,7 @@ footer {
     background: #ffffff;
     border: 3px solid #fcf9f9;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto;
     margin-top: 100px;
     display: none;
@@ -1174,7 +1153,7 @@ footer {
     background: #ffffff;
     border: 3px solid #fcf9f9;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto;
     margin-top: 100px;
     display: none;
@@ -1331,7 +1310,7 @@ footer {
     background: #ffffff;
     border: 3px solid #fcf9f9;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto;
     margin-top: 100px;
     display: none;
@@ -1457,7 +1436,7 @@ footer {
     background: #ffffff;
     border: 3px solid #fcf9f9;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto;
     margin-top: 100px;
     display: none;
@@ -1708,14 +1687,9 @@ footer {
     .gran9-1 {
         width: 100%;
         height: 475px;
-        background: rgba(53, 53, 58, 0.8);
-        border: 3px solid #fcf9f9;
+        background: #ffff;
         box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        border-radius: 30px;
     }
 
     .text-section-one9-1 {
@@ -1766,7 +1740,7 @@ footer {
     background: #ffffff;
     border: 3px solid #fcf9f9;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 auto;
     margin-top: 100px;
     display: none;
@@ -1979,10 +1953,10 @@ footer {
     height: 675px;
     background: #FFFFFF;
     border-radius: 30px;
-    margin-top: 100px;
     text-align: center;
     padding-top: 13px;
     margin: 0 auto;
+    margin-top: 100px;
     display: none;
 }
 
@@ -1991,10 +1965,10 @@ footer {
     height: 675px;
     background: #FFFFFF;
     border-radius: 30px;
-    margin-top: 100px;
     text-align: center;
     padding-top: 13px;
     margin: 0 auto;
+    margin-top: 100px;
     display: none;
 }
 
@@ -2136,13 +2110,9 @@ footer {
     .gran11 {
         width: 100%;
         height: 575px;
-        background: rgba(53, 53, 58, 0.8);
-        border: 3px solid #fcf9f9;
+        background: #ffff;
         box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
+        border-radius: 30px;
     }
 
     .buttons11 {
@@ -2398,24 +2368,7 @@ footer {
     display: flex;
 }
 
-.ellipse_1 {
-    height: 10px;
-    width: 25px;
-    width: 30px;
-    height: 10px;
-    background: #e88a92;
-    border-radius: 8px;
-}
-
-.ellipse_0 {
-    height: 10px;
-    width: 25px;
-    width: 30px;
-    height: 10px;
-    border-radius: 8px;
-    border: 2px solid #e88a92;
-    box-sizing: border-box;
-}
+ 
 
 .change_1,
 .change_2,

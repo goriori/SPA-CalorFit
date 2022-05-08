@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,7 +75,7 @@
                     </div>
                 </div>
                 <div class="quantity1">
-                    <input type="text1">
+                    <input id="input_kg" type="text1" onchange="checked_kg()" autocomplete="off">
                     <h1 id="quantity1">КГ</h1>
                 </div>
                 <button class="continue1" onclick="test2()">Продолжить</button>
@@ -678,7 +677,7 @@
             <div class="test14">
                 <div class="question13">Продукты</div>
                 <div class="target13">
-                    Отметьте овощи, которые Вы хотите включить в Ваш план питания
+                    Отметьте продукты, которые Вы хотите включить в Ваш план питания
                 </div>
                 <div class="changes13">
                     <div class="change_1" onclick="change_1()">🥑Авокадо</div>
@@ -714,9 +713,9 @@
             </div>
             <!-- test15 -->
             <div class="test15">
-                <div class="question13">Продукты</div>
+                <div class="question13">Мясо</div>
                 <div class="target13">
-                    Отметьте овощи, которые Вы хотите включить в Ваш план питания
+                    Отметьте виды мяса, которые Вы хотите включить в Ваш план питания
                 </div>
                 <div class="changes15">
                     <div id="change_1" class="change_1" onclick="meat_1()">🍗Индейка</div>
@@ -726,7 +725,7 @@
                     <div id="change_5" class="change_5" onclick="meat_5()">🐔Курица</div>
                     <div id="change_6" class="change_6" onclick="meat_6()">❌Никакой</div>
                 </div>
-                <div class="continue15" onclick="test15()">Продолжить</div>
+                <div class="continue15" onclick="названиеФункции()">Продолжить</div>
                 <div class="ellipse15">
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
