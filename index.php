@@ -8,13 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CalorFit</title>
   <link rel="stylesheet" href="/css/index.css">
+  <script src="js/home.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="block-one">
+    <!-- <div class="block-one">
       <div class="head">
         <div class="logo">CalorFit</div>
         <header class="header">
@@ -48,9 +49,9 @@
             </div>
           </div>
         </header>
-      </div>
-     
-        <!-- <header class="header">
+      </div> -->
+
+    <!-- <header class="header">
           <div class="container">
             <div class="header__body">
               <div class="header__burger">
@@ -81,34 +82,30 @@
             </div>
           </div>
         </header> -->
-      
 
-      <div class="container">
-        <? include $path . "/components/header.php"; ?>
-      </div>
 
-      <div class="content">
-        <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
-      </div>
-      <div class="imageTest">
-        <a href="#"><div class="Man">
+    <div class="container">
+      <? include $path . "/components/header.php"; ?>
+    </div>
+    <div class="content">
+      <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
+    </div>
+    <div class="imageTest">
+        <div class="Man">
           <h1 class="white-text">МУЖЧИНА</h1>
           <div class="imageman"></div>
-        </div></a>
-        <a href="/tests/woman/TestWoman.php"><div class="Woman">
+        </div>
+        <div class="Woman">
           <h1 class="white-text">ЖЕНЩИНА</h1>
-          <div class="imagewoman"></div>
-        </div></a>
-      </div>
-      <? include $path . "/components/footer.php"; ?>
-  
+          <a href="tests/woman/TestWoman.php"><div class="imagewoman"></div></a>
+        </div>
     </div>
+    <? include $path . "/components/footer.php"; ?>
+  </div>
   </div>
   </div>
   <script src="../js/burger.js"></script>
- 
-     
-    </div>
+  </div>
   </div>
   </div>
 
