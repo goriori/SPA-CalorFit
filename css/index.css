@@ -1,6 +1,12 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+@font-face {
+    font-family: "Lexend Exa";
+    src: url(../fonts/LexendDecaRegular.ttf);
+}
+
 .wrapper {
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,6 +18,7 @@
 
 .content {
     margin: 0 auto;
+    width: 100%;
     background-color: #c4c4c4;
     height: 182px;
     background: rgba(196, 196, 196, 0.3);
@@ -19,6 +26,16 @@
     justify-content: center;
     align-items: center;
 }
+.logo
+{
+    font-size: 64px;
+    font-family: "Lexend Exa";  
+    color: #fff;
+    float: left;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
 
 .content p {
     font-size: 32px;
@@ -99,7 +116,136 @@
     top: 22px;
 }
 
+/* burger */
+.header {
+    float: right;
+    margin-right: 255px;
+    margin-top: 40px;
+}
 
+.header__list {
+    display: flex;
+    padding: 0px;
+}
+
+.header__list li {
+    list-style: none;
+    margin: 30px 0px 0px 66px;
+    text-align: left;
+    z-index: 132;
+}
+
+.header__link {
+    font-family: 'Lexend Exa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__body {
+    height: 50px;
+}
+
+
+.header__burger {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.header__burger span {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    top: 9px;
+    margin-top: 4px;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+}
+
+.header__burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+}
+
+.header__burger:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+}
+
+.header__burger:before {
+    top: 0;
+}
+
+.header__burger:after {
+    bottom: 0;
+}
+.header__burger.active span {
+    left: 230px;
+    transition: 0.5s;
+}
+.header__burger.active:before {
+    transform: rotate(45deg);
+    top: 7px;
+    width: 20px;
+    left: 255px;
+    transition: 0.5s;
+}
+
+.header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 7px;
+    width: 20px;
+    transition: 0.5s;
+    left: 255px;
+}
+
+.header__menu {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 315px;
+    height: 452px;
+    background-color: #231F1F;
+    transition: all 0.5s ease 0s;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.header__menu.active {
+    top: 0;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.header__list li {
+    margin-bottom: 15px;
+    margin-left: 80px;
+
+}
 /* // ====================================@MEDIA====================================================================@ADAPTIVE======================================== */
 @media (max-width: 1200px) {
 
