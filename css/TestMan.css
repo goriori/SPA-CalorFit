@@ -98,12 +98,23 @@ h6 {
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
     height: 120vh;
     margin: 0 auto;
     padding-top: 50px;
 
 }
 
+
+.backarrowImd {
+    background-image: url(/images/backarrowM.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 39px;
+    margin-left: 255px;
+    cursor: pointer;
+}
 .block {
     width: 690px;
     height: 675px;
@@ -160,6 +171,11 @@ h6 {
     margin-left: 24px;
     margin-top: 27px;
     z-index: 0;
+}
+
+.text-content> h1{
+    font-weight: 400;
+font-size: 32px;
 }
 
 .text-content p {
@@ -264,7 +280,6 @@ footer {
     height: 189px;
     text-align: center;
     margin: 0 auto;
-    
     margin-top: 82px;
     
 
@@ -279,7 +294,7 @@ footer {
 
 .text-about {
     width: 503px;
-    margin-left: 220px;
+    margin: 0 auto;
     height: 88px;
     font-weight: 400;
     font-size: 15px;
@@ -844,6 +859,7 @@ footer {
     width: 376px;
     height: 415px;
     margin-top: -40px;
+    margin-left: -100px;
     background-image: url(/images/weightman.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1057,7 +1073,7 @@ footer {
     display: flex;
 }
 
-.block_img_panel {
+.block_img_panel9 {
     background-image: url(../images/sprintman.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1118,7 +1134,7 @@ footer {
     margin-top: 10px;
 }
 
-.block_test_panel {
+.block_test_panel9 {
     width: 199px;
     height: 352px;
     margin-left: 34px;
@@ -1732,3 +1748,5 @@ form>input {
     background: #7287A7;
     transition: 0.5s;
 }
+
+/* Animations-ERRORR */

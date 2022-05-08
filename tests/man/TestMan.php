@@ -9,28 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="../../js/TestWoman.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
     <title>CalorFit</title>
 </head>
 
 <body>
     <div class="wrapper" id="test">
+        <div class="backarrowImd" v-if="show > 1" v-on:click="show--"></div>
         <!-- Test 1 Man -->
         <div class="test-one Target" v-if="show === 1">
+
             <div class="block">
                 <div class="text-content white-text center-align">
                     <h1>Цель</h1>
                     <p>Какая ваша главная цель?</p>
                 </div>
                 <div class="buttons white-text ">
-                    <div class="one" v-on:click="showAdd">
+                    <div class="one" v-on:click="show++">
                         <p>Похудеть</p>
                         <div class="imgTargetOne"></div>
                     </div>
-                    <div class="two">
+                    <div class="two" v-on:click="show++">
                         <p>Ускорить рост своих мышц</p>
                         <div class="imgTargetTwo"></div>
                     </div>
-                    <div class="three">
+                    <div class="three" v-on:click="show++">
                         <p>Начать питаться правильно</p>
                         <div class="imgTargetThree"></div>
                     </div>
@@ -73,10 +76,10 @@
                         </div>
                     </div>
                     <div class="quantity">
-                        <input type="text" class="quantity_text browser-default" />
+                        <input type="text" class="quantity_text browser-default" name="mass" v-model.trim="form.mass" />
                         <h1 id="quantity">КГ</h1>
                     </div>
-                    <button class="continue1">
+                    <button class="continue1" v-on:click="show++">
                         Продолжить
                     </button>
                 </div>
@@ -112,14 +115,14 @@
                         Отлично! А как насчет Вашего текущего <br> роста и веса?
                     </p>
                 </div>
-                <form action="" class="form-phisic">
+                <form action="" class="form-phisic"  @submit="checkForm">
                     <div class="select-param3">
-                        <input type="number" placeholder="Рост(см)" name="height" class="browser-default" />
+                        <input type="number" placeholder="Рост(см)" name="height" class="browser-default"/>
                     </div>
                     <div class="select-param3">
                         <input type="number" placeholder="Текущий вес(кг)" name="mass" class="browser-default" />
                     </div>
-                    <input type="submit" value="Продолжить" class="white-text browser-default but">
+                    <input type="submit" value="Продолжить" class="white-text browser-default but" v-on:click="show++">
                 </form>
                 <div class="sliders1">
                     <div class="slider_one1"></div>
@@ -154,16 +157,16 @@
                 </div>
                 <div class="buttons">
                     <div class="active">
-                        <button>18-29</button>
+                        <button v-on:click="show++">18-29</button>
                     </div>
                     <div>
-                        <button>30-29</button>
+                        <button v-on:click="show++">30-29</button>
                     </div>
                     <div>
-                        <button>40-49</button>
+                        <button v-on:click="show++">40-49</button>
                     </div>
                     <div>
-                        <button>50+</button>
+                        <button v-on:click="show++">50+</button>
                     </div>
                 </div>
             </div>
@@ -188,11 +191,11 @@
                     <p class="type3">Какое изображение лучше всего соответствует <br> Вашем типу телосложения?</p>
                 </div>
                 <div class="buttons">
-                    <button class="button_panel1">Эктоморф</button>
+                    <button class="button_panel1" v-on:click="show++">Эктоморф</button>
                     <img src="/images/ectomorph.png" class="img_panel1">
-                    <button class="button_panel2">Мезоморф</button>
+                    <button class="button_panel2" v-on:click="show++">Мезоморф</button>
                     <img src="/images/mesomorph.png" class="img_panel2">
-                    <button class="button_panel3">Эндоморф</button>
+                    <button class="button_panel3" v-on:click="show++">Эндоморф</button>
                     <img src="/images/endomorph.png" class="img_panel3">
                 </div>
             </div>
@@ -217,16 +220,16 @@
                     <p class="type3">Пожалуйста, опишите свой обычный день.</p>
                 </div>
                 <div class="buttons-typical white-text">
-                    <div class="typicalOne">
+                    <div class="typicalOne" v-on:click="show++">
                         <p>В офисе</p>
                     </div>
-                    <div class="typicalOne">
+                    <div class="typicalOne" v-on:click="show++">
                         <p>Прогулки на улице</p>
                     </div>
-                    <div class="typicalOne">
+                    <div class="typicalOne" v-on:click="show++">
                         <p>Физическая работы</p>
                     </div>
-                    <div class="typicalOne">
+                    <div class="typicalOne" v-on:click="show++">
                         <p>В основном дома</p>
                     </div>
                 </div>
@@ -254,16 +257,16 @@
                     <div class="block_img_panel"></div>
                     <div class="block_test_panel">
                         <div class="buttons">
-                            <button class="test_panel1">
+                            <button class="test_panel1" v-on:click="show++">
                                 Больше 1 года <br> назад
                             </button>
-                            <button class="test_panel2">
+                            <button class="test_panel2" v-on:click="show++">
                                 Меньше 1 года назад
                             </button>
-                            <button class="test_panel3">
+                            <button class="test_panel3" v-on:click="show++">
                                 Больше 3 лет назад
                             </button>
-                            <button class="test_panel4">
+                            <button class="test_panel4" v-on:click="show++">
                                 Никогда
                             </button>
                         </div>
@@ -302,7 +305,7 @@
                         <div id="answer_5" class="answer_5">✅Я ем много <br />соленого</div>
                         <div id="answer_6" class="answer_6">❌Ничего из перечисленного</div>
                     </div>
-                    <button id="continue" class="continue">Продолжить</button>
+                    <button id="continue" class="continue" v-on:click="show++">Продолжить</button>
                 </div>
                 <footer class="white-text fot-8">
                     <div class="logo8">CalorFit</div>
@@ -326,19 +329,19 @@
                     <p class="type3">Насколько вы физически активны?</p>
                 </div>
                 <div class="wrapp_panel">
-                    <div class="block_img_panel"></div>
-                    <div class="block_test_panel">
+                    <div class="block_img_panel9"></div>
+                    <div class="block_test_panel9">
                         <div class="buttons">
-                            <button class="test_panel1">
+                            <button class="test_panel1" v-on:click="show++">
                                 Практически нет активности
                             </button>
-                            <button class="test_panel2">
+                            <button class="test_panel2" v-on:click="show++">
                                 Фитнес 1-2раза в неделю
                             </button>
-                            <button class="test_panel3">
+                            <button class="test_panel3" v-on:click="show++">
                                 Фитнес 3-5 раз в неделю
                             </button>
-                            <button class="test_panel4">
+                            <button class="test_panel4" v-on:click="show++">
                                 Фитнес 5-7 раз в неделю
                             </button>
                         </div>
@@ -366,9 +369,9 @@
                 </div>
                 <div class="box_panel">
                     <div class="buttons">
-                        <button class="button_panel1">Мой уровень энергии <br> не меняется</button>
-                        <button class="button_panel2">У меня упадок сил перед <br> приемом пищи</button>
-                        <button class="button_panel3">Я чувствую сонливость <br> после обеда</button>
+                        <button class="button_panel1" v-on:click="show++">Мой уровень энергии <br> не меняется</button>
+                        <button class="button_panel2" v-on:click="show++">У меня упадок сил перед <br> приемом пищи</button>
+                        <button class="button_panel3" v-on:click="show++">Я чувствую сонливость <br> после обеда</button>
                     </div>
                 </div>
                 <div class="sliders10">
@@ -406,13 +409,13 @@
                 <div class="buttonsDream">
                     <div class="left">
                         <div class="butt">
-                            <button class="active">
+                            <button class="active" v-on:click="show++">
                                 <div class="image-clock"></div>
                                 <p>Меньше 5 часов</p>
                             </button>
                         </div>
                         <div class="butt">
-                            <button class="active">
+                            <button class="active" v-on:click="show++">
                                 <div class="image-clock"></div>
                                 <p>7-8 часов</p>
                             </button>
@@ -420,13 +423,13 @@
                     </div>
                     <div class="right">
                         <div class="butt">
-                            <button class="active">
+                            <button class="active" v-on:click="show++">
                                 <div class="image-clock"></div>
                                 <p>5-6 часов</p>
                             </button>
                         </div>
                         <div class="butt">
-                            <button class="active">
+                            <button class="active" v-on:click="show++">
                                 <div class="image-clock"></div>
                                 <p>Больше 8 часов</p>
                             </button>
@@ -474,24 +477,24 @@
                 <div class="buttonsWater">
                     <div class="left">
                         <div>
-                            <button class="active2">
+                            <button class="active2" v-on:click="show++">
                                 <p>☕Только кофе или чай</p>
                             </button></router-link>
                         </div>
                         <div>
-                            <button class="active2">
+                            <button class="active2" v-on:click="show++">
                                 <p class="Stack">💧2-5 стаканов(0,5-1,5)</p>
                             </button>
                         </div>
                     </div>
                     <div class="right">
                         <div>
-                            <button class="active2">
+                            <button class="active2" v-on:click="show++">
                                 <p>💧Меньше 2 стаканов(0,5л)</p>
                             </button>
                         </div>
                         <div>
-                            <button class="active2">
+                            <button class="active2" v-on:click="show++">
                                 <p class="Stack">💧Больше 6 стаканов</p>
                             </button>
                         </div>
@@ -534,8 +537,8 @@
                     </p>
                 </div>
                 <div class="buttonsMotivation center-align">
-                    <button>Да</button>
-                    <button>Нет</button>
+                    <button v-on:click="show++">Да</button>
+                    <button v-on:click="show++">Нет</button>
                 </div>
                 <div class="sliders13">
                     <div class="slider_one13"></div>
@@ -574,8 +577,8 @@
                     </p>
                 </div>
                 <div class="buttonsMotivation center-align">
-                    <button>Да</button>
-                    <button>Нет</button>
+                    <button v-on:click="show++">Да</button>
+                    <button v-on:click="show++">Нет</button>
                 </div>
                 <div class="sliders13">
                     <div class="slider_one13"></div>
@@ -616,7 +619,7 @@
                     </p>
                 </div>
                 <form action="" class="send-btn">
-                    <input type="submit" name="send" class="send-btn">
+                    <input type="submit" name="send" class="send-btn" v-on:click="show++">
                 </form>
             </div>
             <footer class="white-text">
@@ -676,18 +679,27 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
     <script>
         var togle = new Vue({
+
             el: '#test',
             data: {
-                show: 16
+                show: 1,
+                form: {
+                    mass: '',
+                    
+                },
+
 
             },
             methods: {
-                showAdd: function() {
-                    this.show = this.show++
+                checkForm: function() {
+
                 }
             }
+
+
         })
     </script>
 </body>
