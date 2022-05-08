@@ -67,17 +67,28 @@
         <footer>
             <div class="logo white-text">CalorFit</div>
             <div class="about">
-                Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
-                <a href="#">Политикой<br />
-                    конфиденциальности</a>, <a href="#">Условиями подписки</a><br />
-                <a href="#">Отписаться от услуги</a><br />
+                Продолжая, вы соглашаетесь с <a href="Treaty.php">Условиями использования</a>,
+                <a href="Treaty.php">Политикой<br />
+                    конфиденциальности</a>, <a href="Rates.php">Условиями подписки</a><br />
+                <a href="Unsubscribe.php">Отписаться от услуги</a><br />
                 Поддержка: admin@meallforme.ru<br />
                 2021 © All Rights Reserved.
-            </div>
+            </div>v>
         </footer>
     </div>
     <script src="../js/burger.js"></script>
-
+    <script>
+        window.replainSettings = {
+            id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
+        };
+        (function(u) {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = u;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
 </body>
 
 </html>

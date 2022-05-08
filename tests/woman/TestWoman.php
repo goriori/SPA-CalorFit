@@ -61,6 +61,18 @@
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
             </div>
+            <script>
+                window.replainSettings = {
+                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
+                };
+                (function(u) {
+                    var s = document.createElement('script');
+                    s.async = true;
+                    s.src = u;
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                })('https://widget.replain.cc/dist/client.js');
+            </script>
         </div>
         <!-- test1 -->
         <div class="test1">
@@ -747,7 +759,7 @@
                     <div class="slide_1"></div>
                 </div>
             </div>
-            <div class="text-btn center-align">
+            <div class="text-btn">
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
                     Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
