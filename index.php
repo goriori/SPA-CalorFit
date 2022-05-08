@@ -51,6 +51,7 @@
       <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
     </div>
     <div class="imageTest">
+<<<<<<< HEAD
       <div class="Man">
         <h1 class="white-text">МУЖЧИНА</h1>
         <div class="imageman"></div>
@@ -61,6 +62,16 @@
           <div class="imagewoman"></div>
         </a>
       </div>
+=======
+        <div class="Man">
+          <h1 class="white-text">МУЖЧИНА</h1>
+          <a href="/tests/man/TestMan.php"><div class="imageman"></div></a>
+        </div>
+        <div class="Woman">
+          <h1 class="white-text">ЖЕНЩИНА</h1>
+          <a href="tests/woman/TestWoman.php"><div class="imagewoman"></div></a>
+        </div>
+>>>>>>> 9ba860f72e527934a8a5ea1e24de00b3bccc35f6
     </div>
     <? include $path . "/components/footer.php"; ?>
     <script src="../js/burger.js"></script>
