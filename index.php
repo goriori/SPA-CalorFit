@@ -53,7 +53,7 @@
     <div class="imageTest">
         <div class="Man">
           <h1 class="white-text">МУЖЧИНА</h1>
-          <div class="imageman"></div>
+          <a href="/tests/man/TestMan.php"><div class="imageman"></div></a>
         </div>
         <div class="Woman">
           <h1 class="white-text">ЖЕНЩИНА</h1>

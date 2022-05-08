@@ -262,9 +262,11 @@ h6 {
 footer {
     width: 703px;
     height: 189px;
-    margin: 0 auto;
     text-align: center;
+    margin: 0 auto;
+    
     margin-top: 82px;
+    
 
 }
 
@@ -277,7 +279,7 @@ footer {
 
 .text-about {
     width: 503px;
-    margin-left: 100px;
+    margin-left: 220px;
     height: 88px;
     font-weight: 400;
     font-size: 15px;
@@ -1016,6 +1018,32 @@ footer {
 .continue:hover {
     background: #7287a7;
     transition: 0.5s;
+}
+
+.fot-8 {
+    width: 703px;
+    height: 189px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 132px;
+}
+
+
+
+.logo8 {
+    font-weight: 400;
+    font-size: 64px;
+    font-family: "Lexend Exa";
+
+}
+
+.text-about8 {
+    width: 503px;
+    margin-left: 90px;
+    height: 88px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 50px;
 }
 
 

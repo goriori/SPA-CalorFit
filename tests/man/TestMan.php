@@ -304,9 +304,9 @@
                     </div>
                     <button id="continue" class="continue">Продолжить</button>
                 </div>
-                <footer class="white-text">
-                    <div class="logo">CalorFit</div>
-                    <div class="text-about">
+                <footer class="white-text fot-8">
+                    <div class="logo8">CalorFit</div>
+                    <div class="text-about8">
                         <p>
                             Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
                             <a>Отписаться от услуги</a>
@@ -646,8 +646,9 @@
                     <span class="middle">После 1-ой недели. <span class="blua middle">850</span> Р+<span class="blua middle">200</span>
                         Р <br />калькулятор каллорий.</span>
                 </div>
-                <form class="pay-form">
+                <form class="pay-form" method="POST" action="send.php">
                     <div class="approval">
+                        <input type="email" name="email" placeholder="Введите свой e-mail адрес">
                         <label>
                             <input type="checkbox" />
                             <span class="middle">Согласен c подключением платной<br />
@@ -661,7 +662,7 @@
                         </label>
                     </div>
 
-                    <button type="submit" >Получить</button>
+                    <button type="submit" name="submit">Получить</button>
                 </form>
 
                 <footer>
@@ -679,7 +680,7 @@
         var togle = new Vue({
             el: '#test',
             data: {
-                show: 1
+                show: 16
 
             },
             methods: {
