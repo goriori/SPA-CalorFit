@@ -15,9 +15,9 @@
 
 <body>
   <div class="wrapper">
-    <div class="logo">CalorFit</div>
     <header class="header">
       <div class="container">
+      <div class="logo">CalorFit</div>
         <div class="header__body">
           <div class="header__burger">
             <span></span>

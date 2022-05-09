@@ -21,4 +21,11 @@
               margin:0 auto;
               margin-top: 50px;
           }
+
+          @media screen and (max-width:767px){
+              .about{
+                  width:100%;
+              }
+              
+          }
       </style>

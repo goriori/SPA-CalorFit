@@ -14,8 +14,8 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
             <div class="container">
+            <div class="logo">CalorFit</div>
                 <div class="header__body">
                     <div class="header__burger">
                         <span></span>
@@ -44,28 +44,25 @@
                     </nav>
                 </div>
             </div>
-        </header>
         <div class="block-gran">
             <div class="text-content white-text">
                 <h1>Тарифы</h1>
-                <p>
+                <p class="one">
                     Пожалуйста, ознакомьтесь с действующим тарифным планом сервиса по разработке плана питания.
 
                 </p>
-                <p>
+                <p class="two">
                     Cтоимость услуги составляет 1 (один) рубль за получение начального плана питания.
                 </p>
-                <p>
+                <p class="two">
                     В дальнейшем через неделю использования сервиса взимается комиссия сервиса в размере 850 (Восемьсот пятьдесят) рублей за пролонгирование плана питания на 7 дней.
                 </p>
-                <p>
+                <p class="two">
                     В дальнейшем через неделю использования сервиса взимается комиссия сервиса в размере 200 (двухсот) рублей за пролонгирование услуги "калькулятор калорий" на 7 дней.
                 </p>
             </div>
         </div>
-
         <footer>
-            <div class="logo white-text">CalorFit</div>
             <div class="about">
                 Продолжая, вы соглашаетесь с <a href="Treaty.php">Условиями использования</a>,
                 <a href="Treaty.php">Политикой<br />
@@ -73,7 +70,7 @@
                 <a href="Unsubscribe.php">Отписаться от услуги</a><br />
                 Поддержка: admin@meallforme.ru<br />
                 2021 © All Rights Reserved.
-            </div>v>
+            </div>
         </footer>
     </div>
     <script src="../js/burger.js"></script>

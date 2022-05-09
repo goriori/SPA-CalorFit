@@ -15,9 +15,11 @@
 
 <body>
     <div class="wrapper">
-        <? include $path . "/components/header.php"; ?>
-        <header class="header">
+        <header>
             <div class="container">
+            <div class="logo">
+                <p class="white-text">CalorFit</p>
+            </div>
                 <div class="header__body">
                     <div class="header__burger">
                         <span></span>

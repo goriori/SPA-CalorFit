@@ -227,6 +227,9 @@ h6 {
     font-family: "Lexend Exa";
     src: url(../fonts/LexendDecaRegular.ttf);
 }
+*{
+    margin:0 auto;
+}
 
 .wrapper {
     background-image: url(../images/background.png);
@@ -235,29 +238,27 @@ h6 {
     height: 120vh;
     margin: 0 auto;
     padding-top: 50px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
+    width:100%;
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 0;
 }
 
-.logo {
-    margin: 0px;
-    display: flex;
+.container{
+    display:flex;
+    justify-content: space-between;
 }
 
-.logo a {
+.logo
+{
     font-size: 64px;
-    margin-top: 0px;
-    font-family: "Lexend Exa";
+    font-family: "Lexend Exa";  
     color: #fff;
+    float: left;
 }
 
 .block {
-    width: 1900px;
+    width: 100%;
     height: 567px;
     background: rgba(196, 196, 196, 0.3);
     padding-top: 30px;
@@ -271,8 +272,6 @@ h1 {
     font-size: 32px;
     color: white;
     margin: 0 auto;
-    
-
 }
 
 form {
@@ -282,6 +281,8 @@ form {
     border: 3px solid #636363;
     border-radius: 10px;
     margin: 0 auto;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
@@ -292,9 +293,7 @@ label {
     font-weight: 400;
     font-size: 15px;
     color: #E8E8E8;
-
     margin-left: 90px;
-
 }
 
 .information-input {
@@ -305,14 +304,11 @@ label {
     margin: 0 auto;
     margin-top: 20px;
     background: transparent;
-    margin-left: 90px;
     margin-bottom: 20px;
     color: white;
     font-family: "Lexend Exa";
     font-weight: 400;
     padding-left: 30px;
-
-
 }
 
 .button-form {
@@ -321,8 +317,8 @@ label {
     border-radius: 20px;
     width: 210px;
     height: 33px;
-    margin-left: 150px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -332,8 +328,6 @@ footer {
     flex-direction: column;
     text-align: center;
     align-items: center;
-
-
 }
 
 .text {
@@ -353,4 +347,10 @@ footer {
     text-align: center;
     color: white;
     margin: 0 auto;
+}
+
+@media screen and (max-width:520px) {
+    form{
+        width:100%;
+    }
 }

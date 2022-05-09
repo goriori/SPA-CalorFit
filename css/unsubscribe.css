@@ -92,9 +92,13 @@ h6 {
 
 /* burger */
 
+.container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
 .header {
-    float: right;
-    margin-right: 255px;
     margin-top: 40px;
 }
 
@@ -232,31 +236,30 @@ h6 {
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 100vh;
     margin: 0 auto;
     padding-top: 50px;
-
 }
 
 
 .block {
     width: 870px;
-    height: 497px;
     background: rgba(53, 53, 58, 0.8);
     border: 1px solid #F7F7F7;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 50px;
-
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {  
-    width: 680px;
+    width: 1280px;
     height: 60px;
     font-size: 64px;
     font-family: "Lexend Exa";  
     margin: 0 auto; 
-
 }
 
 .text-content {
@@ -276,7 +279,10 @@ form {
     width: 510px;
     height: 148px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top:120px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .emailInput {
@@ -300,9 +306,7 @@ form {
     border-radius: 20px;
     font-weight: 400;
     font-size: 16px;
-    margin-left: 100px;
     margin-top: 40px;
-
 }
 
 footer {
@@ -312,8 +316,6 @@ footer {
     flex-direction: column;
     text-align: center;
     align-items: center;
-
-
 }
 
 .text {
@@ -334,4 +336,35 @@ footer {
     color: white;
     margin: 0 auto;
     margin-top: 50px;
+}
+
+@media screen and (max-width:876px) {
+    .block{
+        width:100%;
+    }
+    .about{
+        width:100%;
+    }
+    .text-content{
+        width:75%;
+        margin:0 auto;
+    }
+    form{
+        margin-top:220px;
+    }
+}
+@media screen and (max-width:512px) {
+    .emailInput{
+        width:350px;
+    }
+    .button{
+        width:250px;
+    }
+    form{
+        margin-top:320px;
+        width:100%;
+    }
+    .emailInput{
+        width:100%;
+    }
 }

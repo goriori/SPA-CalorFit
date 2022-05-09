@@ -14,8 +14,8 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
       <div class="container">
+      <div class="logo">CalorFit</div>
         <div class="header__body">
           <div class="header__burger">
             <span></span>
@@ -44,10 +44,6 @@
           </nav>
         </div>
       </div>
-    </header>
-    <div class="container">
-      <? include $path . "/components/header.php"; ?>
-    </div>
     <div class="block">
       <h1>Вход в аккаунт</h1>
       <form action="">

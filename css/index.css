@@ -16,6 +16,12 @@
     overflow-x: hidden;
 }
 
+.container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
 .content {
     margin: 0 auto;
     width: 100%;
@@ -32,8 +38,10 @@
     font-family: "Lexend Exa";  
     color: #fff;
     float: left;
-    margin-left: 300px;
-    margin-top: 10px;
+}
+
+.about{
+    width:690px;
 }
 
 
@@ -118,8 +126,6 @@
 
 /* burger */
 .header {
-    float: right;
-    margin-right: 255px;
     margin-top: 40px;
 }
 
@@ -205,7 +211,7 @@
     bottom: 0;
 }
 .header__burger.active span {
-    left: 230px;
+    left: -27px;
     transition: 0.5s;
     z-index: 5;
 }
@@ -214,7 +220,7 @@
     transform: rotate(45deg);
     top: 7px;
     width: 20px;
-    left: 255px;
+    left: 0px;
     transition: 0.5s;
     z-index: 5;
 }
@@ -224,7 +230,7 @@
     bottom: 7px;
     width: 20px;
     transition: 0.5s;
-    left: 255px;
+    left: 0px;
     z-index: 5;
 }
 
@@ -256,11 +262,6 @@
 }
 /* // ====================================@MEDIA====================================================================@ADAPTIVE======================================== */
 @media (max-width: 1200px) {
-
-
-    .logo {
-        padding-left: 220px;
-    }
 
     .Man {
         width: 272px;
@@ -316,11 +317,6 @@
 
 @media (max-width: 992px) {
 
-
-    .logo {
-        padding-left: 120px;
-    }
-
     .logo h1 {
         font-size: 54px;
         padding-top: 0px;
@@ -349,10 +345,6 @@
 
 @media (max-width: 768px) {
 
-
-    .logo {
-        padding-left: 70px;
-    }
 
     .logo h1 {
         font-size: 40px;
@@ -407,15 +399,15 @@
         text-align: center;
         font-size: 12px;
     }
+
+    .about{
+        width:100%;
+    }
 }
 
 /* 300*800 px ================================================= */
 @media (max-width: 400px) {
 
-
-    .logo {
-        padding-left: 25px;
-    }
 
     .logo h1 {
         font-size: 28px;

@@ -15,6 +15,9 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
+      <div class="logo">
+        <p class="white-text">CalorFit</p>
+      </div>
         <div class="header__body">
           <div class="header__burger">
             <span></span>
@@ -57,9 +60,6 @@
     </div>
 
     <footer>
-      <div class="logo">
-        <p class="white-text">CalorFit</p>
-      </div>
       <div class="about">
         Продолжая, вы соглашаетесь с <a href="Treaty.php">Условиями использования</a>,
         <a href="Treaty.php">Политикой<br />
