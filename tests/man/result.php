@@ -5,13 +5,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/result.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/result.css'>
     <script src='js/main.js'></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <p class="logo">Meallforme</p>
+            <p class="logo">CalorFit</p>
             <div class="content">
             <p class="text_content">
                 Получите ваш персональный <br> План Похудения
@@ -30,7 +30,9 @@
                     </div>
                     <p class="box_content_panel2">кг</p>
                     <p class="box_content_panel3">к Июлю 2022</p>
-                    <div class="img_content_panel">тут svg</div>
+                    <div class="img_content_panel">
+                    
+                    </div>
                 </div>
 
                 <div class="programm_content">
