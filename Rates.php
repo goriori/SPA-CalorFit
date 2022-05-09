@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
-
 <body>
     <div class="wrapper">
         <header class="header">
@@ -63,7 +62,6 @@
                 </p>
             </div>
         </div>
-
         <footer>
             <div class="logo white-text">CalorFit</div>
             <div class="about">
