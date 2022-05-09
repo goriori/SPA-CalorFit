@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/TestMan.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->  
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <title>CalorFit</title>
@@ -153,7 +153,7 @@
                     <div class="select-param3">
                         <input type="number" placeholder="Текущий вес(кг)" name="mass" class="browser-default" v-model="form.dessiredMass" />
                     </div>
-                    <p class="error red-text" v-if="form.dessiredMass < 40 || form.dessiredMass > 150">Не допустимое значение веса</p>
+                    <p class=" red-text" v-if="form.dessiredMass < 40 || form.dessiredMass > 150">Не допустимое значение веса</p>
                     <input type="button" value="Продолжить" class="white-text browser-default but" v-on:click="show++">
                 </form>
                 <div class="sliders1">
@@ -564,8 +564,22 @@
             </footer>
 
         </div>
+        <div class="loadingresult" v-if="show === 13">
+            <div class="block">
+                <div class="container">\
+                    <div class="text-loading center-align">
+                        <p class="red-text">Loading...</p>
+                    </div>
+                    <div class="progress">
+                        <div class="indeterminate "></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
         <!-- Test 13 Man -->
-        <div class="test-13" v-if="show === 13">
+        <div class="test-13" v-if="show === 14">
             <div class="block">
                 <div class="text-content13 white-text center-align">
                     <h2>Мотивация</h2>
@@ -606,7 +620,7 @@
 
         </div>
         <!-- Test 14 Man -->
-        <div class="test-14" v-if="show === 14">
+        <div class="test-14" v-if="show === 15">
             <div class="block">
                 <div class="text-content14 white-text center-align">
                     <h2>Поведение</h2>
@@ -644,10 +658,9 @@
                     </p>
                 </div>
             </footer>
-
         </div>
         <!-- Email -->
-        <div class="email" v-if="show === 15">
+        <div class="email" v-if="show === 16">
             <div class="block">
                 <div class="text-content15 white-text">
                     <p>
@@ -680,7 +693,7 @@
 
         </div>
         <!-- Page Pay -->
-        <div class="pay" v-if="show === 16">
+        <div class="pay" v-if="show === 17">
             <div class="content">
                 <div class="name">
                     <span>Оплатите <span class="ping1">вашу</span> первую<br />
@@ -725,14 +738,17 @@
 
 
     <script src="../js/burger.js"></script>
+    
+  
+      
+
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
     <script>
         var togle = new Vue({
             el: '#test',
             data: {
-                show: 1,
+                show: 13,
 
                 form: {
                     mass: '',
