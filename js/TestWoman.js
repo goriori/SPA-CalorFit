@@ -1,3 +1,54 @@
+function vectorBack() {
+    if ($('.test1').attr('style') == "display: block;") {
+        $('.test1').css('display', 'none');
+        $('.block').css('display', 'block');
+    } else if ($('.container-block2').attr('style') == "display: block;") {
+        $('.container-block2').css('display', 'none');
+        $('.test1').css('display', 'block');
+    } else if ($('.gran3').attr('style') == "display: block;") {
+        $('.test4').css('display', 'none');
+        $('.container-block2').css('display', 'block');
+    } else if ($('.test4').attr('style') == "display: block;") {
+        $('.test4').css('display', 'none');
+        $('.gran3').css('display', 'block');
+    } else if ($('.gran5').attr('style') == "display: block;") {
+        $('.gran5').css('display', 'none');
+        $('.test4').css('display', 'block');
+    } else if ($('.panel6').attr('style') == "display: block;") {
+        $('.panel6').css('display', 'none');
+        $('.gran5').css('display', 'block');
+    } else if ($('.test7').attr('style') == "display: block;") {
+        $('.test7').css('display', 'none');
+        $('.panel6').css('display', 'block');
+    } else if ($('.panel8').attr('style') == "display: block;") {
+        $('.panel8').css('display', 'none');
+        $('.test7').css('display', 'block');
+    } else if ($('.panel9').attr('style') == "display: block;") {
+        $('.panel9').css('display', 'none');
+        $('.panel8').css('display', 'block');
+    } else if ($('.gran9-1').attr('style') == "display: block;") {
+        $('.gran9-1').css('display', 'none');
+        $('.panel9').css('display', 'block');
+    } else if ($('.container-block10').attr('style') == "display: block;") {
+        $('.container-block10').css('display', 'none');
+        $('.panel9').css('display', 'block');
+    } else if ($('.gran11').attr('style') == "display: block;") {
+        $('.gran11').css('display', 'none');
+        $('.container-block10').css('display', 'block');
+    } else if ($('.gran12').attr('style') == "display: block;") {
+        $('.gran12').css('display', 'none');
+        $('.gran11').css('display', 'block');
+    } else if ($('.test13').attr('style') == "display: block;") {
+        $('.test13').css('display', 'none');
+        $('.gran11').css('display', 'block');
+    } else if ($('.test14').attr('style') == "display: block;") {
+        $('.test14').css('display', 'none');
+        $('.test13').css('display', 'block');
+    } else if ($('.test15').attr('style') == "display: block;") {
+        $('.test15').css('display', 'none');
+        $('.test13').css('display', 'block');
+    }
+}
 
 function test() {
     $('.block').css('display', 'none');
@@ -7,6 +58,7 @@ function test() {
 function changeWeightLeft() {
     $('.kg1').removeClass('activeRight');
     $('.kg1').addClass('activeLeft');
+    $('.continue1').removeClass('active');
     $('#quantity1').html("ФН");
     $('#input_kg').val("");
     $('.pound_text1').css('color', '#ffff');
@@ -14,6 +66,7 @@ function changeWeightLeft() {
 }
 function changeWeightRight() {
     $('.kg1').removeClass('activeLeft');
+    $('.continue1').removeClass('active');
     $('#quantity1').html("КГ");
     $('.kg1').addClass('activeRight');
     $('#input_kg').val("");
@@ -34,29 +87,29 @@ $(function () {
             $CheckKG = $('#input_kg').val();
             if ($CheckKG < 25 || $CheckKG > 300) {
                 $('.continue1').removeClass('active');
-                } else if ($CheckKG >= 25 && $CheckKG <= 300) {
+            } else if ($CheckKG >= 25 && $CheckKG <= 300) {
                 $('.continue1').addClass('active');
-                }
-            
-            }else if ($('#kg1').attr('class') == 'kg1 activeLeft') {
-
-                $CheckPH = $('#input_kg').val();
-                if ($CheckPH < 55 || $CheckPH > 661) {
-                $('.continue1').removeClass('active');
-                } else if ($CheckPH >= 55 && $CheckPH <= 661) {
-                $('.continue1').addClass('active');
-                }
             }
+
+        } else if ($('#kg1').attr('class') == 'kg1 activeLeft') {
+
+            $CheckPH = $('#input_kg').val();
+            if ($CheckPH < 55 || $CheckPH > 661) {
+                $('.continue1').removeClass('active');
+            } else if ($CheckPH >= 55 && $CheckPH <= 661) {
+                $('.continue1').addClass('active');
+            }
+        }
     });
 });
 
-$(function(){
-    $('#height, #weight').on('input', function(){
-        $CheckHeight=$('#height').val();
-        $CheckWeight=$('#weight').val();
-        if($CheckHeight<90 || $CheckHeight > 243 || $CheckWeight < 40 || $CheckWeight > 300){
+$(function () {
+    $('#height, #weight').on('input', function () {
+        $CheckHeight = $('#height').val();
+        $CheckWeight = $('#weight').val();
+        if ($CheckHeight < 90 || $CheckHeight > 243 || $CheckWeight < 40 || $CheckWeight > 300) {
             $('.btn2').removeClass('active');
-        }else if($CheckHeight>=90 && $CheckHeight <= 243 && $CheckWeight >= 40 && $CheckWeight <= 300){
+        } else if ($CheckHeight >= 90 && $CheckHeight <= 243 && $CheckWeight >= 40 && $CheckWeight <= 300) {
             $('.btn2').addClass('active');
         }
     });
@@ -65,7 +118,6 @@ $(function(){
 function test3() {
     $('.container-block2').css('display', 'none');
     $('.gran3').css('display', 'block');
-
 }
 
 function test4() {
@@ -152,12 +204,6 @@ function test7() {
 function test8() {
     $('.test7').css('display', 'none');
     $('.panel8').css('display', 'block');
-    if($('#input_kg').val()<$('#weight').val()){
-        $kgTest=$('#weight').val()-$('#input_kg').val();
-        $('.type2').html("Учитывая то, что Вы хотите набрать" + $kgTest + "кг" + ".Ваша физическая активность играет большую роль!");
-    }else if($('#input_kg').val()>$('#weight').val())
-        $kgTest2=$('#input_kg').val()-$('#weight').val();
-        $('.type2').html("Учитывая то, что Вы хотите сбросить" + $kgTest2 + "кг" + ".Ваша физическая активность играет большую роль!");
 }
 
 function kg_text10() {
@@ -322,5 +368,35 @@ function test15() {
     $('.change_1, .change_2, .change_3, .change_4, .change_5, .change_6').removeClass('active');
     $('.test14').css('display', 'none');
     $('.test15').css('display', 'block');
+}
 
+function LoadTest() {
+    $('.test15').css('display', 'none');
+    $('.loading__svg').css('display', 'block');
+    $('.header').css('display', 'none');
+    $('.vectorImg').css('display', 'none');
+    const progressbarThumb = document.querySelector('.progressbar__thumb');
+    const progressbarPercent = document.querySelector('.progressbar__percent > tspan');
+    const progressbarText = document.querySelector('.progressbar__info > tspan');
+
+    function onUpdateGsap() {
+        const percent = gsap.getProperty(progressbarThumb, '--percent');
+
+        if (percent == 100) {
+            progressbarText.textContent = 'Готово';
+            $('.loading__svg').css('display', 'none');
+            $('.pay').css('display', 'block');
+            $('.header').css('display', 'block');
+        } else if (percent > 60 && percent < 99) {
+            progressbarText.textContent = 'Подборка подходящих рецептов';
+        } else if (percent > 40 && percent < 60) {
+            progressbarText.textContent = 'Анализ Вашего диетического профиля';
+        } else if (percent > 0 && percent < 40) {
+            progressbarText.textContent = 'Обработка Ваших ответов...'
+        }
+        progressbarPercent.textContent = Math.round(percent);
+    }
+
+    const tl = gsap.timeline({ defaults: { duration: 12, ease: 'linear' } })
+        .to(progressbarThumb, { '--percent': 100, onUpdate: onUpdateGsap });
 }
