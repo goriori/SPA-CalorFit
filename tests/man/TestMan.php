@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/TestMan.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../js/TestMan.js"></script>
     <title>CalorFit</title>
 </head>
 
@@ -24,22 +24,22 @@
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li>
-                                <a href="/" class="header__link index">Главная</a>
+                                <a href="../../" class="header__link index">Главная</a>
                             </li>
                             <li>
-                                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
+                                <a href="../../Unsubscribe.php" class="header__link">Отписаться</a>
                             </li>
                             <li>
-                                <a href="Rates.php" class="header__link">Тарифы</a>
+                                <a href="../../Rates.php" class="header__link">Тарифы</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Политика<br> конфенденциальности</a>
+                                <a href="../../Treaty.php" class="header__link">Политика<br> конфенденциальности</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Условия пользования</a>
+                                <a href="../../Treaty.php" class="header__link">Условия пользования</a>
                             </li>
                             <li>
-                                <a href="Singin.php" class="header__link">Личный кабинет</a>
+                                <a href="../../Singin.php" class="header__link">Личный кабинет</a>
                             </li>
                         </ul>
                     </nav>
@@ -48,6 +48,7 @@
         </header>
         <!-- Test 1 Man -->
         <div class="test-one Target" v-if="show === 1">
+
             <div class="block">
                 <div class="text-content white-text center-align">
                     <h1>Цель</h1>
@@ -67,14 +68,23 @@
                         <div class="imgTargetThree"></div>
                     </div>
                 </div>
-                <div class="sliders">
-                    <div class="slider_one"></div>
-                    <div class="slider_two"></div>
-                    <div class="slider_two"></div>
-                    <div class="slider_two"></div>
-                    <div class="slider_two"></div>
-                    <div class="slider_two"></div>
-                    <div class="slider_two"></div>
+                <div class="sliders2">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                    </div>
                 </div>
             </div>
             <footer class="white-text">
@@ -92,6 +102,7 @@
         </div>
         <!-- Test 2 Man -->
         <div class="test-two Mass" v-if="show === 2">
+
             <div class="block center-align">
                 <h1 class="target">Желаемый вес</h1>
                 <h1 class="question">Хорошо, какой для Вас идеальный вес?</h1>
@@ -105,23 +116,31 @@
                         </div>
                     </div>
                     <div class="quantity">
-                        <input type="text" class="quantity_text browser-default" name="mass" v-model.trim="form.mass" />
+                        <input id="input_kg" type="number" class="quantity_text browser-default">
                         <h1 id="quantity">КГ</h1>
                     </div>
                     <button class="continue1" v-on:click="show++">
                         Продолжить
                     </button>
                 </div>
-                <div class="sliders1">
-                    <div class="slider_one1"></div>
-                    <div class="slider_one1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
+                <div class="sliders2">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                    </div>
                 </div>
-
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
@@ -138,7 +157,9 @@
         </div>
         <!-- Test 3 Man -->
         <div class="test-trhee Phisicparam" v-if="show === 3">
+
             <div class="block center-align">
+
                 <div class="text-content3 white-text">
                     <h2>Физические параметры</h2>
                     <p class="last-text">
@@ -156,14 +177,23 @@
                     <p class=" red-text" v-if="form.dessiredMass < 40 || form.dessiredMass > 150">Не допустимое значение веса</p>
                     <input type="button" value="Продолжить" class="white-text browser-default but" v-on:click="show++">
                 </form>
-                <div class="sliders1">
-                    <div class="slider_one1"></div>
-                    <div class="slider_one1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
-                    <div class="slider_two1"></div>
+                <div class="sliders2">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                    </div>
                 </div>
             </div>
             <footer class="white-text">
@@ -181,7 +211,9 @@
         </div>
         <!-- Test 4 Man -->
         <div class="test-four Age" v-if="show === 4">
+
             <div class="block">
+
                 <div class="text-content4 white-text center-align">
                     <h2>Возраст</h2>
                     <p class="white-text text-section-two">
@@ -189,7 +221,7 @@
                     </p>
                 </div>
                 <div class="buttons">
-                    <div class="active">
+                    <div class="activet">
                         <button v-on:click="show++">18-29</button>
                     </div>
                     <div>
@@ -200,6 +232,24 @@
                     </div>
                     <div>
                         <button v-on:click="show++">50+</button>
+                    </div>
+                </div>
+                <div class="sliders2">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
                     </div>
                 </div>
             </div>
@@ -231,6 +281,24 @@
                     <img src="/images/mesomorph.png" class="img_panel2">
                     <button class="button_panel3" v-on:click="show++">Эндоморф</button>
                     <img src="/images/endomorph.png" class="img_panel3">
+                </div>
+                <div class="sliders5">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                    </div>
                 </div>
             </div>
             <footer class="white-text">
@@ -268,6 +336,24 @@
                         <p>В основном дома</p>
                     </div>
                 </div>
+                <div class="sliders6">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                    </div>
+                </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
@@ -289,10 +375,10 @@
                     <p class="type">Когда был идеальный вес</p>
                     <p class="type2">Как давно вы были в Вашем <br> идеальном весе?</p>
                 </div>
-                <div class="wrapp_panel">
+                <div class="wrapp_panel7">
                     <div class="block_img_panel"></div>
                     <div class="block_test_panel">
-                        <div class="buttons">
+                        <div class="buttons7">
                             <button class="test_panel1" v-on:click="show++">
                                 Больше 1 года <br> назад
                             </button>
@@ -306,6 +392,24 @@
                                 Никогда
                             </button>
                         </div>
+                    </div>
+                </div>
+                <div class="sliders7">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
                     </div>
                 </div>
             </div>
@@ -344,19 +448,38 @@
                     </div>
                     <button id="continue" class="continue" v-on:click="show++">Продолжить</button>
                 </div>
-                <footer class="white-text fot-8">
-                    <div class="logo8">CalorFit</div>
-                    <div class="text-about8">
-                        <p>
-                            Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                            <a>Отписаться от услуги</a>
-                            Поддержка: admin@calorfit.ru
-                            2021 © All Rights Reserved.
-                        </p>
+                <div class="sliders8">
+                    <div class="sliders">
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_1"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
+                        <div class="slide_2"></div>
                     </div>
-                </footer>
-
+                </div>
             </div>
+            <footer class="white-text">
+                <div class="logo">CalorFit</div>
+                <div class="text-about">
+                    <p>
+                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
+                        <a>Отписаться от услуги</a>
+                        Поддержка: admin@calorfit.ru
+                        2021 © All Rights Reserved.
+                    </p>
+                </div>
+            </footer>
+
+
         </div>
         <!-- Test 9 Man -->
         <div class="test-nine" v-if="show === 9">
@@ -384,6 +507,22 @@
                             </button>
                         </div>
                     </div>
+                </div>
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
@@ -413,14 +552,21 @@
                         <button class="button_panel3" v-on:click="show++">Я чувствую сонливость <br> после обеда</button>
                     </div>
                 </div>
-                <div class="sliders10">
-                    <div class="slider_one10"></div>
-                    <div class="slider_one10"></div>
-                    <div class="slider_two10"></div>
-                    <div class="slider_two10"></div>
-                    <div class="slider_two10"></div>
-                    <div class="slider_two10"></div>
-                    <div class="slider_two10"></div>
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
@@ -476,14 +622,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="sliders11">
-                    <div class="slider_one11"></div>
-                    <div class="slider_one11"></div>
-                    <div class="slider_two11"></div>
-                    <div class="slider_two11"></div>
-                    <div class="slider_two11"></div>
-                    <div class="slider_two11"></div>
-                    <div class="slider_two11"></div>
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
@@ -541,14 +694,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="sliders12">
-                    <div class="slider_one12"></div>
-                    <div class="slider_one12"></div>
-                    <div class="slider_two12"></div>
-                    <div class="slider_two12"></div>
-                    <div class="slider_two12"></div>
-                    <div class="slider_two12"></div>
-                    <div class="slider_two12"></div>
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
@@ -596,14 +756,21 @@
                     <button v-on:click="show++">Да</button>
                     <button v-on:click="show++">Нет</button>
                 </div>
-                <div class="sliders13">
-                    <div class="slider_one13"></div>
-                    <div class="slider_one13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
@@ -637,14 +804,21 @@
                     <button v-on:click="show++">Да</button>
                     <button v-on:click="show++">Нет</button>
                 </div>
-                <div class="sliders13">
-                    <div class="slider_one13"></div>
-                    <div class="slider_one13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
-                    <div class="slider_two13"></div>
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
                 </div>
             </div>
             <footer class="white-text">
@@ -737,10 +911,10 @@
     </div>
 
 
-    <script src="../js/burger.js"></script>
-    
-  
-      
+    <script src="../../../js/burger.js"></script>
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -748,7 +922,11 @@
         var togle = new Vue({
             el: '#test',
             data: {
-                show: 13,
+<<<<<<< HEAD
+                show: 2,
+=======
+                show: 1,
+>>>>>>> 91e583900666f413a758a18af083bc1d2dd1d9d0
 
                 form: {
                     mass: '',
