@@ -772,12 +772,19 @@ footer {
     line-height: 25px;
     text-align: center;
     color: #ffffff;
+    pointer-events: none;
 }
 
-.continue1:hover {
+.continue1.active {
     transition-property: background;
-    transition-duration: 0.8s;
+    transition-duration: 0.5s;
     background: #7287a7;
+    pointer-events: auto;
+    margin:0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

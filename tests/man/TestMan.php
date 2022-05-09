@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/TestMan.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../js/TestMan.js"></script>
     <title>CalorFit</title>
 </head>
 
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     <div class="quantity">
-                        <input type="text" class="quantity_text browser-default" name="mass" v-model.trim="form.mass" />
+                        <input id="input_kg" type="number" class="quantity_text browser-default">
                         <h1 id="quantity">КГ</h1>
                     </div>
                     <button class="continue1" v-on:click="show++">
@@ -748,7 +748,7 @@
         var togle = new Vue({
             el: '#test',
             data: {
-                show: 13,
+                show: 2,
 
                 form: {
                     mass: '',
