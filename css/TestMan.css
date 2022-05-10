@@ -442,6 +442,7 @@ footer {
     font-size: 15px;
     margin-top: 50px;
 }
+<<<<<<< HEAD
 @media screen and (max-width:524px){
     .sliders{
         width: 100%;
@@ -452,8 +453,12 @@ footer {
     }
 }
 @media screen and (max-width:1200px) {
+=======
+
+@media screen and (max-width:1600px) {
+>>>>>>> 356964f286ea774713a1f3692587b862347bde43
     .wrapper {
-        height: 170vh;
+        height: 113vh;
     }
 }
 
@@ -480,7 +485,7 @@ footer {
 
     .wrapper {
         width: 100%;
-        height: 190vh;
+        height: 126vh;
     }
 
     .backarrowImd {
@@ -556,7 +561,7 @@ footer {
     }
 
     .wrapper {
-        height: 180vh;
+        height: 127vh;
     }
 
     .backarrowImd {
