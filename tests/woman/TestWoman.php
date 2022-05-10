@@ -793,10 +793,9 @@
                     <div class="slide_1"></div>
                 </div>
             </div>
-<<<<<<< HEAD
+
             <div class="text-btn center-align">
             <footer>
-=======
             <!-- Loading... -->
             <div class="loading__svg">
                 <svg class="progressbar" viewBox="0 0 62 80">
@@ -823,7 +822,7 @@
                             <span class="ping1 high">1 Р</span><span class="high">*</span><span class="small">/ 1-aя неделя</span>
                         </div>
                         <span class="middle">После 1-ой недели. <span class="blua middle">850</span> Р+<span class="blua middle">200</span>
-                            Р <br />калькулятор каллорий.</span>
+                             <span>калькулятор каллорий.</span>
                     </div>
                     <form class="pay-form" method="POST" action="send.php">
                         <div class="approval">
@@ -852,7 +851,6 @@
                 </div>
             </div>
             <div class="text-btn">
->>>>>>> 165fb4996abe3ee9a67ada9f678fbc5f1a3fd5ce
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
                     Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,

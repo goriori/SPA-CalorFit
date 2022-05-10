@@ -2150,7 +2150,7 @@ footer {
 }
 
 .buttons9-1 {
-    width: 450px;
+    max-width: 450px;
     height: 180px;
     margin: 0 auto;
     display: flex;
@@ -2182,7 +2182,7 @@ footer {
 }
 
 .sliders9-1 {
-    width: 600px;
+    max-width: 600px;
     height: 10px;
     display: flex;
     margin: 0 auto;
@@ -2195,37 +2195,6 @@ footer {
     border-radius: 8px;
 }
 
-@media screen and (max-width:700px){
-    .gran9-1 {
-    margin: 0 auto;
-    margin-top: 100px;
-    border-radius: 10px;
-    max-width: 690px;
-    height: 675px;
-    background: #ffffff;
-    border-radius: 30px;
-    padding-top: 46px;
-    display: block;
-    }
-    
-    .sliders10 {
-    max-width: 600px;
-    height: 10px;
-    display: flex;
-    margin-top: 130px;
-    }
-        
-    .sliders1 div {
-    width: 25px;
-    height: 10px;
-    }
-        
-    .sliders{
-    width:100%;
-    justify-content: space-around;
-    }
-    }
-
 
 /* hover */
 
@@ -2234,11 +2203,6 @@ footer {
     transition: 0.5s;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 165fb4996abe3ee9a67ada9f678fbc5f1a3fd5ce
 /* test10 */
 .container-block10 {
     max-width: 690px;
@@ -3280,8 +3244,6 @@ footer {
     display: flex;
 }
 
-<<<<<<< HEAD
-=======
 .ellipse15 div {
     height: 10px;
     width: 25px;
@@ -3289,9 +3251,6 @@ footer {
 }
 
 
-
-
->>>>>>> 165fb4996abe3ee9a67ada9f678fbc5f1a3fd5ce
 .change_1,
 .change_2,
 .change_3,
