@@ -794,12 +794,8 @@
                     <div class="slide_1"></div>
                 </div>
             </div>
-<<<<<<< HEAD
-
             <div class="text-btn center-align">
             <footer>
-=======
->>>>>>> b3ddf8937f04322598ad56dcd9203f16875433b0
             <!-- Loading... -->
             <div class="loading__svg">
                 <svg class="progressbar" viewBox="0 0 62 80">
