@@ -244,7 +244,7 @@ h6 {
     align-items: center;
 }
 
-.container{
+.container_head{
     display:flex;
     justify-content: space-between;
 }
@@ -255,6 +255,7 @@ h6 {
     font-family: "Lexend Exa";  
     color: #fff;
     float: left;
+    margin-right: 1100px;
 }
 
 .block {

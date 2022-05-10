@@ -50,6 +50,12 @@ function sendMailAttachment($mailTo, $from, $subject, $message, $file = false){
     }else{
         $bodyMail = $message;
     }
+    
+    $new_url = 'http://spa-calorfit/';
+    header('Location: '.$new_url);
+
     $result = mail($mailTo, $subject, $bodyMail, $headers); // отправка письма
     return $result;
+
+    
 }

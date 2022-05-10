@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/TestMan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="../../js/TestMan.js"></script>
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <title>CalorFit</title>
 </head>
@@ -169,12 +169,10 @@
                 <form action="" class="form-phisic">
                     <div class="select-param3">
                         <input type="number" placeholder="Рост(см)" name="height" class="browser-default" v-model="form.heigth" />
-                    </div>
-                    <p class="error red-text" v-if="form.heigth < 120 || form.height > 220">Не допустимое значение роста</p>
+                    </div>                   
                     <div class="select-param3">
                         <input type="number" placeholder="Текущий вес(кг)" name="mass" class="browser-default" v-model="form.dessiredMass" />
                     </div>
-                    <p class=" red-text" v-if="form.dessiredMass < 40 || form.dessiredMass > 150">Не допустимое значение веса</p>
                     <input type="button" value="Продолжить" class="white-text browser-default but" v-on:click="show++">
                 </form>
 
@@ -897,19 +895,15 @@
         </div>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="../../../js/burger.js"></script>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../../js/TestMan.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
         var togle = new Vue({
             el: '#test',
             data: {
-                show: 1,
+                show: 15,
 
 
                 form: {
@@ -937,7 +931,7 @@
             var x = document.getElementsByTagName('script')[0];
             x.parentNode.insertBefore(s, x);
         })('https://widget.replain.cc/dist/client.js');
-    </script>
+    </script> -->
 
 </body>
 

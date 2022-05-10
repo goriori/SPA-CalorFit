@@ -456,6 +456,11 @@ footer {
 }
 
 @media screen and (max-width:1600px) {
+
+
+}
+
+@media screen and (max-width:1600px) {
     .wrapper {
         height: 113vh;
     }
@@ -2151,4 +2156,8 @@ button:hover {
     transition: 0.5s;
 }
 
-/* Animations-ERRORR */
+/* Display none tests */
+
+.test-two, .test-trhee, .test-four, .test-five, .tes-fix, .test-seven, .test-eigth, .test-nine, .test-ten, .test-eleven, .testtwelwe, .test-13, .test-14, .loading__svg, .pay {
+    display: none;
+}
