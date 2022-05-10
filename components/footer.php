@@ -4,7 +4,7 @@
               <a href="#">Политикой<br />
                   конфиденциальности</a>, <a href="#">Условиями подписки</a><br />
               <a href="#">Отписаться от услуги</a><br />
-              Поддержка: admin@meallforme.ru<br />
+              Поддержка: admin@сalorfit.ru<br />
               2021 © All Rights Reserved.
           </div>
       </footer>

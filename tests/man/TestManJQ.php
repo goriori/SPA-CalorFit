@@ -8,16 +8,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="../../js/TestWoman.js"></script>
+    <script src="../../js/TestMan.js"></script>
     <script src="../../js/burger.js"></script>
-    <link rel="stylesheet" href="/css/menu.css">
-    <link rel="stylesheet" href="/css/TestWoman.css">
+    <link rel="stylesheet" href="/css/TestManTest.css">
     <title>CalorFit</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <img onclick="vectorBack()" class="vectorImg" src="../../images/Vector.png">
+        <img onclick="vectorBack()" class="vectorImg" src="../../images/backarrowM.png">
         <header class="header">
             <div class="container">
                 <div class="header__body">
@@ -30,19 +29,19 @@
                                 <a href="/" class="header__link index">Главная</a>
                             </li>
                             <li>
-                                <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
+                                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
                             </li>
                             <li>
-                                <a href="Rates.php" class="header__link rates">Тарифы</a>
+                                <a href="Rates.php" class="header__link">Тарифы</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
+                                <a href="/" class="header__link">Политика<br> конфенденциальности</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
+                                <a href="/" class="header__link">Условия пользования</a>
                             </li>
                             <li>
-                                <a href="Singin.php" class="header__link login">Личный кабинет</a>
+                                <a href="/Singin.php" class="header__link">Личный кабинет</a>
                             </li>
                         </ul>
                     </nav>
@@ -64,15 +63,9 @@
                         <p class="twost">Ускорить рост своих мышц</p>
                         <div class="img-twost"></div>
                     </button>
-                </div>
-                <div class="rightst">
                     <button class="buttonst" onclick="test()">
                         <p class="threest">Убрать лишние килограммы</p>
                         <div class="img-threest"></div>
-                    </button>
-                    <button class="buttonst" onclick="test()">
-                        <p class="fourst">Начать правильно питаться</p>
-                        <div class="img-fourst"></div>
                     </button>
                 </div>
             </div>
@@ -230,24 +223,20 @@
         <div class="test4">
             <div class="target4">Тип телосложения</div>
             <div class="note4">Для каждого типа телосложения характерен свой уровень метаболизма</div>
-            <div class="question4">Выберите привычки, которые соотвествуют Вашему образу жизни</div>
+            <div class="question4">Какое изображение лучше всего соответствует Вашем типу телосложения?</div>
             <div class="response4">
                 <div class="answer4">
                     <div class="girl1" onclick="test5()">
-                        <p>Прямоуго<br>льник</p>
-                        <img src="../../images/woman/girl1.png">
+                        <p>Эктоморф</p>
+                        <img src="../../images/ectomorph.png">
                     </div>
                     <div class="girl2" onclick="test5()">
-                        <p>песочные<br>часы</p>
-                        <img src="../../images/woman/girl2.png">
+                        <p>Мезоморф</p>
+                        <img src="../../images/mesomorph.png">
                     </div>
                     <div class="girl3" onclick="test5()">
-                        <p>груша</p>
-                        <img src="../../images/woman/girl3.png">
-                    </div>
-                    <div class="girl4" onclick="test5()">
-                        <p>яблоко</p>
-                        <img src="../../images/woman/girl4.png">
+                        <p>Эндоморф</p>
+                        <img src="../../images/endomorph.png">
                     </div>
                 </div>
             </div>
@@ -321,7 +310,7 @@
         <!-- test6 -->
         <div class="panel6">
             <p class="type6">Когда был идеальный вес</p>
-            <p class="type26">Как давно вы были в Вашем идеальном весе?</p>
+            <p class="type26">Как давно вы были в Вашем <br>идеальном весе?</p>
             <div class="wrapp_panel6">
                 <div class="block_img_panel6"></div>
                 <div class="block_test_panel6">
