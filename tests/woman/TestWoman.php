@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="../../js/TestWoman.js"></script>
     <script src="../../js/burger.js"></script>
+    <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/TestWoman.css">
     <title>CalorFit</title>
 </head>
@@ -29,19 +30,19 @@
                                 <a href="/" class="header__link index">Главная</a>
                             </li>
                             <li>
-                                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
+                                <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
                             </li>
                             <li>
-                                <a href="Rates.php" class="header__link">Тарифы</a>
+                                <a href="Rates.php" class="header__link rates">Тарифы</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Политика<br> конфенденциальности</a>
+                                <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Условия пользования</a>
+                                <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
                             </li>
                             <li>
-                                <a href="../../index.php" class="header__link">Личный кабинет</a>
+                                <a href="Singin.php" class="header__link login">Личный кабинет</a>
                             </li>
                         </ul>
                     </nav>
