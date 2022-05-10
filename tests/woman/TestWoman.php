@@ -854,7 +854,7 @@
                     <a href="#">Политикой конфиденциальности</a>,
                     <a href="#">Условиями подписки</a>,
                     <a href="#">Отписаться от услуги</a> <br />Поддержка:
-                    admin@meallforme.ru <br>2021 © All Rights Reserved.
+                    admin@calorfit.ru <br>2021 © All Rights Reserved.
                 </p>
             </div>
         </footer>

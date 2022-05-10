@@ -65,7 +65,7 @@
         <a href="Treaty.php">Политикой<br />
           конфиденциальности</a>, <a href="Rates.php">Условиями подписки</a><br />
         <a href="Unsubscribe.php">Отписаться от услуги</a><br />
-        Поддержка: admin@meallforme.ru<br />
+        Поддержка: admin@calorfit.ru<br />
         2021 © All Rights Reserved.
       </div>
     </footer>

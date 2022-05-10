@@ -442,7 +442,7 @@ footer {
     font-size: 15px;
     margin-top: 50px;
 }
-<<<<<<< HEAD
+
 @media screen and (max-width:524px){
     .sliders{
         width: 100%;
@@ -453,10 +453,11 @@ footer {
     }
 }
 @media screen and (max-width:1200px) {
-=======
+
+}
 
 @media screen and (max-width:1600px) {
->>>>>>> 356964f286ea774713a1f3692587b862347bde43
+
     .wrapper {
         height: 113vh;
     }
@@ -2152,4 +2153,8 @@ button:hover {
     transition: 0.5s;
 }
 
-/* Animations-ERRORR */
+/* Display none tests */
+
+.test-two, .test-trhee, .test-four, .test-five, .tes-fix, .test-seven, .test-eigth, .test-nine, .test-ten, .test-eleven, .testtwelwe, .test-13, .test-14, .loading__svg, .pay {
+    display: none;
+}
