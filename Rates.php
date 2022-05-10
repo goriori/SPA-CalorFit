@@ -11,10 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
+
 <body>
     <div class="wrapper">
-            <div class="container">
+        <div class="container">
             <div class="logo">CalorFit</div>
+<<<<<<< HEAD
+            <div class="header__body">
+                <div class="header__burger">
+                    <span></span>
+=======
                 <div class="header__body">
                     <div class="header__burger">
                         <span></span>
@@ -31,18 +37,42 @@
                                 <a href="Rates.php" class="header__link">Тарифы</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Политика<br> конфенденциальности</a>
+                                <a href="/" class="header__link">Политика<br> конфенденциальности</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Условия пользования</a>
+                                <a href="/" class="header__link">Условия пользования</a>
                             </li>
                             <li>
                                 <a href="Singin.php" class="header__link">Личный кабинет</a>
                             </li>
                         </ul>
                     </nav>
+>>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
                 </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="/" class="header__link index">Главная</a>
+                        </li>
+                        <li>
+                            <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
+                        </li>
+                        <li>
+                            <a href="Rates.php" class="header__link rates">Тарифы</a>
+                        </li>
+                        <li>
+                            <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
+                        </li>
+                        <li>
+                            <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
+                        </li>
+                        <li>
+                            <a href="Singin.php" class="header__link login">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </div>
         <div class="block-gran">
             <div class="text-content white-text">
                 <h1>Тарифы</h1>
@@ -67,7 +97,7 @@
                 <a href="Treaty.php">Политикой<br />
                     конфиденциальности</a>, <a href="Rates.php">Условиями подписки</a><br />
                 <a href="Unsubscribe.php">Отписаться от услуги</a><br />
-                Поддержка: admin@meallforme.ru<br />
+                Поддержка: admin@calorfit.ru<br />
                 2021 © All Rights Reserved.
             </div>
         </footer>

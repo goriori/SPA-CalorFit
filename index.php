@@ -28,19 +28,26 @@
                 <a href="/" class="header__link index">Главная</a>
               </li>
               <li>
-                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
+                <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
               </li>
               <li>
-                <a href="Rates.php" class="header__link">Тарифы</a>
+                <a href="Rates.php" class="header__link rates">Тарифы</a>
               </li>
               <li>
-                <a href="Treaty.php" class="header__link">Политика<br> конфенденциальности</a>
+<<<<<<< HEAD
+                <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
               </li>
               <li>
-                <a href="Treaty.php" class="header__link">Условия пользования</a>
+                <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
+=======
+                <a href="/" class="header__link">Политика<br> конфенденциальности</a>
               </li>
               <li>
-                <a href="Singin.php" class="header__link">Личный кабинет</a>
+                <a href="/" class="header__link">Условия пользования</a>
+>>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+              </li>
+              <li>
+                <a href="Singin.php" class="header__link login">Личный кабинет</a>
               </li>
             </ul>
           </nav>
@@ -65,7 +72,7 @@
 
         <div class="Man">
           <h1 class="white-text">МУЖЧИНА</h1>
-          <a href="/tests/man/TestMan.php"><div class="imageman"></div></a>
+          <a href="/tests/man/TestManJQ.php"><div class="imageman"></div></a>
         </div>
         <div class="Woman">
           <h1 class="white-text">ЖЕНЩИНА</h1>

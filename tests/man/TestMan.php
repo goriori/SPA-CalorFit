@@ -7,8 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/TestMan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="../../js/TestMan.js"></script>
+    <link rel="stylesheet" href="/css/menu.css">
+=======
+    
+    
+>>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <title>CalorFit</title>
 </head>
 
@@ -48,7 +55,6 @@
         </header>
         <!-- Test 1 Man -->
         <div class="test-one Target" v-if="show === 1">
-
             <div class="block">
                 <div class="text-content white-text center-align">
                     <h1>Цель</h1>
@@ -68,32 +74,31 @@
                         <div class="imgTargetThree"></div>
                     </div>
                 </div>
-                <div class="sliders2">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
-                </div>
+
+            </div>
+            <div class="sliders">
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
-                        Поддержка: admin@calorfit.ru
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
+                        Поддержка: admin@calorfit.ru<br>
                         2021 © All Rights Reserved.
                     </p>
                 </div>
@@ -123,31 +128,32 @@
                         Продолжить
                     </button>
                 </div>
-                <div class="sliders2">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
+
+            </div>
+            <div class="sliders2">
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -169,39 +175,38 @@
                 <form action="" class="form-phisic">
                     <div class="select-param3">
                         <input type="number" placeholder="Рост(см)" name="height" class="browser-default" v-model="form.heigth" />
-                    </div>
-                    <p class="error red-text" v-if="form.heigth < 120 || form.height > 220">Не допустимое значение роста</p>
+                    </div>                   
                     <div class="select-param3">
                         <input type="number" placeholder="Текущий вес(кг)" name="mass" class="browser-default" v-model="form.dessiredMass" />
                     </div>
-                    <p class=" red-text" v-if="form.dessiredMass < 40 || form.dessiredMass > 150">Не допустимое значение веса</p>
                     <input type="button" value="Продолжить" class="white-text browser-default but" v-on:click="show++">
                 </form>
-                <div class="sliders2">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
+
+            </div>
+            <div class="sliders2">
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -234,31 +239,32 @@
                         <button v-on:click="show++">50+</button>
                     </div>
                 </div>
-                <div class="sliders2">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
+
+            </div>
+            <div class="sliders2">
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -282,31 +288,32 @@
                     <button class="button_panel3" v-on:click="show++">Эндоморф</button>
                     <img src="/images/endomorph.png" class="img_panel3">
                 </div>
-                <div class="sliders5">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
+
+            </div>
+            <div class="sliders2">
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -336,31 +343,32 @@
                         <p>В основном дома</p>
                     </div>
                 </div>
-                <div class="sliders6">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
+
+            </div>
+            <div class="sliders2">
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -394,31 +402,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="sliders7">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
+
+            </div>
+            <div class="sliders2">
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -448,31 +457,32 @@
                     </div>
                     <button id="continue" class="continue" v-on:click="show++">Продолжить</button>
                 </div>
-                <div class="sliders8">
-                    <div class="sliders">
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_1"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                        <div class="slide_2"></div>
-                    </div>
+
+            </div>
+            <div class="sliders2">
+                <div class="sliders">
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -508,6 +518,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="sliders2">
                 <div class="sliders">
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
@@ -529,8 +541,8 @@
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -552,6 +564,8 @@
                         <button class="button_panel3" v-on:click="show++">Я чувствую сонливость <br> после обеда</button>
                     </div>
                 </div>
+            </div>
+            <div class="sliders2">
                 <div class="sliders">
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
@@ -573,8 +587,8 @@
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -622,6 +636,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="sliders2">
                 <div class="sliders">
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
@@ -643,8 +659,8 @@
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -694,6 +710,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="sliders2">
                 <div class="sliders">
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
@@ -715,8 +733,8 @@
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
@@ -724,22 +742,8 @@
             </footer>
 
         </div>
-        <div class="loadingresult" v-if="show === 13">
-            <div class="block">
-                <div class="container">\
-                    <div class="text-loading center-align">
-                        <p class="red-text">Loading...</p>
-                    </div>
-                    <div class="progress">
-                        <div class="indeterminate "></div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
         <!-- Test 13 Man -->
-        <div class="test-13" v-if="show === 14">
+        <div class="test-13" v-if="show === 13">
             <div class="block">
                 <div class="text-content13 white-text center-align">
                     <h2>Мотивация</h2>
@@ -756,6 +760,8 @@
                     <button v-on:click="show++">Да</button>
                     <button v-on:click="show++">Нет</button>
                 </div>
+            </div>
+            <div class="sliders2">
                 <div class="sliders">
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
@@ -777,9 +783,9 @@
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
-                        Поддержка: admin@calorfit.ru
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
+                        Поддержка: admin@calorfit.ru<br />
                         2021 © All Rights Reserved.
                     </p>
                 </div>
@@ -787,7 +793,7 @@
 
         </div>
         <!-- Test 14 Man -->
-        <div class="test-14" v-if="show === 15">
+        <div class="test-14" v-if="show === 14">
             <div class="block">
                 <div class="text-content14 white-text center-align">
                     <h2>Поведение</h2>
@@ -801,9 +807,11 @@
                     </p>
                 </div>
                 <div class="buttonsMotivation center-align">
-                    <button v-on:click="show++">Да</button>
-                    <button v-on:click="show++">Нет</button>
+                    <button id="LoadingMan" v-on:click="show++">Да</button>
+                    <button id="LoadingMan" v-on:click="show++">Нет</button>
                 </div>
+            </div>
+            <div class="sliders2">
                 <div class="sliders">
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
@@ -825,49 +833,32 @@
                 <div class="logo">CalorFit</div>
                 <div class="text-about">
                     <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
+                        Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
+                        <a href="../../Unsubscribe.php">Отписаться от услуги</a>
                         Поддержка: admin@calorfit.ru
                         2021 © All Rights Reserved.
                     </p>
                 </div>
             </footer>
         </div>
-        <!-- Email -->
-        <div class="email" v-if="show === 16">
-            <div class="block">
-                <div class="text-content15 white-text">
-                    <p>
-                        Получите на почту Ваш персональный План питания для Похудения!
-                    </p>
-                </div>
-                <form action="">
-                    <input type="email" required placeholder="введите e-mail адрес" class="browser-default">
-                </form>
-                <div class="last-text">
-                    <p>
-                        Конфиденциальность и сохранность Ваших данных гарантирована. Мы по электронной почте для удобного доступа
-                    </p>
-                </div>
-                <form action="" class="send-btn">
-                    <input type="submit" name="send" class="send-btn" v-on:click="show++">
-                </form>
-            </div>
-            <footer class="white-text">
-                <div class="logo">CalorFit</div>
-                <div class="text-about">
-                    <p>
-                        Продолжая, вы соглашаетесь с <a>Условиями использования</a>, <a>Политикой конфиденциальности</a>, <a>Условиями подписки</a>
-                        <a>Отписаться от услуги</a>
-                        Поддержка: admin@calorfit.ru
-                        2021 © All Rights Reserved.
-                    </p>
-                </div>
-            </footer>
 
+        <!-- loadingresult -->
+        <div class="loading__svg" v-if="show === 15">
+            <div class="block loadingCenter">
+                <svg class="progressbar" viewBox="0 0 62 80">
+                    <circle class="progressbar__track" cx="31" cy="31"></circle>
+                    <circle class="progressbar__thumb" cx="31" cy="31"></circle>
+                    <text x="32" y="33" class="progressbar__percent" text-anchor="middle" dominant-baseline="middle">
+                        <tspan>0</tspan>%
+                    </text>
+                    <text x="32" y="66" class="progressbar__info" text-anchor="middle">
+                        <tspan>Загрузка...</tspan>
+                    </text>
+                </svg>
+            </div>
         </div>
         <!-- Page Pay -->
-        <div class="pay" v-if="show === 17">
+        <div class="pay" v-if="show === 16">
             <div class="content">
                 <div class="name">
                     <span>Оплатите <span class="ping1">вашу</span> первую<br />
@@ -901,8 +892,8 @@
                 </form>
                 <footer>
                     Нажимая на кнопку, Вы соглашаетесь с
-                    <a href="#">политикой конфиденциальности</a> ,<a href="#">условиями использования</a>
-                    и <a href="#">действующими тарифами сервиса</a> , даете свое согласие на
+                    <a href="../../Treaty.php">политикой конфиденциальности</a> ,<a href="../../Treaty.php">условиями использования</a>
+                    и <a href="../../Rates.php">действующими тарифами сервиса</a> , даете свое согласие на
                     обработку персональных данных и на получение рекламных материалов,
                     осознаете возмездный характер оказываемых услуг.
                 </footer>
@@ -910,23 +901,16 @@
         </div>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="../../../js/burger.js"></script>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../../js/TestMan.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
         var togle = new Vue({
             el: '#test',
             data: {
-<<<<<<< HEAD
-                show: 2,
-=======
-                show: 1,
->>>>>>> 91e583900666f413a758a18af083bc1d2dd1d9d0
+                show: 15,
+
 
                 form: {
                     mass: '',
@@ -953,7 +937,7 @@
             var x = document.getElementsByTagName('script')[0];
             x.parentNode.insertBefore(s, x);
         })('https://widget.replain.cc/dist/client.js');
-    </script>
+    </script> -->
 
 </body>
 
