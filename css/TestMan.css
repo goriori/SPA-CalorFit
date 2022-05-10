@@ -442,7 +442,7 @@ footer {
     font-size: 15px;
     margin-top: 50px;
 }
-<<<<<<< HEAD
+
 @media screen and (max-width:524px){
     .sliders{
         width: 100%;
@@ -453,10 +453,9 @@ footer {
     }
 }
 @media screen and (max-width:1200px) {
-=======
+}
 
 @media screen and (max-width:1600px) {
->>>>>>> 356964f286ea774713a1f3692587b862347bde43
     .wrapper {
         height: 113vh;
     }

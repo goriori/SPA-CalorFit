@@ -2,6 +2,8 @@ function vectorBack() {
     if ($('.test1').attr('style') == "display: block;") {
         $('.test1').css('display', 'none');
         $('.block').css('display', 'block');
+    } else if ($('.block').attr('style') == "display: block;") {
+        window.history.back();
     } else if ($('.container-block2').attr('style') == "display: block;") {
         $('.container-block2').css('display', 'none');
         $('.test1').css('display', 'block');

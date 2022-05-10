@@ -65,7 +65,7 @@
 
         <div class="Man">
           <h1 class="white-text">МУЖЧИНА</h1>
-          <a href="/tests/man/TestMan.php"><div class="imageman"></div></a>
+          <a href="/tests/man/TestManJQ.php"><div class="imageman"></div></a>
         </div>
         <div class="Woman">
           <h1 class="white-text">ЖЕНЩИНА</h1>

@@ -49,7 +49,6 @@
         </header>
         <!-- Test 1 Man -->
         <div class="test-one Target" v-if="show === 1">
-
             <div class="block">
                 <div class="text-content white-text center-align">
                     <h1>Цель</h1>
