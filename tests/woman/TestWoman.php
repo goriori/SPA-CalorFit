@@ -793,10 +793,6 @@
                     <div class="slide_1"></div>
                 </div>
             </div>
-<<<<<<< HEAD
-            <div class="text-btn center-align">
-            <footer>
-=======
             <!-- Loading... -->
             <div class="loading__svg">
                 <svg class="progressbar" viewBox="0 0 62 80">
@@ -852,7 +848,6 @@
                 </div>
             </div>
             <div class="text-btn">
->>>>>>> 165fb4996abe3ee9a67ada9f678fbc5f1a3fd5ce
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
                     Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,

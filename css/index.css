@@ -211,7 +211,7 @@
     bottom: 0;
 }
 .header__burger.active span {
-    left: -27px;
+    left: 230px;
     transition: 0.5s;
     z-index: 5;
 }
@@ -220,7 +220,7 @@
     transform: rotate(45deg);
     top: 7px;
     width: 20px;
-    left: 0px;
+    left: 255px;
     transition: 0.5s;
     z-index: 5;
 }
@@ -230,7 +230,7 @@
     bottom: 7px;
     width: 20px;
     transition: 0.5s;
-    left: 0px;
+    left: 255px;
     z-index: 5;
 }
 
