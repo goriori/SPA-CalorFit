@@ -71,23 +71,21 @@
                 </div>
 
             </div>
-            <div class="sliders2">
-                <div class="sliders">
-                    <div class="slide_1"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                    <div class="slide_2"></div>
-                </div>
+            <div class="sliders">
+                <div class="slide_1"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
+                <div class="slide_2"></div>
             </div>
             <footer class="white-text">
                 <div class="logo">CalorFit</div>
@@ -95,7 +93,7 @@
                     <p>
                         Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
                         <a href="../../Unsubscribe.php">Отписаться от услуги</a>
-                        Поддержка: admin@calorfit.ru
+                        Поддержка: admin@calorfit.ru<br>
                         2021 © All Rights Reserved.
                     </p>
                 </div>
@@ -784,7 +782,7 @@
                     <p>
                         Продолжая, вы соглашаетесь с <a href="../../Treaty.php">Условиями использования</a>, <a href="../../Treaty.php">Политикой конфиденциальности</a>, <a href="../../Rates.php">Условиями подписки</a>,
                         <a href="../../Unsubscribe.php">Отписаться от услуги</a>
-                        Поддержка: admin@calorfit.ru
+                        Поддержка: admin@calorfit.ru<br />
                         2021 © All Rights Reserved.
                     </p>
                 </div>
@@ -806,8 +804,8 @@
                     </p>
                 </div>
                 <div class="buttonsMotivation center-align">
-                    <button v-on:click="show++">Да</button>
-                    <button v-on:click="show++">Нет</button>
+                    <button id="LoadingMan" v-on:click="show++">Да</button>
+                    <button id="LoadingMan" v-on:click="show++">Нет</button>
                 </div>
             </div>
             <div class="sliders2">
@@ -906,7 +904,7 @@
 
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
         var togle = new Vue({

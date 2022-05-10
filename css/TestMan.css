@@ -236,15 +236,18 @@ h6 {
 }
 
 /* HomeViews test 1 */
+::-webkit-scrollbar{
+    display:none;
+}
 
 .wrapper {
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
     width: 100%;
     margin: 0 auto;
-    height: 105vh;
-    position: absolute;
+    height: 100vh;
 }
 
 .backarrowImd {
@@ -266,7 +269,7 @@ h6 {
     border: 3px solid #FCF9F9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin: 0 auto;
+    margin:0 auto;
     margin-top: 100px;
 }
 
@@ -395,13 +398,7 @@ h6 {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-}
-
-.sliders2 {
-    bottom: 260px;
-    position: absolute;
-    width: 100%;
-    display: flex;
+    margin-top: -30px;
 }
 
 .sliders div {
@@ -445,7 +442,15 @@ footer {
     font-size: 15px;
     margin-top: 50px;
 }
-
+@media screen and (max-width:524px){
+    .sliders{
+        width: 100%;
+    }
+    .sliders div{
+        height: 10px;
+        width: 25px;
+    }
+}
 @media screen and (max-width:1200px) {
     .wrapper {
         height: 170vh;
@@ -535,14 +540,13 @@ footer {
         left: 25px;
     }
 
-    .sliders2 {
-        bottom: 390px;
-        margin-left: auto;
-    }
-
     .sliders {
-        width: 500px;
+        width: 95%;
         justify-content: space-around;
+    }
+    .sliders div {
+        height: 7px;
+        width:19px
     }
 }
 
