@@ -25,7 +25,6 @@
                         <span></span>
                     </div>
                     <nav class="header__menu">
-<<<<<<< HEAD
                     <ul class="header__list">
                         <li>
                             <a href="/" class="header__link index">Главная</a>
@@ -46,28 +45,6 @@
                             <a href="Singin.php" class="header__link login">Личный кабинет</a>
                         </li>
                     </ul>
-=======
-                        <ul class="header__list">
-                            <li>
-                                <a href="/" class="header__link">Главная</a>
-                            </li>
-                            <li>
-                                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
-                            </li>
-                            <li>
-                                <a href="Rates.php" class="header__link">Тарифы</a>
-                            </li>
-                            <li>
-                                <a href="#" class="header__link">Политика<br> конфенденциальности</a>
-                            </li>
-                            <li>
-                                <a href="#" class="header__link">Условия пользования</a>
-                            </li>
-                            <li>
-                                <a href="Singin.php" class="header__link">Личный кабинет</a>
-                            </li>
-                        </ul>
->>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
                     </nav>
                 </div>
             </div>

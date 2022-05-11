@@ -27,6 +27,7 @@ footer,
 header,
 aside {
     display: block;
+    margin-top:40px;
 }
 
 html,
@@ -263,6 +264,12 @@ h6 {
     margin: 0 auto;
     padding-top: 10px;
     
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
