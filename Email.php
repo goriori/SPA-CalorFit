@@ -24,35 +24,40 @@ include $path . "/controllers/connect.php";
                         <div>Получите на почту Ваш персональный<br>План питания для Похудения!</div>
                     </div>
                     <div class="center">
+                        <?php
+                        if (isset($_POST['qemail'])) {
+                            $qemail = $_POST['qemail'];
+                        }
+                        if (isset($_POST['send'])) {
+                            $send = $_POST['send'];
+                        }
+                        if (isset($send)) {
+                            if ($send) {
+                                if ($qemail) {
+                                    $add_email_str = "INSERT INTO `emails` (`id`, `email`, `paid`) VALUES (NULL, '$qemail', '');";
+                                    $add_email_run = mysqli_query($connect, $add_email_str);
+                                }
+                                if ($add_email_run) {
+                                    echo "успешно";
+                                } else {
+                                    $result = "<div class='error'>Заполните данные!</div>";
+                                }
+                            }
+                        }
+                        ?>
                         <form method="POST">
                             <input autocomplete="off" type="email" name="qemail" class="input" placeholder="Введите свой e-mail адрес"><br>
                             <div>Конфиденциальность и сохранность Ваших данных гарантирована. Мы по электронной почте дляудобного доступа</div>
                             <input name="send" type="submit" class="send" value="Продолжить"><br>
                         </form>
+                        <?php
+                        if (isset($result)) {
+                            echo $result;
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
-            <?php
-            if (isset($_POST['qemail'])) {
-                $qemail = $_POST['qemail'];
-            }
-            if (isset($_POST['send'])) {
-                $send = $_POST['send'];
-            }
-            if (isset($send)) {
-                if ($send) {
-                    if ($qemail) {
-                        $add_email_str = "INSERT INTO `emails` (`id`, `email`, `paid`) VALUES (NULL, '$qemail', '');";
-                        $add_email_run = mysqli_query($connect, $add_email_str);
-                    }
-                    if ($add_email_run) {
-                        echo "успешно";
-                    } else {
-                        echo "<font color='red'>Заполните поле!</font>";
-                    }
-                }
-            }
-            ?>
             <? include $path . "/components/footer.php" ?>
         </div>
     </div>
