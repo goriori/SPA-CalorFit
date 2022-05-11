@@ -312,22 +312,19 @@ footer {
     }
 }
 @media screen and (max-width:1200px) {
-<<<<<<< HEAD
-=======
-}
+
 
 @media screen and (max-width:1600px) {
 
 
 }
->>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+
 
 }
 @media screen and (max-width:1600px) {
-<<<<<<< HEAD
 
-=======
->>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+
+
     .wrapper {
         height: 113vh;
     }
@@ -2021,13 +2018,12 @@ button:hover {
 .but:hover {
     background: #7287A7;
     transition: 0.5s;
-<<<<<<< HEAD
-=======
+
 }
 
 /* Display none tests */
 
 .test-two, .test-trhee, .test-four, .test-five, .tes-fix, .test-seven, .test-eigth, .test-nine, .test-ten, .test-eleven, .testtwelwe, .test-13, .test-14, .loading__svg, .pay {
     display: none;
->>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+
 }

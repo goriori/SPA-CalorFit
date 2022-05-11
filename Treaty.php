@@ -25,7 +25,7 @@
                         <span></span>
                     </div>
                     <nav class="header__menu">
-<<<<<<< HEAD
+
                     <ul class="header__list">
                         <li>
                             <a href="/" class="header__link index">Главная</a>
@@ -46,7 +46,7 @@
                             <a href="Singin.php" class="header__link login">Личный кабинет</a>
                         </li>
                     </ul>
-=======
+
                         <ul class="header__list">
                             <li>
                                 <a href="/" class="header__link">Главная</a>
@@ -67,7 +67,7 @@
                                 <a href="Singin.php" class="header__link">Личный кабинет</a>
                             </li>
                         </ul>
->>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+
                     </nav>
                 </div>
             </div>

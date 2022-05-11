@@ -16,11 +16,11 @@
     <div class="wrapper">
         <div class="container">
             <div class="logo">CalorFit</div>
-<<<<<<< HEAD
+
             <div class="header__body">
                 <div class="header__burger">
                     <span></span>
-=======
+
                 <div class="header__body">
                     <div class="header__burger">
                         <span></span>
@@ -47,7 +47,7 @@
                             </li>
                         </ul>
                     </nav>
->>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+
                 </div>
                 <nav class="header__menu">
                     <ul class="header__list">
