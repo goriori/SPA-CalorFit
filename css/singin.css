@@ -268,9 +268,10 @@ h6 {
     width:100%;
 }
 
-.container_head{
+.container{
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo
@@ -279,8 +280,12 @@ h6 {
     font-family: "Lexend Exa";  
     color: #fff;
 
+
     float: left;
     margin-right: 1100px;
+
+
+    float: left;
 
 }
 

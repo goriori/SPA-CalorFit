@@ -47,6 +47,7 @@
                         </li>
                     </ul>
 
+
                         <ul class="header__list">
                             <li>
                                 <a href="/" class="header__link">Главная</a>
@@ -67,6 +68,7 @@
                                 <a href="Singin.php" class="header__link">Личный кабинет</a>
                             </li>
                         </ul>
+
 
                     </nav>
                 </div>

@@ -359,6 +359,9 @@ footer {
         margin-top:150px;
     }
     .block-gran{
-        height:960px;
+        height:1060px;
+    }
+    .wrapper{
+        height:160vh;
     }
 }
