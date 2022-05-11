@@ -1688,7 +1688,7 @@ footer {
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 100px;
-    display: block;
+    display: none;
 }
 
 .type8 {

@@ -8,7 +8,7 @@ function vectorBack() {
         $('.container-block2').css('display', 'none');
         $('.test1').css('display', 'block');
     } else if ($('.gran3').attr('style') == "display: block;") {
-        $('.test4').css('display', 'none');
+        $('.gran3').css('display', 'none');
         $('.container-block2').css('display', 'block');
     } else if ($('.test4').attr('style') == "display: block;") {
         $('.test4').css('display', 'none');
