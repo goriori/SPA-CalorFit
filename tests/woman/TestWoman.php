@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="../../js/TestWoman.js"></script>
     <script src="../../js/burger.js"></script>
+    <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/TestWoman.css">
     <title>CalorFit</title>
 </head>
@@ -29,19 +30,19 @@
                                 <a href="/" class="header__link index">Главная</a>
                             </li>
                             <li>
-                                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
+                                <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
                             </li>
                             <li>
-                                <a href="Rates.php" class="header__link">Тарифы</a>
+                                <a href="Rates.php" class="header__link rates">Тарифы</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Политика<br> конфенденциальности</a>
+                                <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
                             </li>
                             <li>
-                                <a href="Treaty.php" class="header__link">Условия пользования</a>
+                                <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
                             </li>
                             <li>
-                                <a href="../../index.php" class="header__link">Личный кабинет</a>
+                                <a href="Singin.php" class="header__link login">Личный кабинет</a>
                             </li>
                         </ul>
                     </nav>
@@ -793,6 +794,8 @@
                     <div class="slide_1"></div>
                 </div>
             </div>
+            <div class="text-btn center-align">
+            <footer>
             <!-- Loading... -->
             <div class="loading__svg">
                 <svg class="progressbar" viewBox="0 0 62 80">
@@ -819,7 +822,7 @@
                             <span class="ping1 high">1 Р</span><span class="high">*</span><span class="small">/ 1-aя неделя</span>
                         </div>
                         <span class="middle">После 1-ой недели. <span class="blua middle">850</span> Р+<span class="blua middle">200</span>
-                            Р <br />калькулятор каллорий.</span>
+                             <span>калькулятор каллорий.</span>
                     </div>
                     <form class="pay-form" method="POST" action="send.php">
                         <div class="approval">

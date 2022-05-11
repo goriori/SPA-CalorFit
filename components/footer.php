@@ -12,20 +12,19 @@
           .about {
               color: white;
               width: 690px;
-              height: 88px;
               font-style: normal;
               font-weight: 400;
               font-size: 15px;
               line-height: 19px;
               text-align: center;
-              margin:0 auto;
+              margin: 0 auto;
               margin-top: 50px;
           }
 
-          @media screen and (max-width:767px){
-              .about{
-                  width:100%;
+          @media screen and (max-width:767px) {
+              .about {
+                  width: 100%;
               }
-              
+
           }
       </style>

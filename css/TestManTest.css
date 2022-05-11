@@ -2214,7 +2214,6 @@ footer {
         border-radius: 10px;
         max-width: 690px;
         height: 675px;
-        background: #ffffff;
         border-radius: 30px;
         padding-top: 46px;
         display: none;
@@ -2263,8 +2262,6 @@ footer {
     .container-block10 {
         max-width: 690px;
         height: 675px;
-        background: #ffffff;
-        border: 3px solid #fcf9f9;
         box-sizing: border-box;
         border-radius: 30px;
         margin: 0 auto;
@@ -3487,7 +3484,7 @@ footer {
 .content {
     background-color: rgb(249, 249, 249);
     height: 900px;
-    width: 40%;
+    width: 690px;
     margin: 0px auto;
     margin-top: 20px;
     box-shadow: 0px 0px 10px 0px #b3b0b0;

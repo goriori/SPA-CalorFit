@@ -8,7 +8,7 @@ function vectorBack() {
         $('.container-block2').css('display', 'none');
         $('.test1').css('display', 'block');
     } else if ($('.gran3').attr('style') == "display: block;") {
-        $('.test4').css('display', 'none');
+        $('.gran3').css('display', 'none');
         $('.container-block2').css('display', 'block');
     } else if ($('.test4').attr('style') == "display: block;") {
         $('.test4').css('display', 'none');
@@ -206,6 +206,15 @@ function test7() {
 function test8() {
     $('.test7').css('display', 'none');
     $('.panel8').css('display', 'block');
+    $result=Number($('#input_kg').val());
+    $kgNow=Number($('#weight').val());
+    if($result > $kgNow){
+        $response=$result-$kgNow;
+        $('.type2').html('Учитывая то, что Вы хотите набрать ' + $response + ' кг. Ваша физическая активность играет большую роль!');
+    }else if($result < $kgNow){
+        $response=$kgNow-$result;
+        $('.type2').html('Учитывая то, что Вы хотите сбросить ' +  $response  + ' кг. Ваша физическая активность играет большую роль!');
+    }
 }
 
 function kg_text10() {
