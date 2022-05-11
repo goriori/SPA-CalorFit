@@ -31,12 +31,12 @@ include $path . "/controllers/connect.php";
             <!-- <th>Сумма оплаты, руб</th> -->
             <th>Статус оплаты</th>
           </tr>
-          <tr>
-            <?php
-            $str_get_emails = "SELECT * FROM `emails`";
-            $run_get_emails = mysqli_query($connect, $str_get_emails);
-            if ($run_get_emails) {
-              while ($email = mysqli_fetch_array($run_get_emails)) { ?>
+          <?php
+          $str_get_emails = "SELECT * FROM `emails`";
+          $run_get_emails = mysqli_query($connect, $str_get_emails);
+          if ($run_get_emails) {
+            while ($email = mysqli_fetch_array($run_get_emails)) { ?>
+              <tr>
                 <td><? echo $email['id']; ?></td>
                 <td><? echo $email['email']; ?></td>
                 <!-- <td>8 560</td> -->
@@ -47,15 +47,15 @@ include $path . "/controllers/connect.php";
                   <td>Не оплачено</td>
                 <? }
                 ?>
-            <? }
-            }
-            ?>
+              </tr>
+          <? }
+          }
+          ?>
 
-            <!-- <td>1</td>
+          <!-- <td>1</td>
             <td>email.simple@mail.ru</td>
             <td>8 560</td>
             <td>Оплачено</td> -->
-          </tr>
         </table>
       </div>
     </div>

@@ -38,7 +38,7 @@ include $path . "/controllers/connect.php";
                                     $add_email_run = mysqli_query($connect, $add_email_str);
                                 }
                                 if ($add_email_run) {
-                                    echo "успешно";
+                                    $result = "<div class='succes'>Успешно!</div>";
                                 } else {
                                     $result = "<div class='error'>Заполните данные!</div>";
                                 }
