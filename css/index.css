@@ -448,7 +448,9 @@
     .imageTest {
         max-width: 315px;
         height: 180px;
+        margin: 0 auto;
         margin-top: 60px;
+        
     }
 
     .Man {

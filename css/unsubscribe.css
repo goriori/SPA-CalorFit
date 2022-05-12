@@ -27,7 +27,7 @@ footer,
 header,
 aside {
     display: block;
-    
+
 }
 
 html,
@@ -99,9 +99,10 @@ h6 {
     src: url(../fonts/LexendDecaRegular.ttf);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
+
 .wrapper {
     background-image: url(../images/background.png);
     background-size: cover;
@@ -110,11 +111,11 @@ h6 {
     width: 100%;
     margin: 0 auto;
     height: 120vh;
-    
+
 }
 
-.container{
-    display:flex;
+.container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -127,18 +128,18 @@ h6 {
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 50px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
 }
 
-.logo {  
+.logo {
     width: 1280px;
     height: 60px;
     font-size: 64px;
-    font-family: "Lexend Exa";  
-    
+    font-family: "Lexend Exa";
+
 }
 
 .text-content {
@@ -158,8 +159,8 @@ form {
     width: 510px;
     height: 148px;
     margin: 0 auto;
-    margin-top:120px;
-    display:flex;
+    margin-top: 120px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -171,11 +172,14 @@ form {
     border-radius: 10px;
     display: block;
     padding-left: 25px;
-    padding-top: 22px;
+
     color: white;
     font-family: "Lexend Exa";
     font-weight: 400;
-    
+    background: none;
+    font-weight: 400;
+    font-size: 16px;
+
 }
 
 .button {
@@ -218,32 +222,72 @@ footer {
 }
 
 @media screen and (max-width:876px) {
-    .block{
-        width:100%;
+    .block {
+        width: 100%;
     }
-    .about{
-        width:100%;
+
+    .about {
+        width: 100%;
     }
-    .text-content{
-        width:75%;
-        margin:0 auto;
+
+    .text-content {
+        width: 75%;
+        margin: 0 auto;
     }
-    form{
-        margin-top:220px;
+
+    form {
+        margin-top: 220px;
     }
 }
+
 @media screen and (max-width:512px) {
-    .emailInput{
-        width:350px;
+    .emailInput {
+        width: 350px;
     }
-    .button{
-        width:250px;
+
+    .button {
+        width: 250px;
     }
-    form{
-        margin-top:320px;
-        width:100%;
+
+    form {
+        margin-top: 320px;
+        width: 100%;
     }
-    .emailInput{
-        width:100%;
+
+    .emailInput {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    
+    .text-content>p {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .text-content > h1 {
+        font-size: 30px;
+
+    }
+
+    form {
+        margin-top: 150px;
+        
+    }
+
+    .emailInput {
+        width: 250px;
+    
+    }
+
+    .button {
+        width: 180px;
+        height: 40px;
+    }
+
+    .about {
+        width: 95%;
+        font-size: 15px;
     }
 }

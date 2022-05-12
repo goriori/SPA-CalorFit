@@ -161,6 +161,10 @@ input::-webkit-inner-spin-button {
     height: 100vh;
 }
 
+.logoMobile {
+    display: none;
+}
+
 .block-gran {
     width: 870px;
     height: 701px;
@@ -256,18 +260,21 @@ footer {
 }
 @media screen and (max-width:580px) {
     .two{
-        margin-top: 64px;
+        margin-top: 24px;
         width: 100%;
+        font-size: 15px;
+
     }
     #twoId{
         height: 100px;
+        
     }
     .block-gran{
         height:800px;
     }
     .about{
         font-size: 22px;
-        line-height: 23px;
+        line-height: 1
     }
     .wrapper{
         height:160vh;
@@ -276,25 +283,49 @@ footer {
 
 @media screen and (max-width:360px){
     .two{
-        margin-top: 70px;
+        margin-top: 20px;
         width: 100%;
+        
+    }
+    .text-content > h1 {
+        font-size: 30px;
     }
     .text-content{
         width: 95%;
+        padding-left: 10px;
     }
     #twoId{
         height: 100px;
+        margin-top: 30px;
     }
     .block-gran{
-        height:800px;
+        height:550px;
     }
     .wrapper{
         height:160vh;
     }
+    .logoMobile {
+        display: block;
+        font-size: 40px;
+        font-family: "Lexend Exa";
+        font-weight: 400;
+        position: relative;
+        top: 70px;
+    }
+
+    .about > .logo {
+        display: none;
+    }
+
+    .about {
+        font-size: 15px;
+        width: 95%;
+        
+    }
 }
 
 @media screen and (max-width:320px){
-    .two{
+    /* .two{
         margin-top: 77px;
         width: 100%;
         font-size: 20px;
@@ -317,5 +348,5 @@ footer {
     .logo{
         font-size: 60px;
         width: 100%;
-    }
+    } */
 }

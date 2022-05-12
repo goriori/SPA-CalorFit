@@ -22,7 +22,7 @@
         <p>-Уже списанные средства за подписку - НЕ возвращаются согласно нашему договору-оферте.</p>
       </div>
       <form action="">
-        <input class="emailInput" type="email" name="email" placeholder="Введите свой Email адрес...">
+        <input class="emailInput browser-default" type="email" name="email" placeholder="Введите свой Email адрес...">
         <input class="button" type="submit" name="send" >
       </form>
     </div>

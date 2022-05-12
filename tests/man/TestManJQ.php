@@ -838,7 +838,7 @@
                     </div>
                     <form class="pay-form" method="POST" action="send.php">
                         <div class="approval">
-                            <input type="email" name="email" placeholder="Введите свой e-mail адрес">
+                            <input type="email" name="email" placeholder="Введите свой e-mail адрес" required>
                             <label>
                                 <input id="pay_checkbox" type="checkbox">
                                 <span class="middle">Согласен c подключением платной<br />

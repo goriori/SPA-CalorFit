@@ -121,6 +121,18 @@ h6 {
     flex-direction: column;
     gap: 15px;
   }
+
+  .admin_input {
+      width: 300px;
+      height: 40px;
+      border: 2px solid white;
+      border-radius: 10px;
+  }
+
+  .btn-search {
+      width: 100px;
+      margin-bottom: 5px;
+  }
   
   .admin_main > div {
     font-size: 30px;
@@ -162,3 +174,57 @@ h6 {
       justify-content: center;
       
   }
+
+  @media screen and (max-width:500px) {
+      table {
+          font-size: 20px;
+      }
+  }
+
+  @media screen and (max-width:400px) {
+    table {
+        font-size: 18px;
+    }
+    .admin_input {
+        width: 200px;
+        
+    }
+  
+    .btn-search {
+        width: 75px;
+        padding-right: 5px;
+       
+    }
+}
+
+@media screen and (max-width:370px) {
+    table {
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 100px;
+        
+    }
+
+    .admin-panel-text {
+        font-size: 20px;
+    }
+    .admin_main > div {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      .admin_input {
+        width: 180px;
+        
+    }
+  
+    .btn-search {
+        width: 75px;
+       
+    }
+}
+
+      
+  

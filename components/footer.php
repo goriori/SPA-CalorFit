@@ -27,4 +27,10 @@
               }
 
           }
+          @media screen and (max-width:400px) {
+              .about {
+                  font-size: 15px;
+                  line-height: 1.2;
+              }
+          }
       </style>

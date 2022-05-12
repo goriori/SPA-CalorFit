@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="/css/rates.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
+
 <body>
     <div class="wrapper">
-    <? include $path . "/components/burger.php"; ?>
+        <div class="logoMobile white-text">CalorFit</div>
+        <? include $path . "/components/burger.php"; ?>
         <div class="block-gran">
             <div class="text-content white-text">
                 <h1>Тарифы</h1>
