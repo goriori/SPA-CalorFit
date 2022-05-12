@@ -319,8 +319,10 @@ input::-webkit-inner-spin-button {
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 .block-gran {

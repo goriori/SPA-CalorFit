@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <link rel="stylesheet" href="/css/sendM.css">
+    <link rel="stylesheet" href="/css/sendW.css">
     <title>Success</title>
 </head>
 <body>
@@ -19,7 +19,7 @@ error_reporting(0);
 $connect=mysqli_connect('localhost','u1665837_admin','Qwas1234','u1665837_calorfit.ru');
 $email = $_POST['email'];
 $date = date("d.m.Y G:i");
-$str_add_order = "INSERT INTO `orders` (`id`, `email`, `status`, `gender`, `date`) VALUES (NULL, '$email', '0', '1', '$date')";
+$str_add_order = "INSERT INTO `orders` (`id`, `email`, `status`, `gender`, `date`) VALUES (NULL, '$email', '0', '0', '$date')";
 $run_add_order = mysqli_query($connect, $str_add_order);
 ?>
     <div class="text-message white-text">
@@ -87,7 +87,7 @@ function sendMailAttachment($mailTo, $from, $subject, $message, $file = false){
     return $result;  
 }
 ?>
-
+ 
     </div>
 </body>
 </html>

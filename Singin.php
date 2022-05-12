@@ -1,4 +1,21 @@
-<? $path = $_SERVER['DOCUMENT_ROOT'] ?>
+<?
+$path = $_SERVER['DOCUMENT_ROOT'];
+session_start(); ?>
+<?
+$connect = mysqli_connect('localhost', 'u1665837_admin', 'Qwas1234', 'u1665837_calorfit.ru');
+$login = $_POST['login'];
+$password = $_POST['password'];
+if ($_POST['send']) {
+  $str_auth_user = "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password'";
+  $run_auth_user = mysqli_query($connect, $str_auth_user);
+  $count_user = mysqli_num_rows($run_auth_user);
+  if ($count_user == 1) {
+    $out_user = mysqli_fetch_array($run_auth_user);
+    $_SESSION['user'] = ["login" => $out_user['login'], "role" => $out_user['role']];
+    header("location: admin/Admin.php");
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,11 +69,11 @@
     </header>
     <div class="block">
       <h1>Вход в аккаунт</h1>
-      <form action="">
+      <form action="" method="POST">
         <label for="login">Login</label><br>
         <input type="text" name="login" id="login" class="information-input browser-default" required><br>
         <label for="password">Password</label><br>
-        <input type="passwrod" name="password" id="password" class="information-input" required><br>
+        <input type="password" name="password" id="password" class="information-input browser-default" required><br>
         <input type="submit" name="send" class="button-form">
       </form>
     </div>

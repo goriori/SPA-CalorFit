@@ -2,9 +2,9 @@ function vectorBack() {
     if ($('.test1').attr('style') == "display: block;") {
         $('.test1').css('display', 'none');
         $('.block').css('display', 'block');
-    }else if($('.block').attr('style') == "display: block;"){
+    } else if ($('.block').attr('style') == "display: block;") {
         window.history.back();
-    }else if ($('.container-block2').attr('style') == "display: block;") {
+    } else if ($('.container-block2').attr('style') == "display: block;") {
         $('.container-block2').css('display', 'none');
         $('.test1').css('display', 'block');
     } else if ($('.gran3').attr('style') == "display: block;") {
@@ -390,30 +390,50 @@ function LoadTest() {
             $('.loading__svg').css('display', 'none');
             $('.result').css('display', 'block');
             $('.header').css('display', 'block');
-            $ideal=Number($('#input_kg').val());
-            $yourWeight=Number($('#weight').val());
-            $yourHeight=Number($('#height').val());
-            $resultTest=Number(($yourWeight/(($yourHeight/100)*($yourHeight/100))).toFixed(2));
-            $WeightGood=Number($yourHeight-110);
-            if($resultTest < 16){
+            $ideal = Number($('#input_kg').val());
+            $yourWeight = Number($('#weight').val());
+            $yourHeight = Number($('#height').val());
+            if ($('#kg1').attr('class') == "kg1 activeLeft") {
+                $resultTest = Number((($yourWeight * 0.4535923745) / (($yourHeight / 100) * ($yourHeight / 100))).toFixed(2));
+            } else if ($('#kg1').attr('class') == "kg1 activeRight" || $('#kg1').attr('class') == "kg1") {
+                $resultTest = Number(($yourWeight / (($yourHeight / 100) * ($yourHeight / 100))).toFixed(2));
+            }
+            $WeightGood = Number($yourHeight - 110);
+            if ($resultTest < 16) {
                 $('#IndexYour').css('color', 'red');
                 $('#IndexYour').html($resultTest + '(дефицит массы)');
-            }else if(16 < $resultTest && $resultTest <= 17.9){
+<<<<<<< HEAD
+            }else if(16 < $resultTest <= 17.5){
                 $('#IndexYour').css('color', 'yellow');
                 $('#IndexYour').html($resultTest + '(недостаточная масса тела)');
-            }else if(18 <= $resultTest && $resultTest <= 24.9){
+            }else if(18 <= $resultTest <= 24.9){
                 $('#IndexYour').css('color', 'green');
                 $('#IndexYour').html($resultTest + '(нормальный вес)');
-            }else if(25 <= $resultTest && $resultTest <= 29.9){
+            }else if(25 <= $resultTest <= 29.9){
                 $('#IndexYour').css('color', 'yellow');
                 $('#IndexYour').html($resultTest + '(избыточная масса тела)');
-            }else if(30 <= $resultTest <= 34.9 && $resultTest <= 34.9){
+            }else if(30 <= $resultTest <= 34.9){
                 $('#IndexYour').css('color', 'red');
                 $('#IndexYour').html($resultTest + '(ожирение 1 степени)');
-            }else if(35 <= $resultTest && $resultTest <= 39.9){
+            }else if(35 <= $resultTest <= 39.9){
+=======
+            } else if (16 < $resultTest && $resultTest <= 17.9) {
+                $('#IndexYour').css('color', 'yellow');
+                $('#IndexYour').html($resultTest + '(недостаточная масса тела)');
+            } else if (18 <= $resultTest && $resultTest <= 24.9) {
+                $('#IndexYour').css('color', 'green');
+                $('#IndexYour').html($resultTest + '(нормальный вес)');
+            } else if (25 <= $resultTest && $resultTest <= 29.9) {
+                $('#IndexYour').css('color', 'yellow');
+                $('#IndexYour').html($resultTest + '(избыточная масса тела)');
+            } else if (30 <= $resultTest <= 34.9 && $resultTest <= 34.9) {
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(ожирение 1 степени)');
+            } else if (35 <= $resultTest && $resultTest <= 39.9) {
+>>>>>>> 2486b5613645fff3a0771de6fb3ddd8805a54096
                 $('#IndexYour').css('color', 'red');
                 $('#IndexYour').html($resultTest + '(ожирение 2 степени)');
-            }else if($resultTest >= 40){
+            } else if ($resultTest >= 40) {
                 $('#IndexYour').css('color', 'red');
                 $('#IndexYour').html($resultTest + '(ожирение 3 степени)');
             }
@@ -433,8 +453,7 @@ function LoadTest() {
     const tl = gsap.timeline({ defaults: { duration: 12, ease: 'linear' } })
         .to(progressbarThumb, { '--percent': 100, onUpdate: onUpdateGsap });
 }
-
-function receive(){
+function receive() {
     $('.result').css('display', 'none');
     $('.pay').css('display', 'block');
 }
