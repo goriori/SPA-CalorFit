@@ -49,7 +49,7 @@
                 </div>
             </div>
         </header>
-        <div class="block" style="display: none;">
+        <div class="block" style="display: block;">
             <div class="block-textst">
                 <h2>Цель</h2>
                 <p>Какая Ваша главная цель?</p>
@@ -861,7 +861,7 @@
                         </div>
                         <button class="pay-submit" type="submit" name="submit">Получить</button>
                     </form>
-                    <footer>
+                    <footer class="ftr">
                         Нажимая на кнопку, Вы соглашаетесь с
                         <a href="#">политикой конфиденциальности</a> ,<a href="#">условиями использования</a>
                         и <a href="#">действующими тарифами сервиса</a> , даете свое согласие на

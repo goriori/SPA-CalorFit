@@ -6,7 +6,7 @@ $connect = mysqli_connect('localhost', 'u1665837_admin', 'Qwas1234', 'u1665837_c
 error_reporting(0);
 ?>
 <?
-// if ($_SESSION['user']['role'] == 2) {
+if ($_SESSION['user']['role'] == 2) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,7 +91,7 @@ error_reporting(0);
 </body>
 
 </html><?
-        // } else {
+        } else {
         ?>
 
 <!DOCTYPE html>
@@ -115,5 +115,5 @@ error_reporting(0);
 
 </html>
 <?
-// }
+}
 ?>
