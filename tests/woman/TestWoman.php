@@ -795,73 +795,111 @@
                 </div>
             </div>
             <div class="text-btn center-align">
-            <footer>
-            <!-- Loading... -->
-            <div class="loading__svg">
-                <svg class="progressbar" viewBox="0 0 62 80">
-                    <circle class="progressbar__track" cx="31" cy="31"></circle>
-                    <circle class="progressbar__thumb" cx="31" cy="31"></circle>
-                    <text x="32" y="33" class="progressbar__percent" text-anchor="middle" dominant-baseline="middle">
-                        <tspan>0</tspan>%
-                    </text>
-                    <text x="32" y="66" class="progressbar__info" text-anchor="middle">
-                        <tspan>Загрузка...</tspan>
-                    </text>
-                </svg>
-            </div>
-            <!-- endLoading -->
-            <div class="pay">
-                <div class="content">
-                    <div class="name">
-                        <span>Оплатите <span class="ping1">вашу</span> первую<br />
-                            <span class="ping2">покупку</span></span>
+                <footer>
+                    <!-- Loading... -->
+                    <div class="loading__svg">
+                        <svg class="progressbar" viewBox="0 0 62 80">
+                            <circle class="progressbar__track" cx="31" cy="31"></circle>
+                            <circle class="progressbar__thumb" cx="31" cy="31"></circle>
+                            <text x="32" y="33" class="progressbar__percent" text-anchor="middle" dominant-baseline="middle">
+                                <tspan>0</tspan>%
+                            </text>
+                            <text x="32" y="66" class="progressbar__info" text-anchor="middle">
+                                <tspan>Загрузка...</tspan>
+                            </text>
+                        </svg>
                     </div>
-                    <div class="blockPay">
-                        <span class="middle"><b>Тариф <s>850.00</s> Р н.</b></span>
-                        <div>
-                            <span class="ping1 high">1 Р</span><span class="high">*</span><span class="small">/ 1-aя неделя</span>
+                    <!-- endLoading -->
+                    <!-- Результаты опроса -->
+                    <div class="result">
+                        <div class="text-content black-text ">
+                            <p id="head-1">Предворительные данные</p>
+                            <p id="head-2">Исходя из пройденного вами теста:</p>
                         </div>
-                        <span class="middle">После 1-ой недели. <span class="blua middle">850</span> Р+<span class="blua middle">200</span>
-                             <span>калькулятор каллорий.</span>
+                        <div class="information-test left-align">
+                            <div class="block-index">
+                                <p>Индекс вашей массы тела:
+                                <font id="IndexYour"></font>
+                                </p>
+                            </div>
+                            <div class="block-index">
+                                <p>Ваш вес является:
+                                <font id="WeightYour"></font>
+                                </p>
+                            </div>
+                            <div class="block-index">
+                                <p>Ваш идеальный вес:
+                                <font id="GoodWeight"></font>
+                                </p>
+                            </div>
+                            <div class="block-index">
+                                <p>Вес к которому вы хотите придти:
+                                <font id="WeightWant"></font>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="information-users">
+                            <p class="user-head">3 из 4</p>
+                            <p id="peoples">Похожих людей пришли к нужному весу с нашей программой</p>
+                        </div>
+                        <div class="infromation-next">
+                            <p class="black-text">Получить индивидуальный план вашего питания</p>
+                            <button onclick="receive()">Получить</button>
+                        </div>
                     </div>
-                    <form class="pay-form" method="POST" action="send.php">
-                        <div class="approval">
-                            <input type="email" name="email" placeholder="Введите свой e-mail адрес">
-                            <label>
-                                <input id="pay_checkbox" type="checkbox">
-                                <span class="middle">Согласен c подключением платной<br />
-                                    подписки стоимостью <span class="blua">1</span> Р <br />за первые
-                                    <span class="blua">7 дней</span> доступа<br />
-                                    после <span class="blua">1-ой недели</span> с подключенной<br />
-                                    карты автоматически списывается <span class="blua">850</span> Р. +
-                                    <br /><span class="blua">200</span> Р / неделя калькулятор
-                                    калорий<br />
-                                    согласно <a href="#">тарифу</a></span>
-                            </label>
+                    <!-- конец опроса -->
+                    <div class="pay">
+                        <div class="content">
+                            <div class="name">
+                                <span>Оплатите <span class="ping1">вашу</span> первую<br />
+                                    <span class="ping2">покупку</span></span>
+                            </div>
+                            <div class="blockPay">
+                                <span class="middle"><b>Тариф <s>850.00</s> Р н.</b></span>
+                                <div>
+                                    <span class="ping1 high">1 Р</span><span class="high">*</span><span class="small">/ 1-aя неделя</span>
+                                </div>
+                                <span class="middle">После 1-ой недели. <span class="blua middle">850</span> Р+<span class="blua middle">200</span>
+                                    <span>калькулятор каллорий.</span>
+                            </div>
+                            <form class="pay-form" method="POST" action="send.php">
+                                <div class="approval">
+                                    <input type="email" name="email" placeholder="Введите свой e-mail адрес">
+                                    <label>
+                                        <input id="pay_checkbox" type="checkbox">
+                                        <span class="middle">Согласен c подключением платной<br />
+                                            подписки стоимостью <span class="blua">1</span> Р <br />за первые
+                                            <span class="blua">7 дней</span> доступа<br />
+                                            после <span class="blua">1-ой недели</span> с подключенной<br />
+                                            карты автоматически списывается <span class="blua">850</span> Р. +
+                                            <br /><span class="blua">200</span> Р / неделя калькулятор
+                                            калорий<br />
+                                            согласно <a href="#">тарифу</a></span>
+                                    </label>
+                                </div>
+                                <button class="pay-submit" type="submit" name="submit">Получить</button>
+                            </form>
+                            <footer>
+                                Нажимая на кнопку, Вы соглашаетесь с
+                                <a href="#">политикой конфиденциальности</a> ,<a href="#">условиями использования</a>
+                                и <a href="#">действующими тарифами сервиса</a> , даете свое согласие на
+                                обработку персональных данных и на получение рекламных материалов,
+                                осознаете возмездный характер оказываемых услуг.
+                            </footer>
                         </div>
-                        <button class="pay-submit" type="submit" name="submit">Получить</button>
-                    </form>
-                    <footer>
-                        Нажимая на кнопку, Вы соглашаетесь с
-                        <a href="#">политикой конфиденциальности</a> ,<a href="#">условиями использования</a>
-                        и <a href="#">действующими тарифами сервиса</a> , даете свое согласие на
-                        обработку персональных данных и на получение рекламных материалов,
-                        осознаете возмездный характер оказываемых услуг.
-                    </footer>
-                </div>
+                    </div>
+                    <div class="text-btn">
+                        <h1 class="logo">CalorFit</h1>
+                        <p class="about">
+                            Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
+                            <a href="#">Политикой конфиденциальности</a>,
+                            <a href="#">Условиями подписки</a>,
+                            <a href="#">Отписаться от услуги</a> <br />Поддержка:
+                            admin@calorfit.ru <br>2021 © All Rights Reserved.
+                        </p>
+                    </div>
+                </footer>
             </div>
-            <div class="text-btn">
-                <h1 class="logo">CalorFit</h1>
-                <p class="about">
-                    Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
-                    <a href="#">Политикой конфиденциальности</a>,
-                    <a href="#">Условиями подписки</a>,
-                    <a href="#">Отписаться от услуги</a> <br />Поддержка:
-                    admin@calorfit.ru <br>2021 © All Rights Reserved.
-                </p>
-            </div>
-        </footer>
-    </div>
 </body>
 
 </html>

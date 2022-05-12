@@ -65,15 +65,14 @@
     }
 
     .treatyb {
-        width: 215px;
+        width: 230px;
     }
 
     .login {
-        width: 175px;
+        width: 200px;
     }
 
     .header__link {
-        font-family: 'Lexend Exa';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
