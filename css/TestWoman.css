@@ -431,6 +431,7 @@ button {
     display: flex;
     margin: 0 auto;
     margin-top: 130px;
+    margin-bottom:20px;
 }
 
 .sliders div {
@@ -452,6 +453,7 @@ footer {
     height: 190px;
     margin: 0 auto;
     margin-top: 60px;
+    max-width:767px;
 }
 
 .logo {
@@ -474,7 +476,7 @@ footer {
 
 @media screen and (max-width:700px) {
     .wrapper {
-        display: block;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -716,6 +718,7 @@ footer {
     display: flex;
     margin: 0 auto;
     margin-top: 40px;
+    margin-bottom:20px;
 }
 
 .ellipse1 div {
@@ -724,12 +727,6 @@ footer {
 }
 
 @media screen and (max-width:700px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .test1 {
         width: 100%;
         margin-top: 0px;
@@ -950,7 +947,7 @@ footer {
     display: flex;
     margin: 0 auto;
     margin-top: 85px;
-
+    margin-bottom:20px;
 }
 
 .sliders3 div {
@@ -1152,6 +1149,7 @@ footer {
     width: 600px;
     margin: 0 auto;
     margin-top: 133px;
+    margin-bottom:20px;
 }
 
 .ellipse4 div {
@@ -1263,6 +1261,7 @@ footer {
     display: flex;
     margin: 0 auto;
     margin-top: 25px;
+    margin-bottom:20px;
 }
 
 .dark-text5 {
@@ -1454,6 +1453,7 @@ footer {
     display: flex;
     height: 10px;
     width: 600px;
+    margin-bottom:20px;
 }
 
 .ellipse6 div {
@@ -1594,6 +1594,7 @@ footer {
     margin: 0 auto;
     margin-top: 46px;
     display: flex;
+    margin-bottom:20px;
 }
 
 .ellipse7 div {
@@ -1796,6 +1797,7 @@ footer {
     display: flex;
     height: 10px;
     width: 600px;
+    margin-bottom:20px;
 }
 
 .ellipse8 div {
@@ -1847,8 +1849,8 @@ footer {
     box-sizing: border-box;
     border-radius: 30px;
     margin: 0 auto;
-    margin-top: 100px;
     display: none;
+    margin-top:100px;
 }
 
 
@@ -1951,6 +1953,7 @@ footer {
     margin-top: 144px;
     height: 10px;
     max-width: 600px;
+    margin-bottom:20px;
 }
 
 .ellipse9 div {
@@ -1961,6 +1964,7 @@ footer {
 @media screen and (max-width:700px) {
     .panel9{
     width: 100%;
+    margin-top:0px;
     }
     
     .box_panel9 {
@@ -2000,7 +2004,6 @@ footer {
     
     .box_panel9 {
     margin: 0 auto;
-    border: 1px solid black;
     margin-top: 64px;
     }
 
@@ -2040,7 +2043,7 @@ footer {
 .target9-1 h2 {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 32px;
     line-height: 25px;
     text-align: center;
     color: #000000;
@@ -2142,6 +2145,7 @@ footer {
     display: flex;
     margin: 0 auto;
     margin-top: 170px;
+    margin-bottom:20px;
 }
 
 .sliders9-1 div {
@@ -2193,6 +2197,7 @@ footer {
         height: 10px;
         display: flex;
         margin-top: 130px;
+        margin-bottom:20px;
     }
 
     .sliders1 div {
@@ -2328,13 +2333,6 @@ footer {
 
     .response1 {
         width: 100%;
-    }
-
-    .sliders10 {
-        max-width: 600px;
-        height: 10px;
-        display: flex;
-        margin-top: 130px;
     }
 
     .sliders1 div {
@@ -2528,6 +2526,7 @@ footer {
     display: flex;
     margin: 0 auto;
     margin-top: 140px;
+    margin-bottom:20px;
 }
 
 .sliders10 div {
@@ -2559,6 +2558,13 @@ footer {
     display: none;
 }
 
+.white-text11{
+        height: 40px;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 25px;
+}
+
 .gran12 {
     width: 690px;
     height: 675px;
@@ -2572,10 +2578,13 @@ footer {
 }
 
 @media screen and (max-width:700px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .gran11{
+        width:100%;
+        margin-top:0px;
+    }
+
+    .sliders11{
+        width:100%;
     }
 
     .gran12 {
@@ -2641,13 +2650,12 @@ footer {
         max-width: 600px;
         height: 10px;
         display: flex;
-        margin-top: 330px;
+        margin-bottom:20px;
     }
 
     .sliders11 div {
         width: 20px;
         height: 10px;
-        margin-top: 50px;
     }
 
     .sliders {
@@ -2661,18 +2669,20 @@ footer {
         max-width: 600px;
         height: 10px;
         display: flex;
-        margin-top: 130px;
     }
 
     .sliders11 div {
         width: 25px;
         height: 10px;
-        margin-top: 50px;
     }
 
     .sliders {
         width: 100%;
         justify-content: space-around;
+    }
+
+    .form11{
+        margin-top:0;
     }
 }
 
@@ -2729,7 +2739,7 @@ footer {
 
 .buttons11 {
     max-width: 390px;
-    height: 299px;
+    height: 385px;
     margin: 0 auto;
 }
 
@@ -2774,7 +2784,7 @@ footer {
     max-width: 600px;
     height: 10px;
     display: flex;
-    margin-top: 130px;
+    margin-bottom:20px;
 }
 
 .sliders11 div {
@@ -2844,12 +2854,6 @@ footer {
 }
 
 @media screen and (max-width:700px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .test13 {
         width: 100%;
         margin-top: 0px;
@@ -2943,12 +2947,6 @@ footer {
 }
 
 @media screen and (max-width:700px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .test14 {
         width: 100%;
         margin-top: 0px;
@@ -3048,87 +3046,6 @@ footer {
     text-align: center;
     color: #000000;
     margin-top: 27px;
-}
-
-@media screen and (max-width:700px) {
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .test15 {
-        width: 100%;
-        margin-top: 0px;
-    }
-
-    .changes15 {
-        height: 283px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 16px;
-        border-top-left-radius: 30px;
-    }
-
-    .target13 {
-        width: 100%;
-        height: 41px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        text-align: center;
-        color: #000000;
-        margin-top: 27px;
-    }
-
-    .changes15 {
-        height: 283px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 16px;
-        border-top-left-radius: 30px;
-    }
-
-    .block-textst {
-        width: 100%;
-    }
-
-    .block-textst p {
-        width: 100%;
-    }
-
-    footer {
-        width: 100%;
-    }
-
-    .about {
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    .response1 {
-        width: 100%;
-    }
-
-    .ellipse1 {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .sliders {
-        width: 100%;
-        justify-content: space-around;
-    }
 }
 
 .question13 {
@@ -3284,6 +3201,7 @@ footer {
     height: 10px;
     margin-top: 46px;
     display: flex;
+    margin-bottom:20px;
 }
 
 .ellipse13 div {
@@ -3296,12 +3214,19 @@ footer {
     height: 10px;
     margin-top: 46px;
     display: flex;
+    margin-bottom:20px;
 }
 
 .ellipse15 div {
     height: 10px;
     width: 25px;
     background-color: #e88a92;
+}
+
+@media screen and (max-width:700px) {
+    .ellipse15{
+        width:100%;
+    }
 }
 
 .change_1,
@@ -3375,6 +3300,18 @@ footer {
     padding: 40px;
 }
 
+@media screen and (max-width:767px) {
+    .loading__svg{
+        width:100%;
+        height:560px;
+    }
+
+    .step-pay{
+        min-height: calc(100vh - 56px);
+        content: "viewport-units-buggyfill; height: calc(100vh - 56px);";
+    }
+}
+
 .progressbar {
     margin: 0 auto;
     max-width: 437px;
@@ -3413,7 +3350,6 @@ footer {
     stroke-dasharray: var(--strokeDasharray);
     stroke: var(--color);
     stroke-width: var(--strokeWidth);
-
     transform-origin: center;
     transform-box: fill-box;
     transform: rotate(-90deg);
@@ -3429,18 +3365,21 @@ footer {
     margin-top: 100px;
 }
 
+.step-pay{
+    width:560px;
+    min-height:610px;
+    margin:15px auto 50px;
+    background-color:#f9f9f9;
+    box-shadow: 0 11px 20px rgn(220 228 226 / 60%);
+}
+
 .content {
     background-color: rgb(249, 249, 249);
     height: 900px;
-    width: 40%;
     margin: 0px auto;
     margin-top: 20px;
     box-shadow: 0px 0px 10px 0px #b3b0b0;
     border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .name span {
@@ -3460,12 +3399,11 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    height: 50px;
-    width: 100%;
+    height: 80px;
 }
 
 .blockPay {
-    width: 60%;
+    max-width: 767px;
     height: 180px;
     border-radius: 20px;
     margin-top: 60px;
@@ -3495,17 +3433,21 @@ footer {
 }
 
 .approval {
+    padding-left: 15px;
     text-align: left;
     margin-top: 30px;
 }
 
 .pay-in {
-    width: 200px;
+    max-width: 200px;
     border: 1px solid black;
 }
 
 .pay-form {
     margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pay-form>button {
@@ -3534,5 +3476,206 @@ footer {
     color: white;
 }
 
+@media screen and (max-width:565px) {
+    .step-pay{
+        width:100%;
+    }
+}
 
-@media screen and (max-width:700px) {}
+@media screen and (max-width:342px) {
+    .blockPay{
+        margin-top:115px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sliders div {
+        width: 15px;
+        height: 5px;
+    }
+    .ellipse1 div{
+        width: 15px;
+        height: 5px;
+    }
+
+    .sliders3 div {
+        width: 15px;
+        height: 5px;
+    }
+
+    .ellipse4 div{
+        width: 15px;
+        height: 5px;
+    }
+
+    .sliders5 div {
+        width: 15px;
+        height: 5px;
+    }
+
+    .ellipse9 div{
+        width: 15px;
+        height: 5px;
+    }
+
+    .ellipse6 div{
+        width: 15px;
+        height: 5px;
+    }
+
+    .ellipse7 div{
+        width: 15px;
+        height: 5px;
+    }
+
+    .ellipse8 div{
+        width: 15px;
+        height: 5px;
+    }
+
+    .sliders9-1 div {
+        width: 15px;
+        height: 5px;
+    }
+
+    .sliders10 div{
+        width:15px;
+        height:5px;
+    }
+
+    .sliders11 div{
+        width:15px;
+        height:5px;
+    }
+
+    .ellipse13 div{
+        width: 15px;
+        height: 5px;
+    }
+
+    .ellipse15 div{
+        width: 15px;
+        height: 5px;
+    }
+}
+@media screen and (max-width:340px){
+    .changeWeight1{
+        width:312px;
+    }
+    .changeWeight_text1{
+        width:295px;
+    }
+    .pound1{
+        width:312px;
+    }
+
+    .select-param2 input{
+        width:300px;
+    }
+
+    .buttons3 div button{
+        width:300px;
+    }
+
+    .buttons3{
+        width:300px;
+    }
+
+    .buttons5{
+        width:300px;
+    }
+
+    .buttons5 div button{
+        width:300px;
+    }
+}
+
+@media screen and (max-width:370px){
+    .question4{
+        padding-top:25px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .test15 {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .changes15 {
+        height: 283px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 16px;
+        border-top-left-radius: 30px;
+    }
+
+    .target13 {
+        width: 100%;
+        height: 41px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+        margin-top: 27px;
+    }
+
+    .block-textst {
+        width: 100%;
+    }
+
+    .block-textst p {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .response1 {
+        width: 100%;
+    }
+
+    .ellipse1 {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .sliders {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .text-content2 h2{
+        width:100%;
+    }
+
+    .last-text2{
+        padding-top:25px;
+    }
+
+    .butt9-1:nth-child(2){
+        margin-bottom:5px;
+    }
+}
+
+@media screen and (max-width:340px){
+    .changes15{
+        width:300px;
+    }
+}
+@media screen and (max-width:380px){
+    .changes15{
+        padding-top:25px;
+    }
+}

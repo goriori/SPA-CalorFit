@@ -545,7 +545,6 @@
                 <div class="slide_2"></div>
             </div>
         </div>
-        <footer>
             <!-- test10 -->
             <div class="container-block10">
                 <div class="text-content white-text10">
@@ -795,7 +794,6 @@
                 </div>
             </div>
             <div class="text-btn center-align">
-            <footer>
             <!-- Loading... -->
             <div class="loading__svg">
                 <svg class="progressbar" viewBox="0 0 62 80">
@@ -811,6 +809,7 @@
             </div>
             <!-- endLoading -->
             <div class="pay">
+                <div class="step-pay">
                 <div class="content">
                     <div class="name">
                         <span>Оплатите <span class="ping1">вашу</span> первую<br />
@@ -849,6 +848,7 @@
                         осознаете возмездный характер оказываемых услуг.
                     </footer>
                 </div>
+                </div>
             </div>
             <div class="text-btn">
                 <h1 class="logo">CalorFit</h1>
@@ -860,7 +860,6 @@
                     admin@calorfit.ru <br>2021 © All Rights Reserved.
                 </p>
             </div>
-        </footer>
     </div>
 </body>
 
