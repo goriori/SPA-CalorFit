@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="../../js/TestMan.js"></script>
     <script src="../../js/burger.js"></script>
@@ -89,18 +90,7 @@
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
             </div>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+          
         </div>
         <!-- test1 -->
         <div class="test1">
@@ -797,6 +787,41 @@
                 </svg>
             </div>
             <!-- endLoading -->
+            <!-- Результаты опроса -->
+            <div class="result">
+                <div class="text-content white-text ">
+                    <p id="head-1">Предворительные данные</p>
+                    <p id="head-2">Исходя из пройденного вами теста:</p>
+                </div>
+                <div class="information-test">
+                    <div class="block-index">
+                        <p>Индекс вашей массы тела:<font id="IndexYour"></font>
+                        </p>
+                    </div>
+                    <div class="block-index">
+                        <p>Ваш вес является:<font id="WeightYour"></font>
+                        </p>
+                    </div>
+                    <div class="block-index">
+                        <p>Ваш идеальный вес:<font id="GoodWeight"></font>
+                        </p>
+                    </div>
+                    <div class="block-index">
+                        <p>Вес к которому вы хотите придти:<font id="WeightWant"></font>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="information-users">
+                    <p class="user-head">3 из 4</p>
+                    <p id="peoples">Похожих людей пришли к нужному весу с нашей программой</p>
+                </div>
+                <div class="infromation-next">
+                    <p class="white-text">Получить индивидуальный план вашего питания</p>
+                    <button class="rec" onclick="receive()">Получить</button>
+                </div>
+            </div>
+            <!-- конец опроса -->
             <div class="pay">
                 <div class="content">
                     <div class="name">
@@ -837,6 +862,7 @@
                     </footer>
                 </div>
             </div>
+
             <div class="text-btn">
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
@@ -847,8 +873,21 @@
                     admin@calorfit.ru <br>2021 © All Rights Reserved.
                 </p>
             </div>
+
         </footer>
     </div>
+    <script>
+                window.replainSettings = {
+                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
+                };
+                (function(u) {
+                    var s = document.createElement('script');
+                    s.async = true;
+                    s.src = u;
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                })('https://widget.replain.cc/dist/client.js');
+            </script>
 </body>
 
 </html>

@@ -221,30 +221,152 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-@media screen and (max-width:1292px){
-    .header{
-        margin-right: 30px;
+@media screen and (max-width:1292px) {
+    .header {
+        float: right;
+        margin-top: 40px;
+        margin-right: 40px;
+        display: flex;
     }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .header__list li {
+        list-style: none;
+        margin: 25px 0px 0px 66px;
+        text-align: left;
+        z-index: 132;
+    }
+
+    .index {
+        width: 20px;
+    }
+
+    .header__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .header__body {
+        height: 50px;
+    }
+
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        z-index: 4;
+        cursor: pointer;
+    }
+
+    .header__burger span {
+        background-color: black;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        top: 9px;
+        margin-top: 4px;
+        transition: all 0.3s ease 0s;
+        border-radius: 5px;
+    }
+
+    .header__burger:after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        border-radius: 5px;
+    }
+
+    .header__burger:before {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        border-radius: 5px;
+    }
+
+    .header__burger:before {
+        top: 0;
+    }
+
+    .header__burger:after {
+        bottom: 0;
+    }
+
+    .header__burger.active span {
+        left: 0px;
+        transition: 0.5s;
+        z-index: 20;
+        background-color: white;
+    }
+
     .header__burger.active:before {
         transform: rotate(-45deg);
         top: 7px;
-        left:-2px;
+        width: 20px;
+        left: -2px;
+        transition: 0.5s;
+        z-index: 20;
+        background-color: white;
     }
-    
+
     .header__burger.active:after {
         transform: rotate(45deg);
         bottom: 7px;
+        width: 20px;
+        transition: 0.5s;
         left: -2px;
-    }
-    .header__burger.active span {
-        left: 2px;
+        z-index: 20;
         background-color: white;
     }
-    
-    
-}
 
-@media screen and (max-width:1292px) {
+    .header__menu {
+        position: absolute;
+        top: -100%;
+        right: 0;
+        width: 315px;
+        height: 452px;
+        background-color: #231F1F;
+        transition: all 0.5s ease 0s;
+        z-index: 3;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .header__menu.active {
+        top: 0;
+    }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .header__list li {
+        margin-bottom: 15px;
+        margin-left: 80px;
+
+    }
 
     .block,
     .test1,
@@ -266,6 +388,7 @@ input::-webkit-inner-spin-button {
         margin-top: 10px;
     }
 }
+
 
 .wrapper {
     background-size: cover;
@@ -335,6 +458,9 @@ input::-webkit-inner-spin-button {
     margin-left: 74px;
     margin-top: -1px;
 }
+.onest {
+    top: 50px;
+}
 
 .twost {
     top: 40px;
@@ -400,11 +526,14 @@ button {
 .rightst button:hover {
     transition: .5s;
     background-color: #DC4B57;
+    cursor: pointer;
 }
 
 .leftst button:hover {
     transition: .5s;
     background-color: #DC4B57;
+    cursor: pointer;
+
 }
 
 .leftst button {
@@ -709,6 +838,7 @@ footer {
     color: white;
     pointer-events: auto;
     user-select: none;
+    cursor: pointer;
 
 }
 
@@ -874,6 +1004,7 @@ footer {
     background: #e88a92;
     transition: 0.5s;
     color: white;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -995,6 +1126,7 @@ footer {
 .buttons3 div button:hover {
     background-color: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -1132,6 +1264,7 @@ footer {
     background-color: #E88A92;
     transition: .5s;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -1294,6 +1427,7 @@ footer {
 .buttons5 div button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -1371,6 +1505,7 @@ footer {
 .buttons6 button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .wrapp_panel6 {
@@ -1635,6 +1770,7 @@ footer {
     height: 51px;
     border: 1px solid #E88A92;
     border-radius: 30px;
+    cursor: pointer;
 
 }
 
@@ -1678,6 +1814,7 @@ footer {
 .buttons8 button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .panel8 {
@@ -1880,6 +2017,7 @@ footer {
 .buttons9 button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .img9 {
@@ -1966,42 +2104,44 @@ footer {
     width: 100%;
     margin-top:0px;
     }
-    
+
     .box_panel9 {
-    margin: 0 auto;
-    margin-top: 64px;
+        margin: 0 auto;
+        margin-top: 64px;
     }
 
     .ellipse9 {
-    margin-top: 10px;
+        margin-top: 10px;
     }
 
     .ellipse9 {
-    margin: 0 auto;
-    margin-top: 142px;
-    display: flex;
-    height: 10px;
-    max-width: 600px;
+        margin: 0 auto;
+        margin-top: 142px;
+        display: flex;
+        height: 10px;
+        max-width: 600px;
     }
+
     .button_panel19 {
-    width: 100%;
+        width: 100%;
     }
-    
+
     .button_panel29 {
         width: 100%;
     }
-    
+
     .button_panel39 {
         width: 100%;
     }
-    
+
     .ellipse9 div {
-    height: 10px;
-    width: 25px;
+        height: 10px;
+        width: 25px;
     }
 }
+
 @media screen and (max-width:338px) {
-    
+
     .box_panel9 {
     margin: 0 auto;
     margin-top: 64px;
@@ -2009,13 +2149,13 @@ footer {
 
     .button_panel19 {
         width: 100%;
- 
+
     }
-    
+
     .button_panel29 {
         width: 100%;
     }
-    
+
     .button_panel39 {
         width: 100%;
     }
@@ -2133,6 +2273,7 @@ footer {
     color: #fff;
     font-weight: 400;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .buttons9-1 div {
@@ -2155,9 +2296,10 @@ footer {
 }
 
 @media screen and (max-width:700px) {
-    .gran9-1{
+    .gran9-1 {
         width: 100%;
     }
+
     .sliders9-1 {
         max-width: 600px;
         height: 10px;
@@ -2165,6 +2307,7 @@ footer {
         margin: 0 auto;
         margin-top: 170px;
     }
+
     .gran9-1 {
         margin: 0 auto;
         margin-top: 0px;
@@ -2178,15 +2321,17 @@ footer {
 }
 
 @media screen and (max-width:460px) {
-    .gran9-1{
+    .gran9-1 {
         max-height: 1500px;
     }
-    .buttons9-1{
+
+    .buttons9-1 {
         width: 214px;
         height: 400px;
         margin-top: 25px;
         flex-direction: column;
     }
+
     .sliders9-1 {
         position: relative;
         margin-top: 25px;
@@ -2218,6 +2363,7 @@ footer {
 .buttons9-1 div button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 /* test10 */
@@ -2518,6 +2664,7 @@ footer {
 .buttons10 div button:hover {
     background: #DC4B57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .sliders10 {
@@ -2756,6 +2903,7 @@ footer {
 
 .buttons11 div button:hover {
     background: #DC4B57;
+    cursor: pointer;
 }
 
 .active11 {
@@ -2821,6 +2969,7 @@ footer {
 .buttons11 div button:hover {
     background: #DC4B57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 /* test13 */
@@ -3186,6 +3335,7 @@ footer {
     color: white;
     user-select: none;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .continue15.active {
@@ -3194,6 +3344,7 @@ footer {
     color: white;
     user-select: none;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .ellipse13 {
@@ -3359,6 +3510,118 @@ footer {
     width: 600px;
 }
 
+@media screen and (max-width:700px) {
+    .loading__svg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:654px) {
+    .loading__svg {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width:474px) {
+    .loading__svg {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .loading__svg {
+        height: 400px;
+    }
+}
+
+/* Результаты опроса  */
+.result {
+    width: 690px;
+    height: 675px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border-radius: 10px;
+    display: none;
+}
+
+#head-1 {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+
+#head-2 {
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.information-test {
+    margin-top: 50px;
+    background-color: #e88a92;
+    border-top: 1px solid #DC4B57;
+    border-bottom: 1px solid #DC4B57;
+}
+
+.block-index {
+    height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+
+.infromation-next {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.infromation-next>button {
+    width: 210px;
+    height: 51px;
+    margin-top: 30px;
+    background: white;
+    border: 1px solid #dc4b57;
+    border-radius: 30px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+
+.infromation-next>button:hover {
+    transition: .5s;
+    background-color: #DC4B57;
+    color: white;
+    user-select: none;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+
+.information-users {
+    margin-top: 20px;
+    background-color: #DC4B57;
+}
+
+.user-head {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#peoples {
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 /* Pay */
 .pay {
     display: none;
@@ -3376,6 +3639,7 @@ footer {
 .content {
     background-color: rgb(249, 249, 249);
     height: 900px;
+    width: 690px;
     margin: 0px auto;
     margin-top: 20px;
     box-shadow: 0px 0px 10px 0px #b3b0b0;
@@ -3474,6 +3738,7 @@ footer {
     transition: .5s;
     margin-top: 20px;
     color: white;
+    cursor: pointer;
 }
 
 @media screen and (max-width:565px) {
@@ -3677,5 +3942,59 @@ footer {
 @media screen and (max-width:380px){
     .changes15{
         padding-top:25px;
+    }
+}
+@media screen and (max-width:700px) {
+    .content {
+        width: 90%;
+    }
+
+    .pay {
+        margin-top: 0px;
+    }
+
+    .footer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:511px) {
+    .blockPay {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .name span {
+        font-size: 20px;
+    }
+
+    .high {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .middle {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .high {
+        font-size: 38px;
+    }
+
+    .middle {
+        font-size: 16px;
+    }
+
+    .blockPay {
+        margin-top: 50px;
+    }
+
+    .pay-submit {
+        width: 80%;
+        height: 40px;
     }
 }

@@ -2,13 +2,13 @@ function vectorBack() {
     if ($('.test1').attr('style') == "display: block;") {
         $('.test1').css('display', 'none');
         $('.block').css('display', 'block');
-    }else if($('.block').attr('style') == "display: block;"){
+    } else if ($('.block').attr('style') == "display: block;") {
         window.history.back();
-    }else if ($('.container-block2').attr('style') == "display: block;") {
+    } else if ($('.container-block2').attr('style') == "display: block;") {
         $('.container-block2').css('display', 'none');
         $('.test1').css('display', 'block');
     } else if ($('.gran3').attr('style') == "display: block;") {
-        $('.test4').css('display', 'none');
+        $('.gran3').css('display', 'none');
         $('.container-block2').css('display', 'block');
     } else if ($('.test4').attr('style') == "display: block;") {
         $('.test4').css('display', 'none');
@@ -388,8 +388,42 @@ function LoadTest() {
         if (percent == 100) {
             progressbarText.textContent = 'Готово';
             $('.loading__svg').css('display', 'none');
-            $('.pay').css('display', 'block');
+            $('.result').css('display', 'block');
             $('.header').css('display', 'block');
+            $ideal = Number($('#input_kg').val());
+            $yourWeight = Number($('#weight').val());
+            $yourHeight = Number($('#height').val());
+            if ($('#kg1').attr('class') == "kg1 activeLeft") {
+                $resultTest = Number((($yourWeight * 0.4535923745) / (($yourHeight / 100) * ($yourHeight / 100))).toFixed(2));
+            } else if ($('#kg1').attr('class') == "kg1 activeRight" || $('#kg1').attr('class') == "kg1") {
+                $resultTest = Number(($yourWeight / (($yourHeight / 100) * ($yourHeight / 100))).toFixed(2));
+            }
+            $WeightGood = Number($yourHeight - 110);
+            if ($resultTest < 16) {
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(дефицит массы)');
+            } else if (16 < $resultTest && $resultTest <= 17.9) {
+                $('#IndexYour').css('color', 'yellow');
+                $('#IndexYour').html($resultTest + '(недостаточная масса тела)');
+            } else if (18 <= $resultTest && $resultTest <= 24.9) {
+                $('#IndexYour').css('color', 'green');
+                $('#IndexYour').html($resultTest + '(нормальный вес)');
+            } else if (25 <= $resultTest && $resultTest <= 29.9) {
+                $('#IndexYour').css('color', 'yellow');
+                $('#IndexYour').html($resultTest + '(избыточная масса тела)');
+            } else if (30 <= $resultTest <= 34.9 && $resultTest <= 34.9) {
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(ожирение 1 степени)');
+            } else if (35 <= $resultTest && $resultTest <= 39.9) {
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(ожирение 2 степени)');
+            } else if ($resultTest >= 40) {
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(ожирение 3 степени)');
+            }
+            $('#WeightYour').html($yourWeight + 'кг');
+            $('#GoodWeight').html($WeightGood + 'кг');
+            $('#WeightWant').html($ideal + 'кг');
         } else if (percent > 60 && percent < 99) {
             progressbarText.textContent = 'Подборка подходящих рецептов';
         } else if (percent > 40 && percent < 60) {
@@ -402,4 +436,8 @@ function LoadTest() {
 
     const tl = gsap.timeline({ defaults: { duration: 12, ease: 'linear' } })
         .to(progressbarThumb, { '--percent': 100, onUpdate: onUpdateGsap });
+}
+function receive() {
+    $('.result').css('display', 'none');
+    $('.pay').css('display', 'block');
 }
