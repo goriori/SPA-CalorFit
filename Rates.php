@@ -13,7 +13,40 @@
 </head>
 <body>
     <div class="wrapper">
+<<<<<<< HEAD
+        <div class="container">
+            <div class="logo">CalorFit</div>
+                <div class="header__body">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="/" class="header__link">Главная</a>
+                            </li>
+                            <li>
+                                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
+                            </li>
+                            <li>
+                                <a href="Rates.php" class="header__link">Тарифы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">Политика<br> конфенденциальности</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">Условия пользования</a>
+                            </li>
+                            <li>
+                                <a href="Singin.php" class="header__link">Личный кабинет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+=======
     <? include $path . "/components/burger.php"; ?>
+>>>>>>> 7200bff5efdc56d41938cfaf92685c69638eecee
         <div class="block-gran">
             <div class="text-content white-text">
                 <h1>Тарифы</h1>
