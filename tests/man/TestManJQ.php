@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="../../js/TestMan.js"></script>
     <script src="../../js/burger.js"></script>
@@ -35,10 +36,10 @@
                                 <a href="Rates.php" class="header__link">Тарифы</a>
                             </li>
                             <li>
-                                <a href="/" class="header__link">Политика<br> конфенденциальности</a>
+                                <a href="#" class="header__link">Политика<br> конфенденциальности</a>
                             </li>
                             <li>
-                                <a href="/" class="header__link">Условия пользования</a>
+                                <a href="#" class="header__link">Условия пользования</a>
                             </li>
                             <li>
                                 <a href="/Singin.php" class="header__link">Личный кабинет</a>
@@ -797,6 +798,36 @@
                 </svg>
             </div>
             <!-- endLoading -->
+            <!-- Результаты опроса -->
+            <div class="result">
+                <div class="text-content white-text ">
+                    <p id="head-1">Предворительные данные</p>
+                    <p id="head-2">Исходя из пройденного вами теста:</p>
+                </div>
+                <div class="information-test">
+                    <div class="block-index">
+                        <p>Индекс вашей массы тела:<h1 id="IndexYour"></h1></p>
+                    </div>
+                    <div class="block-index">
+                        <p>Ваш вес является:<h1 id="WeightYour"></h1></p>
+                    </div>
+                    <div class="block-index">
+                        <p>Ваш идеальный вес:<h1 id="GoodWeight"></h1></p>
+                    </div>
+                    <div class="block-index">
+                        <p>Вес к которому вы хотите придти:<h1 id="WeightWant"></h1></p>
+                    </div>
+                </div>
+                <div class="information-users">
+                    <p class="user-head">3 из 4</p>
+                    <p id="peoples">Похожих людей пришли к нужному весу с нашей программой</p>
+                </div>
+                <div class="infromation-next">
+                    <p class="white-text">Получить индивидуальный план вашего питания</p>
+                    <button onclick="receive()">Получить</button>
+                </div>
+            </div>
+            <!-- конец опроса -->
             <div class="pay">
                 <div class="content">
                     <div class="name">
@@ -837,6 +868,7 @@
                     </footer>
                 </div>
             </div>
+
             <div class="text-btn">
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
@@ -847,6 +879,7 @@
                     admin@calorfit.ru <br>2021 © All Rights Reserved.
                 </p>
             </div>
+
         </footer>
     </div>
 </body>

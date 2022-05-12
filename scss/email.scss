@@ -1,0 +1,177 @@
+@import "default/mixins";
+@import "default/null";
+
+
+.wrapper{
+    overflow: hidden;
+    // height: 100%;
+}
+
+
+.container{
+    max-width: rem(1410);
+    margin: auto;
+}
+
+
+
+body{
+    background: url(../images/background.png) no-repeat center center fixed;;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: rem(8);
+    position: relative;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+.content_view{
+    background-color: rgba(53,53,58, 0.8);
+    border: 3px solid #FCF9F9;
+    border-radius: rem(10);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(13) rem(150) rem(104) rem(150);
+}
+
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: rem(21);
+    div{
+        &:first-child{
+            padding-top: rem(63);
+            font-size: rem(20);
+            text-align: center;
+        }
+        
+    }
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: rem(390);
+    gap: rem(31);
+    text-align: center;
+    
+    form{
+        input[type="email"]{
+            padding-top: rem(60);
+            font-size: rem(20);
+            border-bottom: 1px solid #7D7D7D;
+            line-height: 2;
+            background: transparent;
+            color:#fff;
+            &:focus{
+                border-bottom: 1px solid #fff;
+            }
+        }
+
+        div{
+            color:#7D7D7D ;
+            font-size: rem(20);
+            
+        }
+    }
+}
+
+.end{
+    display: flex;
+    align-items: center;
+    gap: rem(30);
+    margin: rem(45) 0 0 0;
+    .send{
+        padding: rem(15) rem(50);
+        border: 1px solid #fff;
+        background-color: #231F1F;
+        border-radius: rem(30);
+        font-size: rem(20);
+        margin: 154px 0px 0px 0px;
+    }
+    .send:hover{
+        cursor: pointer;
+    }
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: rem(82) 0 0 0;
+    gap: rem(10);
+    h1{
+        font-size: rem(64);
+    }
+    .info{
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+        text-align: center;
+        font-size: rem(15);
+    }
+}
+
+
+
+
+
+.menu_panel{
+    position: absolute;
+    background-color: #201A1A;
+    padding: rem(12) rem(25) rem(50) rem(66);
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.28s ease all;
+    transform: scale(0.7);
+    &.active{
+        transition: 0.28s ease all;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.menu{
+    position: relative;
+    svg{
+        position: absolute;
+        right: -15px;
+        top: -5px;
+    }
+}
+.menu_list{
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    font-size: rem(20);
+}
+
+@font-face {
+    font-family: "Lexend Exa";
+    src: url(../fonts/LexendDecaRegular.ttf);
+}
+.error{
+    color: red;
+    font-size: rem(14);
+    font-weight: 400;
+    font-family: "Lexend Exa";
+}

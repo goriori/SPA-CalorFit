@@ -202,6 +202,15 @@ function test7() {
 function test8() {
     $('.test7').css('display', 'none');
     $('.panel8').css('display', 'block');
+    $result = Number($('#input_kg').val());
+    $kgNow = Number($('#weight').val());
+    if ($result > $kgNow) {
+        $response = $result - $kgNow;
+        $('.type2').html('Учитывая то, что Вы хотите набрать ' + $response + ' кг. Ваша физическая активность играет большую роль!');
+    } else if ($result < $kgNow) {
+        $response = $kgNow - $result;
+        $('.type2').html('Учитывая то, что Вы хотите сбросить ' + $response + ' кг. Ваша физическая активность играет большую роль!');
+    }
 }
 
 function kg_text10() {
@@ -379,8 +388,38 @@ function LoadTest() {
         if (percent == 100) {
             progressbarText.textContent = 'Готово';
             $('.loading__svg').css('display', 'none');
-            $('.pay').css('display', 'block');
+            $('.result').css('display', 'block');
             $('.header').css('display', 'block');
+            $ideal=Number($('#input_kg').val());
+            $yourWeight=Number($('#weight').val());
+            $yourHeight=Number($('#height').val());
+            $resultTest=Number(($yourWeight/(($yourHeight/100)*($yourHeight/100))).toFixed(2));
+            $WeightGood=Number($yourHeight-110);
+            if($resultTest < 16){
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(дефицит массы)');
+            }else if(16 < $resultTest >= 17,9){
+                $('#IndexYour').css('color', 'yellow');
+                $('#IndexYour').html($resultTest + '(недостаточная масса тела)');
+            }else if(18 <= $resultTest >= 24,9){
+                $('#IndexYour').css('color', 'green');
+                $('#IndexYour').html($resultTest + '(нормальный вес)');
+            }else if(25 <= $resultTest >= 29,9){
+                $('#IndexYour').css('color', 'yellow');
+                $('#IndexYour').html($resultTest + '(избыточная масса тела)');
+            }else if(30 <= $resultTest >= 34,9){
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(ожирение 1 степени)');
+            }else if(35 <= $resultTest >= 39,9){
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(ожирение 2 степени)');
+            }else if($resultTest >= 40){
+                $('#IndexYour').css('color', 'red');
+                $('#IndexYour').html($resultTest + '(ожирение 3 степени)');
+            }
+            $('#WeightYour').html($yourWeight);
+            $('#GoodWeight').html($WeightGood);
+            $('#WeightWant').html($ideal);
         } else if (percent > 60 && percent < 99) {
             progressbarText.textContent = 'Подборка подходящих рецептов';
         } else if (percent > 40 && percent < 60) {
@@ -393,4 +432,9 @@ function LoadTest() {
 
     const tl = gsap.timeline({ defaults: { duration: 12, ease: 'linear' } })
         .to(progressbarThumb, { '--percent': 100, onUpdate: onUpdateGsap });
+}
+
+function receive(){
+    $('.result').css('display', 'none');
+    $('.pay').css('display', 'block');
 }

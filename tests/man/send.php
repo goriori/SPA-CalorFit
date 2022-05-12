@@ -1,7 +1,28 @@
-<?
+
+<? $path = $_SERVER['DOCUMENT_ROOT'] ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="/css/send.css">
+    <title>Success</title>
+</head>
+<body>
+    <div class="wrapper">
+    
+    <?
 error_reporting(0);
 $email = $_POST['email'];
-?><div>Письмо отправлено на адрес <?echo $email?></div><?
+?>
+    <div class="text-message white-text">Письмо отправлено на адрес <p class="red-text"> <?echo $email?></p></div>
+    <div>
+        <p class="white-text">Пожалуйста проверьте вашу почту</p>
+    </div>
+<?
 // пример использования
 $file = "files/test.txt"; // файл
 $mailTo = $email; // кому
@@ -51,11 +72,12 @@ function sendMailAttachment($mailTo, $from, $subject, $message, $file = false){
         $bodyMail = $message;
     }
     
-    $new_url = 'http://spa-calorfit/';
-    header('Location: '.$new_url);
-
+   
     $result = mail($mailTo, $subject, $bodyMail, $headers); // отправка письма
-    return $result;
-
-    
+    return $result;  
 }
+?>
+ <? include $path . "/components/footer.php"; ?>
+    </div>
+</body>
+</html>

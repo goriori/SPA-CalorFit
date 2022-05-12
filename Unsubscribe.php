@@ -34,17 +34,11 @@
                 <a href="Rates.php" class="header__link rates">Тарифы</a>
               </li>
               <li>
-<<<<<<< HEAD
-                <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
+
+                <a href="#" class="header__link">Политика<br> конфенденциальности</a>
               </li>
               <li>
-                <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
-=======
-                <a href="/" class="header__link">Политика<br> конфенденциальности</a>
-              </li>
-              <li>
-                <a href="/" class="header__link">Условия пользования</a>
->>>>>>> 97cd98ebaa4793fec20e9b999df6fb9da9fd80d0
+                <a href="#" class="header__link">Условия пользования</a>
               </li>
               <li>
                 <a href="Singin.php" class="header__link login">Личный кабинет</a>
@@ -62,7 +56,7 @@
       </div>
       <form action="">
         <input class="emailInput" type="email" name="email" placeholder="Введите свой Email адрес...">
-        <input class="button" type="submit" name="send">
+        <input class="button" type="submit" name="send" >
       </form>
     </div>
 
