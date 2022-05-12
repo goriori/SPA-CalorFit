@@ -170,8 +170,16 @@
     background-image: url(../images/background.png);
     text-align: center;
     overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.head{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
 .content {
     margin: 0 auto;
     width: 100%;
@@ -370,7 +378,7 @@
     .logo {
         font-size: 40px;
         margin-top: 33px;
-        margin-left: 0px;
+        margin-left: 50px;
     }
 
     .Man {
