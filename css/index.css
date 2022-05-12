@@ -19,7 +19,7 @@
     list-style: none;
     margin: 30px 0px 0px 66px;
     text-align: left;
-    z-index: 132;
+    z-index: 2;
 }
 .index
 {
@@ -66,7 +66,7 @@
     position: relative;
     width: 40px;
     height: 30px;
-    z-index: 4;
+    z-index: 34;
     cursor: pointer;
 }
 
@@ -141,13 +141,14 @@
     right: 0;
     width: 315px;
     height: 452px;
-    background-color: #231F1F;
     transition: all 0.5s ease 0s;
     border-radius: 0px 0px 0px 10px;
+    z-index: 200;
 }
 
 .header__menu.active {
     top: 0;
+    z-index: 2;
 }
 
 .header__list {
@@ -161,6 +162,7 @@
     margin-left: 80px;
 
 }
+/* burger-adaptation */
 
 .wrapper {
     background-size: cover;
@@ -169,12 +171,6 @@
     background-image: url(../images/background.png);
     text-align: center;
     overflow-x: hidden;
-}
-
-.container{
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
 }
 
 .content {
@@ -193,6 +189,8 @@
     font-family: "Lexend Exa";  
     color: #fff;
     float: left;
+    margin-left: 345px;
+    margin-top: 14px;
 }
 
 .about{
@@ -280,6 +278,11 @@
 }
 
 /* // ====================================@MEDIA====================================================================@ADAPTIVE======================================== */
+@media screen and (max-width:1498px){
+    .logo{
+        margin-left: 70px;
+    }
+}
 @media (max-width: 1200px) {
 
     .Man {
@@ -365,8 +368,10 @@
 @media (max-width: 768px) {
 
 
-    .logo h1 {
+    .logo {
         font-size: 40px;
+        margin-top: 33px;
+        margin-left: 0px;
     }
 
     .Man {
@@ -434,16 +439,15 @@
 
     .content {
         margin-top: 20px;
+        height: 80px;
     }
 
     .content p {
-        font-size: 30px;
-        padding-top: 53px;
+        font-size: 20px;
     }
 
     .imageTest {
         max-width: 315px;
-        margin-left: 23px;
         height: 180px;
         margin-top: 60px;
     }
@@ -556,3 +560,4 @@
     z-index: 1;
     transition: 0.3s;
 }
+
