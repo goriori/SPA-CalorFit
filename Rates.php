@@ -21,10 +21,10 @@
                 <div class="header__burger">
                     <span></span>
 
-                <div class="header__body">
+                    <!-- <div class="header__body">
                     <div class="header__burger">
                         <span></span>
-                    </div>
+                    </div> -->
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li>
@@ -49,7 +49,7 @@
                     </nav>
 
                 </div>
-                <nav class="header__menu">
+                <!-- <nav class="header__menu">
                     <ul class="header__list">
                         <li>
                             <a href="/" class="header__link index">Главная</a>
@@ -70,7 +70,7 @@
                             <a href="Singin.php" class="header__link login">Личный кабинет</a>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
         </div>
         <div class="block-gran">

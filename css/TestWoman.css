@@ -400,11 +400,14 @@ button {
 .rightst button:hover {
     transition: .5s;
     background-color: #DC4B57;
+    cursor: pointer;
 }
 
 .leftst button:hover {
     transition: .5s;
     background-color: #DC4B57;
+    cursor: pointer;
+
 }
 
 .leftst button {
@@ -707,6 +710,7 @@ footer {
     color: white;
     pointer-events: auto;
     user-select: none;
+    cursor: pointer;
 
 }
 
@@ -877,6 +881,7 @@ footer {
     background: #e88a92;
     transition: 0.5s;
     color: white;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -998,6 +1003,7 @@ footer {
 .buttons3 div button:hover {
     background-color: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -1135,6 +1141,7 @@ footer {
     background-color: #E88A92;
     transition: .5s;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -1295,6 +1302,7 @@ footer {
 .buttons5 div button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -1372,6 +1380,7 @@ footer {
 .buttons6 button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .wrapp_panel6 {
@@ -1634,6 +1643,7 @@ footer {
     height: 51px;
     border: 1px solid #E88A92;
     border-radius: 30px;
+    cursor: pointer;
 
 }
 
@@ -1677,6 +1687,7 @@ footer {
 .buttons8 button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .panel8 {
@@ -1878,6 +1889,7 @@ footer {
 .buttons9 button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .img9 {
@@ -2130,6 +2142,7 @@ footer {
     color: #fff;
     font-weight: 400;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .buttons9-1 div {
@@ -2213,6 +2226,7 @@ footer {
 .buttons9-1 div button:hover {
     background: #dc4b57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 /* test10 */
@@ -2520,6 +2534,7 @@ footer {
 .buttons10 div button:hover {
     background: #DC4B57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .sliders10 {
@@ -2746,6 +2761,7 @@ footer {
 
 .buttons11 div button:hover {
     background: #DC4B57;
+    cursor: pointer;
 }
 
 .active11 {
@@ -2811,6 +2827,7 @@ footer {
 .buttons11 div button:hover {
     background: #DC4B57;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 /* test13 */
@@ -3269,6 +3286,7 @@ footer {
     color: white;
     user-select: none;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .continue15.active {
@@ -3277,6 +3295,7 @@ footer {
     color: white;
     user-select: none;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .ellipse13 {
@@ -3532,6 +3551,7 @@ footer {
     transition: .5s;
     margin-top: 20px;
     color: white;
+    cursor: pointer;
 }
 
 
