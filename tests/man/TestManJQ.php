@@ -806,17 +806,29 @@
                 </div>
                 <div class="information-test">
                     <div class="block-index">
-                        <p>Индекс вашей массы тела:<h1 id="IndexYour"></h1></p>
+                        <p>Ваш рост: <h1 id="HeightYour"></h1></p>
                     </div>
                     <div class="block-index">
-                        <p>Ваш вес является:<h1 id="WeightYour"></h1></p>
+                        <p>Индекс вашей массы тела:
+                        <h1 id="IndexYour"></h1>
+                        </p>
                     </div>
                     <div class="block-index">
-                        <p>Ваш идеальный вес:<h1 id="GoodWeight"></h1></p>
+                        <p>Ваш вес является:
+                        <h1 id="WeightYour"></h1>
+                        </p>
                     </div>
                     <div class="block-index">
-                        <p>Вес к которому вы хотите придти:<h1 id="WeightWant"></h1></p>
+                        <p>Ваш идеальный вес:
+                        <h1 id="GoodWeight"></h1>
+                        </p>
                     </div>
+                    <div class="block-index">
+                        <p>Вес к которому вы хотите придти:
+                        <h1 id="WeightWant"></h1>
+                        </p>
+                    </div>
+
                 </div>
                 <div class="information-users">
                     <p class="user-head">3 из 4</p>

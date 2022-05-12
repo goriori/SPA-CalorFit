@@ -458,6 +458,9 @@ input::-webkit-inner-spin-button {
     margin-left: 74px;
     margin-top: -1px;
 }
+.onest {
+    top: 50px;
+}
 
 .twost {
     top: 40px;

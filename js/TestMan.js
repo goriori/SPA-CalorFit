@@ -398,19 +398,19 @@ function LoadTest() {
             if($resultTest < 16){
                 $('#IndexYour').css('color', 'red');
                 $('#IndexYour').html($resultTest + '(дефицит массы)');
-            }else if(16 < $resultTest >= 17,9){
+            }else if(16 < $resultTest <= 17.5){
                 $('#IndexYour').css('color', 'yellow');
                 $('#IndexYour').html($resultTest + '(недостаточная масса тела)');
-            }else if(18 <= $resultTest >= 24,9){
+            }else if(18 <= $resultTest <= 24.9){
                 $('#IndexYour').css('color', 'green');
                 $('#IndexYour').html($resultTest + '(нормальный вес)');
-            }else if(25 <= $resultTest >= 29,9){
+            }else if(25 <= $resultTest <= 29.9){
                 $('#IndexYour').css('color', 'yellow');
                 $('#IndexYour').html($resultTest + '(избыточная масса тела)');
-            }else if(30 <= $resultTest >= 34,9){
+            }else if(30 <= $resultTest <= 34.9){
                 $('#IndexYour').css('color', 'red');
                 $('#IndexYour').html($resultTest + '(ожирение 1 степени)');
-            }else if(35 <= $resultTest >= 39,9){
+            }else if(35 <= $resultTest <= 39.9){
                 $('#IndexYour').css('color', 'red');
                 $('#IndexYour').html($resultTest + '(ожирение 2 степени)');
             }else if($resultTest >= 40){

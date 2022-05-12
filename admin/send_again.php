@@ -17,10 +17,12 @@
     <?
 error_reporting(0);
 $connect=mysqli_connect('localhost','u1665837_admin','Qwas1234','u1665837_calorfit.ru');
-$email = $_POST['email'];
+$str_out_order = "SELECT * FROM `orders` WHERE `id` = '$_GET[order_id]'";
+$run_out_order = mysqli_query($connect, $str_out_order);
+$out_order = mysqli_fetch_array($run_out_order);
+$out_order_email = $out_order['email'];
+$email = $out_order_email;
 $date = date("d.m.Y G:i");
-$str_add_order = "INSERT INTO `orders` (`id`, `email`, `status`, `gender`, `date`) VALUES (NULL, '$email', '0', '1', '$date')";
-$run_add_order = mysqli_query($connect, $str_add_order);
 ?>
     <div class="text-message white-text">
         Письмо отправлено на адрес 
@@ -29,12 +31,11 @@ $run_add_order = mysqli_query($connect, $str_add_order);
     </div>
     
     <div class="buttons">
-        <button><a href="/">Вернуться на главную<a></button>
-       <button><a href="/tests/man/TestManJQ.php">Пройти тест заново</a></button>
+       <button><a href="/admin/Admin.php">Вернуться назад</a></button>
     </div>
 <?
 // пример использования
-$file = "/files/test.docx"; // файл
+$file = "files/test.txt"; // файл
 $mailTo = $email; // кому
 $from = "calorfittt@yandex.ru"; // от кого
 $subject = "Заявка с сайта"; // тема письма

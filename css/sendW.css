@@ -1,0 +1,61 @@
+* {
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg_woman.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+    height: 100vh;
+    background-position: center center;
+    text-align: center;
+}
+
+#Check {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text-message {
+    background-color: rgba(76, 80, 85, 0.438);
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 15%;
+    font-size: 32px;
+    padding-top: 40px;
+}
+
+.buttons > button {
+    width: 210px;
+    height: 51px;
+    margin-top: 30px;
+    background: #E88A92;
+    border: 1px solid #EFEFEF;
+    border-radius: 30px;
+    
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin-right: 20px;
+    
+}
+.buttons > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons > button:hover {
+    transition: .5s;
+    background-color: #DC4B57;
+    color: white;
+    user-select: none;
+    pointer-events: auto;
+    cursor: pointer;
+}

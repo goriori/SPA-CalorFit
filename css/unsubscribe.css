@@ -260,9 +260,10 @@ h6 {
     background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 10px;
+    height: 120vh;
     
 }
 
