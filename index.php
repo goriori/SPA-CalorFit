@@ -15,8 +15,10 @@
 
 <body>
   <div class="wrapper">
+    <div class="head">
     <h1 class="logo">CalorFit</h1>
     <? include $path . "/components/burger.php"; ?>
+    </div>
     <div class="content">
       <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
     </div>

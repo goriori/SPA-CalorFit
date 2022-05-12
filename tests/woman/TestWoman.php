@@ -545,6 +545,7 @@
                 <div class="slide_2"></div>
             </div>
         </div>
+        <footer>
             <!-- test10 -->
             <div class="container-block10">
                 <div class="text-content white-text10">
@@ -794,26 +795,21 @@
                 </div>
             </div>
             <div class="text-btn center-align">
-            <!-- Loading... -->
-            <div class="loading__svg">
-                <svg class="progressbar" viewBox="0 0 62 80">
-                    <circle class="progressbar__track" cx="31" cy="31"></circle>
-                    <circle class="progressbar__thumb" cx="31" cy="31"></circle>
-                    <text x="32" y="33" class="progressbar__percent" text-anchor="middle" dominant-baseline="middle">
-                        <tspan>0</tspan>%
-                    </text>
-                    <text x="32" y="66" class="progressbar__info" text-anchor="middle">
-                        <tspan>Загрузка...</tspan>
-                    </text>
-                </svg>
-            </div>
-            <!-- endLoading -->
-            <div class="pay">
-                <div class="step-pay">
-                <div class="content">
-                    <div class="name">
-                        <span>Оплатите <span class="ping1">вашу</span> первую<br />
-                            <span class="ping2">покупку</span></span>
+                <footer>
+                    <!-- Loading... -->
+                    <div class="loading__svg">
+                        <svg class="progressbar" viewBox="0 0 62 80">
+                            <circle class="progressbar__track" cx="31" cy="31"></circle>
+                            <circle class="progressbar__thumb" cx="31" cy="31"></circle>
+                            <text x="32" y="33" class="progressbar__percent" text-anchor="middle" dominant-baseline="middle">
+                                <tspan>0</tspan>%
+                            </text>
+                            <text x="32" y="66" class="progressbar__info" text-anchor="middle">
+                                <tspan>Загрузка...</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <!-- endLoading -->
                     <!-- Результаты опроса -->
                     <div class="result">
                         <div class="text-content black-text ">
@@ -853,6 +849,7 @@
                     </div>
                     <!-- конец опроса -->
                     <div class="pay">
+                        <div class="step-pay">
                         <div class="content">
                             <div class="name">
                                 <span>Оплатите <span class="ping1">вашу</span> первую<br />
@@ -883,6 +880,7 @@
                                 </div>
                                 <button class="pay-submit" type="submit" name="submit">Получить</button>
                             </form>
+                        
                             <footer>
                                 Нажимая на кнопку, Вы соглашаетесь с
                                 <a href="#">политикой конфиденциальности</a> ,<a href="#">условиями использования</a>
@@ -891,29 +889,20 @@
                                 осознаете возмездный характер оказываемых услуг.
                             </footer>
                         </div>
-                        <button class="pay-submit" type="submit" name="submit">Получить</button>
-                    </form>
-                    <footer>
-                        Нажимая на кнопку, Вы соглашаетесь с
-                        <a href="#">политикой конфиденциальности</a> ,<a href="#">условиями использования</a>
-                        и <a href="#">действующими тарифами сервиса</a> , даете свое согласие на
-                        обработку персональных данных и на получение рекламных материалов,
-                        осознаете возмездный характер оказываемых услуг.
-                    </footer>
-                </div>
-                </div>
+                    </div>
+                    </div>
+                    <div class="text-btn">
+                        <h1 class="logo">CalorFit</h1>
+                        <p class="about">
+                            Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
+                            <a href="#">Политикой конфиденциальности</a>,
+                            <a href="#">Условиями подписки</a>,
+                            <a href="#">Отписаться от услуги</a> <br />Поддержка:
+                            admin@calorfit.ru <br>2021 © All Rights Reserved.
+                        </p>
+                    </div>
+                </footer>
             </div>
-            <div class="text-btn">
-                <h1 class="logo">CalorFit</h1>
-                <p class="about">
-                    Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
-                    <a href="#">Политикой конфиденциальности</a>,
-                    <a href="#">Условиями подписки</a>,
-                    <a href="#">Отписаться от услуги</a> <br />Поддержка:
-                    admin@calorfit.ru <br>2021 © All Rights Reserved.
-                </p>
-            </div>
-    </div>
 </body>
 
 </html>

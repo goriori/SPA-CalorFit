@@ -394,12 +394,9 @@ input::-webkit-inner-spin-button {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg_woman.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh;
+    height: 100vh;
     margin: 0 auto;
     overflow-x: hidden;
-    height: 100vh;
     background-position: center center;
     text-align: center;
 }
@@ -867,10 +864,6 @@ footer {
     }
 
     .block-textst p {
-        width: 100%;
-    }
-
-    footer {
         width: 100%;
     }
 
@@ -2780,10 +2773,6 @@ footer {
         width: 100%;
     }
 
-    footer {
-        width: 100%;
-    }
-
     .about {
         width: 100%;
         margin-left: 0px;
@@ -3053,10 +3042,6 @@ footer {
         width: 100%;
     }
 
-    footer {
-        width: 100%;
-    }
-
     .about {
         width: 100%;
         margin-left: 0px;
@@ -3143,10 +3128,6 @@ footer {
     }
 
     .block-textst p {
-        width: 100%;
-    }
-
-    footer {
         width: 100%;
     }
 
@@ -3624,16 +3605,23 @@ footer {
 
 /* Pay */
 .pay {
+    width:100%;
     display: none;
     margin-top: 100px;
 }
 
 .step-pay{
-    width:560px;
+    width:700px;
     min-height:610px;
     margin:15px auto 50px;
     background-color:#f9f9f9;
     box-shadow: 0 11px 20px rgn(220 228 226 / 60%);
+}
+
+@media screen and (max-width:670px) {
+    .step-pay{
+        width:585px;
+    }
 }
 
 .content {
@@ -3644,6 +3632,8 @@ footer {
     margin-top: 20px;
     box-shadow: 0px 0px 10px 0px #b3b0b0;
     border-radius: 2px;
+    display:flex;
+    flex-direction: column;
 }
 
 .name span {
@@ -3898,10 +3888,6 @@ footer {
         width: 100%;
     }
 
-    footer {
-        width: 100%;
-    }
-
     .about {
         width: 100%;
         margin-left: 0px;
@@ -3953,9 +3939,6 @@ footer {
         margin-top: 0px;
     }
 
-    .footer {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width:511px) {
