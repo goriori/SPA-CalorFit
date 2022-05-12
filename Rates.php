@@ -14,11 +14,10 @@
 
 <body>
     <div class="wrapper">
-<<<<<<< HEAD
+
         <div class="logoMobile white-text">CalorFit</div>
         <? include $path . "/components/burger.php"; ?>
-=======
-<<<<<<< HEAD
+
         <div class="container">
             <div class="logo">CalorFit</div>
                 <div class="header__body">
@@ -49,10 +48,9 @@
                     </nav>
                 </div>
             </div>
-=======
+
     <? include $path . "/components/burger.php"; ?>
->>>>>>> 7200bff5efdc56d41938cfaf92685c69638eecee
->>>>>>> e7c6d9ab8998c84ae57eb0d2dbfdca11dd337731
+
         <div class="block-gran">
             <div class="text-content white-text">
                 <h1>Тарифы</h1>
