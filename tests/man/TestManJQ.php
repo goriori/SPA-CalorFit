@@ -806,7 +806,6 @@
                 </div>
                 <div class="information-test">
                     <div class="block-index">
-<<<<<<< HEAD
                         <p>Ваш рост: <h1 id="HeightYour"></h1></p>
                     </div>
                     <div class="block-index">
@@ -822,8 +821,6 @@
                     <div class="block-index">
                         <p>Ваш идеальный вес:
                         <h1 id="GoodWeight"></h1>
-                        </p>
-=======
                         <p>Индекс вашей массы тела:<font id="IndexYour"></font></p>
                     </div>
                     <div class="block-index">
