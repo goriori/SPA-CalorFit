@@ -798,6 +798,36 @@
                 </svg>
             </div>
             <!-- endLoading -->
+            <!-- Результаты опроса -->
+            <div class="result">
+                <div class="text-content white-text ">
+                    <p id="head-1">Предворительные данные</p>
+                    <p id="head-2">Исходя из пройденного вами теста:</p>
+                </div>
+                <div class="information-test">
+                    <div class="block-index">
+                        <p>Индекс вашей массы тела:<h1 id="IndexYour"></h1></p>
+                    </div>
+                    <div class="block-index">
+                        <p>Ваш вес является:<h1 id="WeightYour"></h1></p>
+                    </div>
+                    <div class="block-index">
+                        <p>Ваш идеальный вес:<h1 id="GoodWeight"></h1></p>
+                    </div>
+                    <div class="block-index">
+                        <p>Вес к которому вы хотите придти:<h1 id="WeightWant"></h1></p>
+                    </div>
+                </div>
+                <div class="information-users">
+                    <p class="user-head">3 из 4</p>
+                    <p id="peoples">Похожих людей пришли к нужному весу с нашей программой</p>
+                </div>
+                <div class="infromation-next">
+                    <p class="white-text">Получить индивидуальный план вашего питания</p>
+                    <button onclick="receive()">Получить</button>
+                </div>
+            </div>
+            <!-- конец опроса -->
             <div class="pay">
                 <div class="content">
                     <div class="name">
@@ -838,34 +868,7 @@
                     </footer>
                 </div>
             </div>
-            <div class="result">
-                <div class="text-content white-text ">
-                    <p id="head-1">Предворительные данные</p>
-                    <p id="head-2">Исходя из пройденного вами теста:</p>
-                </div>
-                <div class="information-test">
-                    <div class="block-index">
-                        <p>Индекс вашей массы:</p>
-                    </div>
-                    <div class="block-index">
-                        <p>Ваш вес является:</p>
-                    </div>
-                    <div class="block-index">
-                        <p>Ваш идеальный вес:</p>
-                    </div>
-                    <div class="block-index">
-                        <p>Вес к которому вы хотите придти:</p>
-                    </div>
-                </div>
-                <div class="information-users">
-                    <p class="user-head">3 из 4</p>
-                    <p id="peoples">Похожих людей пришли к нужному весу с нашей программой</p>
-                </div>
-                <div class="infromation-next">
-                    <p class="white-text">Получить индивидуальный план вашего питания</p>
-                    <button>Получить</button>
-                </div>
-            </div>
+
             <div class="text-btn">
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
