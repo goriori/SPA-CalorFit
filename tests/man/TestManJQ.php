@@ -49,7 +49,7 @@
                 </div>
             </div>
         </header>
-        <div class="block" style="display: block;">
+        <div class="block" style="display: none;">
             <div class="block-textst">
                 <h2>Цель</h2>
                 <p>Какая Ваша главная цель?</p>
@@ -795,6 +795,11 @@
                 </div>
                 <div class="information-test">
                     <div class="block-index">
+                        <p>Ваш рост: <h1 id="HeightYour"></h1></p>
+                    </div>
+                    <div class="block-index">
+                        <p>Индекс вашей массы тела:
+                        <h1 id="IndexYour"></h1>
                         <p>Индекс вашей массы тела:<font id="IndexYour"></font>
                         </p>
                     </div>
@@ -803,6 +808,9 @@
                         </p>
                     </div>
                     <div class="block-index">
+                        <p>Ваш идеальный вес:
+                        <h1 id="GoodWeight"></h1>
+                        <p>Индекс вашей массы тела:<font id="IndexYour"></font></p>
                         <p>Ваш идеальный вес:<font id="GoodWeight"></font>
                         </p>
                     </div>
