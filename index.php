@@ -15,38 +15,8 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="container">
-      <div class="logo">CalorFit</div>
-        <div class="header__body">
-          <div class="header__burger">
-            <span></span>
-          </div>
-          <nav class="header__menu">
-            <ul class="header__list">
-              <li>
-                <a href="/" class="header__link index">Главная</a>
-              </li>
-              <li>
-                <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
-              </li>
-              <li>
-                <a href="Rates.php" class="header__link rates">Тарифы</a>
-              </li>
-              <li>
-                <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
-              </li>
-              <li>
-                <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
-              </li>
-              <li>
-                <a href="Singin.php" class="header__link login">Личный кабинет</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <h1 class="logo">CalorFit</h1>
+    <? include $path . "/components/burger.php"; ?>
     <div class="content">
       <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
     </div>
