@@ -818,7 +818,7 @@
                 </div>
                 <div class="infromation-next">
                     <p class="white-text">Получить индивидуальный план вашего питания</p>
-                    <button onclick="receive()">Получить</button>
+                    <button class="rec" onclick="receive()">Получить</button>
                 </div>
             </div>
             <!-- конец опроса -->
