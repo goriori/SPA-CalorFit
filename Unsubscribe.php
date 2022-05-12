@@ -1,3 +1,4 @@
+<? $path = $_SERVER['DOCUMENT_ROOT'] ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,41 +14,7 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <p class="white-text">CalorFit</p>
-        </div>
-        <div class="header__body">
-          <div class="header__burger">
-            <span></span>
-          </div>
-          <nav class="header__menu">
-            <ul class="header__list">
-              <li>
-                <a href="/" class="header__link index">Главная</a>
-              </li>
-              <li>
-                <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
-              </li>
-              <li>
-                <a href="Rates.php" class="header__link rates">Тарифы</a>
-              </li>
-              <li>
-
-                <a href="#" class="header__link">Политика<br> конфенденциальности</a>
-              </li>
-              <li>
-                <a href="#" class="header__link">Условия пользования</a>
-              </li>
-              <li>
-                <a href="Singin.php" class="header__link login">Личный кабинет</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+  <? include $path . "/components/burger.php"; ?>
     <div class="block">
       <div class="text-content white-text">
         <h1>Отказ от подписки</h1>

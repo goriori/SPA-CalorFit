@@ -40,6 +40,9 @@
         display: flex;
         padding: 0px;
     }
+    .header__list > li {
+        width: 100px;
+    }
 
     .header__list li {
         list-style: none;

@@ -338,7 +338,7 @@ input::-webkit-inner-spin-button {
 
     .header__menu {
         position: absolute;
-        top: -100%;
+        top: -200%;
         right: 0;
         width: 315px;
         height: 452px;
@@ -700,8 +700,14 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 340px){
+    /* .kg1 {
+        max-width: 50px;
+    } */
+}
+
 .kg1 {
-    max-width: 165px;
+    width: 165px;
     height: 29px;
     background: #7287A7;
     border: 1px solid #EFEFEF;
@@ -872,9 +878,9 @@ footer {
         width: 100%;
     }
 
-    .kg1 {
+    /* .kg1 {
         width: 100%;
-    }
+    } */
 
     .block-textst p {
         width: 100%;
@@ -946,7 +952,7 @@ footer {
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 100px;
-    display: block;
+    display: none;
 }
 
 .text-content2 {
