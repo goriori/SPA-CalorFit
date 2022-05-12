@@ -443,6 +443,7 @@ input::-webkit-inner-spin-button {
     height: 321px;
     display: flex;
     margin-top: 50px;
+
 }
 
 .img-onest {
@@ -538,6 +539,7 @@ button {
     background: #7287A7;
     border: 1px solid #EFEFEF;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .leftst button {
@@ -823,6 +825,7 @@ footer {
     pointer-events: none;
     transition: .5s;
     user-select: none;
+
 }
 
 .continue1.active {
@@ -831,6 +834,7 @@ footer {
     background: #7287A7;
     pointer-events: auto;
     user-select: none;
+    cursor: pointer;
 
 }
 
@@ -986,6 +990,7 @@ footer {
     transition-duration: .5s;
     background: #7287A7;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .btn2 {
@@ -1120,6 +1125,7 @@ footer {
 .buttons3 div button:hover {
     background: #7287A7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -1262,6 +1268,7 @@ footer {
     border: 1px solid #EFEFEF;
     border-radius: 10px;
     transition: .5s;
+    cursor: pointer;
 }
 
 
@@ -1421,6 +1428,7 @@ footer {
 .buttons5 div button:hover {
     background: #7287A7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -1526,6 +1534,7 @@ footer {
     background: #7287A7;
     border: 1px solid #EFEFEF;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .test_panel1 {
@@ -1756,6 +1765,7 @@ footer {
     width: 210px;
     height: 51px;
     border-radius: 30px;
+    cursor: pointer;
 
 }
 
@@ -1798,6 +1808,7 @@ footer {
 .buttons8 button:hover {
     background: #7287A7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .panel8 {
@@ -1997,6 +2008,7 @@ footer {
 .buttons9 button:hover {
     background: #7287A7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .buttons9 button {
@@ -2243,6 +2255,7 @@ footer {
 .buttons9-1 div button:hover {
     background: #7287A7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 /* test10 */
@@ -2551,6 +2564,7 @@ footer {
 .buttons10 div button:hover {
     background: #7287A7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .sliders10 {
@@ -2793,6 +2807,7 @@ footer {
 .buttons11 div button:hover {
     transition: .5s;
     background: #7287A7;
+    cursor: pointer;
 }
 
 .active11 {
@@ -2858,6 +2873,7 @@ footer {
 .buttons11 div button:hover {
     background: #7287A7;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 /* test13 */
@@ -3318,6 +3334,7 @@ footer {
     color: white;
     user-select: none;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .continue15.active {
@@ -3326,6 +3343,7 @@ footer {
     color: white;
     user-select: none;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .ellipse13 {
@@ -3584,7 +3602,97 @@ footer {
     transition: .5s;
     margin-top: 20px;
     color: white;
+    cursor: pointer;
 }
 
 
 @media screen and (max-width:700px) {}
+
+
+/* result page */
+
+.result {
+    width: 690px;
+    height: 675px;
+    background: rgba(53, 53, 58, 0.8);
+    border: 3px solid #FCF9F9;
+    border-radius: 10px;
+}
+
+#head-1 {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+#head-2 {
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.information-test {
+    margin-top: 50px;
+    background-color: #231F1F;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.block-index {
+    display: flex;
+    height: 50px;
+    
+    font-weight: 400;
+    font-size: 20px;
+    color: white; 
+}
+
+.infromation-next {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.infromation-next > button {
+    width: 210px;
+    height: 51px;
+    margin-top: 30px;
+    background: #231F1F;
+    border: 1px solid #EFEFEF;
+    border-radius: 30px;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: 0.5s;
+    
+}
+
+.infromation-next > button:hover {
+    transition: .5s;
+    background-color: #7287A7;
+    color: white;
+    user-select: none;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+
+.information-users {
+    margin-top: 20px;
+    background-color: #7287A7;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.user-head {
+    color: red;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#peoples {
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}

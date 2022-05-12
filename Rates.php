@@ -12,12 +12,23 @@
 </head>
 <body>
     <div class="wrapper">
+<<<<<<< HEAD
+        <div class="container">
+            <div class="logo">CalorFit</div>
+
+            <div class="header__body">
+                <div class="header__burger">
+                    <span></span>
+
+                    <!-- <div class="header__body">
+=======
         <header class="header">
             <div class="container__burger"> 
                 <div class="header__body">
+>>>>>>> 8b1ad0209fbaa4cc9cd8c53fdc8410e1e96173a6
                     <div class="header__burger">
                         <span></span>
-                    </div>
+                    </div> -->
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li class="index">
@@ -41,6 +52,31 @@
                         </ul>
                     </nav>
                 </div>
+<<<<<<< HEAD
+                <!-- <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="/" class="header__link index">Главная</a>
+                        </li>
+                        <li>
+                            <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
+                        </li>
+                        <li>
+                            <a href="Rates.php" class="header__link rates">Тарифы</a>
+                        </li>
+                        <li>
+                            <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
+                        </li>
+                        <li>
+                            <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
+                        </li>
+                        <li>
+                            <a href="Singin.php" class="header__link login">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </nav> -->
+=======
+>>>>>>> 8b1ad0209fbaa4cc9cd8c53fdc8410e1e96173a6
             </div>
         </header>
         <div class="block-gran">
