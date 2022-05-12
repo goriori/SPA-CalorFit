@@ -3520,9 +3520,22 @@ footer {
     width: 690px;
     height: 675px;
     background: #FFFFFF;
-    border-radius: 30px;
     border-radius: 10px;
     display: none;
+    margin-top:100px;
+}
+
+@media screen and (max-width:700px) {
+    .result{
+        width:100%;
+        margin-top:0px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .result{
+        height:850px;
+    }
 }
 
 #head-1 {

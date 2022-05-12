@@ -545,7 +545,6 @@
                 <div class="slide_2"></div>
             </div>
         </div>
-        <footer>
             <!-- test10 -->
             <div class="container-block10">
                 <div class="text-content white-text10">
@@ -795,7 +794,6 @@
                 </div>
             </div>
             <div class="text-btn center-align">
-                <footer>
                     <!-- Loading... -->
                     <div class="loading__svg">
                         <svg class="progressbar" viewBox="0 0 62 80">
@@ -901,7 +899,6 @@
                             admin@calorfit.ru <br>2021 © All Rights Reserved.
                         </p>
                     </div>
-                </footer>
             </div>
 </body>
 
