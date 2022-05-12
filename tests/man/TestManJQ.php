@@ -49,7 +49,7 @@
                 </div>
             </div>
         </header>
-        <div class="block" style="display: block;">
+        <div class="block" style="display: none;">
             <div class="block-textst">
                 <h2>Цель</h2>
                 <p>Какая Ваша главная цель?</p>
@@ -90,18 +90,7 @@
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
             </div>
-            <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+          
         </div>
         <!-- test1 -->
         <div class="test1">
@@ -811,31 +800,22 @@
                     <div class="block-index">
                         <p>Индекс вашей массы тела:
                         <h1 id="IndexYour"></h1>
+                        <p>Индекс вашей массы тела:<font id="IndexYour"></font>
                         </p>
                     </div>
                     <div class="block-index">
-                        <p>Ваш вес является:
-                        <h1 id="WeightYour"></h1>
+                        <p>Ваш вес является:<font id="WeightYour"></font>
                         </p>
                     </div>
                     <div class="block-index">
                         <p>Ваш идеальный вес:
                         <h1 id="GoodWeight"></h1>
                         <p>Индекс вашей массы тела:<font id="IndexYour"></font></p>
+                        <p>Ваш идеальный вес:<font id="GoodWeight"></font>
+                        </p>
                     </div>
                     <div class="block-index">
-                        <p>Ваш вес является:<font id="WeightYour"></font></p>
-                    </div>
-                    <div class="block-index">
-                        <p>Ваш идеальный вес:<font id="GoodWeight"></font></p>
-                    </div>
-                    <div class="block-index">
-                        <p>Вес к которому вы хотите придти:<font id="WeightWant"></font></p>
->>>>>>> 2486b5613645fff3a0771de6fb3ddd8805a54096
-                    </div>
-                    <div class="block-index">
-                        <p>Вес к которому вы хотите придти:
-                        <h1 id="WeightWant"></h1>
+                        <p>Вес к которому вы хотите придти:<font id="WeightWant"></font>
                         </p>
                     </div>
 
@@ -904,6 +884,18 @@
 
         </footer>
     </div>
+    <script>
+                window.replainSettings = {
+                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
+                };
+                (function(u) {
+                    var s = document.createElement('script');
+                    s.async = true;
+                    s.src = u;
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                })('https://widget.replain.cc/dist/client.js');
+            </script>
 </body>
 
 </html>
