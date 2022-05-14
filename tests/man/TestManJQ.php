@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="../../js/TestMan.js"></script>
+    <script src="../../js/testMan.js"></script>
     <script src="../../js/burger.js"></script>
-    <link rel="stylesheet" href="/css/TestManTest.css">
+    <link rel="stylesheet" href="/css/testManTest.css">
     <title>CalorFit</title>
 </head>
 
@@ -30,19 +30,16 @@
                                 <a href="/" class="header__link index">Главная</a>
                             </li>
                             <li>
-                                <a href="Unsubscribe.php" class="header__link">Отписаться</a>
+                                <a href="../../rates.php" class="header__link rates">Тарифы</a>
                             </li>
                             <li>
-                                <a href="Rates.php" class="header__link">Тарифы</a>
+                                <a href="../../treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
                             </li>
                             <li>
-                                <a href="#" class="header__link">Политика<br> конфенденциальности</a>
+                                <a href="../../treaty.php" class="header__link treatyb">Условия пользования</a>
                             </li>
                             <li>
-                                <a href="#" class="header__link">Условия пользования</a>
-                            </li>
-                            <li>
-                                <a href="/Singin.php" class="header__link">Личный кабинет</a>
+                                <a href="../../singin.php" class="header__link login">Личный кабинет</a>
                             </li>
                         </ul>
                     </nav>
@@ -72,7 +69,7 @@
             </div>
             <div class="sliders">
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -90,7 +87,7 @@
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
             </div>
-          
+
         </div>
         <!-- test1 -->
         <div class="test1">
@@ -114,7 +111,7 @@
             <div class="ellipse1">
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -151,7 +148,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -193,7 +190,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -236,7 +233,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -284,7 +281,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -323,7 +320,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -359,7 +356,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -409,7 +406,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -457,7 +454,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -515,7 +512,7 @@
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
                 <div class="slide_1"></div>
-                <div class="slide_1"></div>
+                <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
                 <div class="slide_2"></div>
@@ -581,7 +578,7 @@
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
-                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
                     <div class="slide_2"></div>
                     <div class="slide_2"></div>
                     <div class="slide_2"></div>
@@ -620,7 +617,7 @@
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
-                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
                     <div class="slide_2"></div>
                     <div class="slide_2"></div>
                     <div class="slide_2"></div>
@@ -658,7 +655,7 @@
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
-                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
                     <div class="slide_2"></div>
                     <div class="slide_2"></div>
                 </div>
@@ -696,7 +693,7 @@
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
-                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
                     <div class="slide_2"></div>
                 </div>
             </div>
@@ -735,7 +732,7 @@
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
                     <div class="slide_1"></div>
-                    <div class="slide_1"></div>
+                    <div class="slide_2"></div>
                 </div>
             </div>
             <!-- test15 -->
@@ -795,7 +792,9 @@
                 </div>
                 <div class="information-test">
                     <div class="block-index">
-                        <p>Ваш рост: <h1 id="HeightYour"></h1></p>
+                        <p>Ваш рост:
+                        <h1 id="HeightYour"></h1>
+                        </p>
                     </div>
                     <div class="block-index">
                         <p>Индекс вашей массы тела:
@@ -810,7 +809,8 @@
                     <div class="block-index">
                         <p>Ваш идеальный вес:
                         <h1 id="GoodWeight"></h1>
-                        <p>Индекс вашей массы тела:<font id="IndexYour"></font></p>
+                        <p>Индекс вашей массы тела:<font id="IndexYour"></font>
+                        </p>
                         <p>Ваш идеальный вес:<font id="GoodWeight"></font>
                         </p>
                     </div>
@@ -874,28 +874,29 @@
             <div class="text-btn">
                 <h1 class="logo">CalorFit</h1>
                 <p class="about">
-                    Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
-                    <a href="#">Политикой конфиденциальности</a>,
-                    <a href="#">Условиями подписки</a>,
-                    <a href="#">Отписаться от услуги</a> <br />Поддержка:
-                    admin@calorfit.ru <br>2021 © All Rights Reserved.
+                    Продолжая, вы соглашаетесь с <a href="../../treaty.php">Условиями использования</a>,
+                    <a href="../../treaty.php">Политикой<br />
+                        конфиденциальности</a>, <a href="../../rates.php">Условиями подписки</a><br />
+                    Поддержка: admin@calorfit.ru<br />
+                    2022 © All Rights Reserved.
                 </p>
+
             </div>
 
         </footer>
     </div>
     <script>
-                window.replainSettings = {
-                    id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
-                };
-                (function(u) {
-                    var s = document.createElement('script');
-                    s.async = true;
-                    s.src = u;
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                })('https://widget.replain.cc/dist/client.js');
-            </script>
+        window.replainSettings = {
+            id: 'ba050b03-40aa-4aa5-a1a3-2eaf87139cb2'
+        };
+        (function(u) {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = u;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
 </body>
 
 </html>

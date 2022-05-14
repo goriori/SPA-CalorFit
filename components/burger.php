@@ -10,19 +10,16 @@
                         <a href="/" class="header__link index">Главная</a>
                     </li>
                     <li>
-                        <a href="Unsubscribe.php" class="header__link unsubscribe">Отписаться</a>
+                        <a href="rates.php" class="header__link rates">Тарифы</a>
                     </li>
                     <li>
-                        <a href="Rates.php" class="header__link rates">Тарифы</a>
+                        <a href="treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
                     </li>
                     <li>
-                        <a href="Treaty.php" class="header__link treaty">Политика<br> конфенденциальности</a>
+                        <a href="treaty.php" class="header__link treatyb">Условия пользования</a>
                     </li>
                     <li>
-                        <a href="Treaty.php" class="header__link treatyb">Условия пользования</a>
-                    </li>
-                    <li>
-                        <a href="Singin.php" class="header__link login">Личный кабинет</a>
+                        <a href="singin.php" class="header__link login">Личный кабинет</a>
                     </li>
                 </ul>
             </nav>

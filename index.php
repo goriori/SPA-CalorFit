@@ -23,25 +23,13 @@
       <p class="white-text center-align">Давайте составим <br />Ваш профиль</p>
     </div>
     <div class="imageTest">
-
-      <!-- <div class="Man">
-        <h1 class="white-text">МУЖЧИНА</h1>
-        <div class="imageman"></div>
-      </div>
-      <div class="Woman">
-        <h1 class="white-text">ЖЕНЩИНА</h1>
-        <a href="tests/woman/TestWoman.php">
-          <div class="imagewoman"></div>
-        </a>
-      </div> -->
-
         <div class="Man">
           <h1 class="white-text">МУЖЧИНА</h1>
-          <a href="/tests/man/TestManJQ.php"><div class="imageman"></div></a>
+          <a href="/tests/man/testManJQ.php"><div class="imageman"></div></a>
         </div>
         <div class="Woman">
           <h1 class="white-text">ЖЕНЩИНА</h1>
-          <a href="tests/woman/TestWoman.php"><div class="imagewoman"></div></a>
+          <a href="tests/woman/testWoman.php"><div class="imagewoman"></div></a>
         </div>
     </div>
     <? include $path . "/components/footer.php"; ?>

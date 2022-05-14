@@ -1,11 +1,10 @@
       <footer>
           <div class="about">
-              Продолжая, вы соглашаетесь с <a href="#">Условиями использования</a>,
-              <a href="#">Политикой<br />
-                  конфиденциальности</a>, <a href="#">Условиями подписки</a><br />
-              <a href="#">Отписаться от услуги</a><br />
-              Поддержка: admin@сalorfit.ru<br />
-              2021 © All Rights Reserved.
+              Продолжая, вы соглашаетесь с <a href="treaty.php">Условиями использования</a>,
+              <a href="treaty.php">Политикой<br />
+                  конфиденциальности</a>, <a href="Rates.php">Условиями подписки</a><br />
+              Поддержка: admin@calorfit.ru<br />
+              2022 © All Rights Reserved.
           </div>
       </footer>
       <style>
@@ -27,6 +26,7 @@
               }
 
           }
+
           @media screen and (max-width:400px) {
               .about {
                   font-size: 15px;
