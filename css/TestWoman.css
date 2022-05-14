@@ -1784,9 +1784,11 @@ footer {
     .ellipse7 {
         width: 100%;
     }
+}
 
-    .answer4 {
-        width: 100%;
+@media screen and (max-width:362px) {
+    .answer4{
+        width:100%;
     }
 }
 
